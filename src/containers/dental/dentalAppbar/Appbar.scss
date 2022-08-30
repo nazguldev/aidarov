@@ -1,0 +1,31 @@
+// appbar scss
+.nav_text {
+    color: white;
+    position: relative;
+  }
+  
+  .nav_text::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #c2b285;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+  }
+  
+  .nav_text:hover::after {
+    width: 100%;
+  }
+  
+  .textdiv {
+    color: black;
+    transition: 0.5s;
+  }
+  
+  .textdiv:hover {
+    color: white;
+  }
+  
