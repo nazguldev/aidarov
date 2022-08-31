@@ -136,8 +136,7 @@ function AboutClinicContainer({ setShow }) {
                     </Col>
                 </Row>
             </div>
-            <h1 data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom" className='text_nav text-center mt-5'>Здесь вы можете:</h1>
+            <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='text_nav text-center mt-5'>Здесь вы можете:</h1>
             <div className='container row m-3 p-2'>
                 <Col xs={10} md={6} lg={5} sm={6}>
                     <h3 data-aos="fade-up"
