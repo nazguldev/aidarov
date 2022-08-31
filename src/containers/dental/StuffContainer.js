@@ -5,7 +5,7 @@ import imgg from '../../img.aidarov/imgg.jpeg'
 import patient1 from './Image/patient1.jpg'
 import patient2 from './Image/patient2.jpg'
 import patient5 from './Image/patient5.jpg'
-import  '../dental.scss'
+import  './dental.scss'
 
 
 function StuffContainer({setShow}) {
