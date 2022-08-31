@@ -10,6 +10,12 @@ import Iplant from '../containers/dental/dentalAppbar/Iplant'
 import CollSenter from '../components/collSenter/CollSenter'
 import './App.scss'
 import Footer from './Footer';
+import AboutXirurg from '../containers/xirurg/AboutXirurg';
+import Adoctors from '../containers/xirurg/Adoctors';
+import Price from '../containers/xirurg/Price';
+import AboutTerapiya from '../containers/terapiya/AboutTerapiya';
+import AdoctorsTerapiya from '../containers/terapiya/AdoctorsTerapiya';
+import PriceTerapiya from '../containers/terapiya/PriceTerapiya';
 
 function App(props) {
   const [show, setShow] = useState(false)
@@ -24,6 +30,13 @@ function App(props) {
         <Route path={'/Brekety'} element={<Brekety setShow={setShow} />} />
         <Route path={'/whiting'} element={<Otbali setShow={setShow}/>} />
         <Route path={'/Iplant'} element={<Iplant setShow={setShow}/>} />
+        <Route path={'/AboutXirurg'} element={<AboutXirurg/>}/>
+        <Route path={'/Adoctors'} element={<Adoctors/>}/>
+        <Route path={'/Price'} element={<Price/>}/>
+        <Route path={'/AboutTerapiya'} element={<AboutTerapiya/>}/>
+        <Route path={'/AdoctorsTerapiya'} element={<AdoctorsTerapiya/>}/>
+        <Route path={'/PriceTerapiya'} element={<PriceTerapiya/>}/>
+
       </Routes>
       
       <CollSenter show={show} setShow={setShow}/>

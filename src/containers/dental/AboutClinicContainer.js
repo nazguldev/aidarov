@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Row, Card, Col, Button } from 'react-bootstrap';
 import Accordion from '../../components/accrdion/Accordion';
 import AutoVideo from '../../components/Vidoe/AutoVideo'
-import '../dental.scss'
+import './dental.scss'
 import RunText from '../../components/runText/RunText';
 import AOS from "aos";
 import imgg from '../../img.aidarov/imgg.jpeg'

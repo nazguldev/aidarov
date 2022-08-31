@@ -3,7 +3,7 @@ import { Row, Col, Card } from "react-bootstrap"
 import Accordion from '../../../components/accrdion/Accordion'
 import RunText from '../../../components/runText/RunText'
 import imgg from '../../../img/imgg.jpeg'
-import '../dental.scss'
+import './dental.scss'
 
 const data = [
     {
