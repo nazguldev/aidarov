@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import Button1 from '../../Button1';
 import logo from "./logo.png"
 
 function _Navbar(props) {
@@ -16,18 +17,15 @@ function _Navbar(props) {
                 <Nav.Link href="/AboutClinic">О Клинике</Nav.Link>
                 <Nav.Link href="/ContactClinick">Контакты</Nav.Link>
                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
+                  <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutXirurg">Хирургия
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
+            <Button1/>
           </Container>
         </Navbar>
 

@@ -43,23 +43,23 @@ function AboutClinicContainer({ setShow }) {
     return (
         <div className={'container aboutClinic mt-5'}>
             <div className='mt-5 text-center '>
-            <DentalNavbar/>
-                    <div className='text-center'>С нами вы<br /> улыбаетесь чаще</div>
-                    <Row>
-                        <Col sm={6} xs={12} md={6} >
-                            <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
-                                поможет обрести улыбку мечты. Ответственность. <br />
-                                Профессионализм. Забота о каждом пациенте.</p>
-                            <Col className='mt-3' sm={6}>
-                                <Button1 setShow={setShow} />
-                            </Col>
+                <DentalNavbar />
+                <div className='text-center'>С нами вы<br /> улыбаетесь чаще</div>
+                <Row>
+                    <Col sm={6} xs={12} md={6} >
+                        <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
+                            поможет обрести улыбку мечты. Ответственность. <br />
+                            Профессионализм. Забота о каждом пациенте.</p>
+                        <Col className='mt-3' sm={6}>
+                            <Button1 setShow={setShow} />
                         </Col>
+                    </Col>
 
-                        <Col sm={6}  xs={12} md={6}>
-                            <AutoVideo />
-                        </Col>
-                    </Row>
-            
+                    <Col sm={6} xs={12} md={6}>
+                        <AutoVideo />
+                    </Col>
+                </Row>
+
             </div>
 
             <div className='text-center ' data-aos="fade-up">
@@ -158,7 +158,7 @@ function AboutClinicContainer({ setShow }) {
                         data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
-            <StuffContainer setShow={setShow}/>
+            <StuffContainer setShow={setShow} />
             <RunText />
 
         </div>
