@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Row, Card, Col, Button } from 'react-bootstrap';
+import { Row, Card, Col,} from 'react-bootstrap';
 import Accordion from '../../components/accrdion/Accordion';
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'

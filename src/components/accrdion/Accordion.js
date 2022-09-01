@@ -18,10 +18,10 @@ function Accordion(props) {
     }, []);
     return (
 
-        <div className='wrapper container mt-5 '>
+        <div className=' container mt-5 '>
             <hr />
 
-            <Col sm={5}>
+            <Col sm={6} xs={12} md={6}>
                 <div className='accordion '>
                     {props.name.map((item, i) => {
                         return (

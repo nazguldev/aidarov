@@ -68,7 +68,7 @@ function StuffContainer({setShow}) {
     return (
         <>
             <Container style={{marginTop:"100px"}}>
-                <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
+                <h1 style={{ color: "#d3bb7e",marginTop: "50px" }}>
                     Врачи, которым доверяют
                 </h1>
                 <Row>
