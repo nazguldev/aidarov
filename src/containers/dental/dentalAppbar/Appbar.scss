@@ -1,9 +1,7 @@
 // appbar scss
-.nav_text {
+.text_nav {
     color: white;
-    position: relative;
   }
-  
   .nav_text::after {
     content: '';
     width: 0;
@@ -19,13 +17,35 @@
   .nav_text:hover::after {
     width: 100%;
   }
-  
   .textdiv {
     color: black;
     transition: 0.5s;
-  }
-  
+  } 
   .textdiv:hover {
     color: white;
   }
+  .t013__img {
+    max-width: 140px;
+    width: 80px;
+    height: 80px;
+    margin: 8px 0 10px 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.tn-atom {
+    color: #ebebeb;
+    font-size: 24px;
+    font-family: 'Arial', Arial, sans-serif;
+    // line-height: 1.55;
+    // font-weight: 300;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #060608;
+    background-position: center center;
+    border-color: #ebebeb;
+    border-style: solid;
+    display: block;
+}
+
   

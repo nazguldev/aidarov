@@ -47,7 +47,10 @@ function MainContainers({ setShow }) {
         }, {
             name: "Терапия",
             text: "Многопрофильный реабилитационный центр клиники профессора Асымбековой.Оказываем профессиональную и эффективную помощь по реабилитации пациентов после инсульта и инфаркта миокарда, черепно-мозговых и спинальных травм, операций на позвоночнике, восстановительное лечение после Covid-19, а также медицинскую и сестринскую помощь пациентам с ограниченными возможностями. Мы помогаем даже в самых сложных ситуациях, обусловленных сопутствующими заболеваниями (рассеянный склероз, болезнь Паркинсона)Учредителями являются ОсОО “Клиника профессора Асымбековой”"
-        }
+        }, {
+            name: "Лаборатория",
+            text: "Многопрофильный реабилитационный центр клиники профессора Асымбековой.Оказываем профессиональную и эффективную помощь по реабилитации пациентов после инсульта и инфаркта миокарда, черепно-мозговых и спинальных травм, операций на позвоночнике, восстановительное лечение после Covid-19, а также медицинскую и сестринскую помощь пациентам с ограниченными возможностями. Мы помогаем даже в самых сложных ситуациях, обусловленных сопутствующими заболеваниями (рассеянный склероз, болезнь Паркинсона)Учредителями являются ОсОО “Клиника профессора Асымбековой”"
+        },
     ]
     return (
         <div className='mainContainers'>
@@ -55,7 +58,7 @@ function MainContainers({ setShow }) {
             <div className='header_banner  w-100 h-100 '>
                 <div className='container'>
                     <h1 className='text-center pt-5'>Добро пожаловать </h1>
-                    <p className='text_nav h5 mt-5 mb-5'>
+                    <p className=' h5 mt-5 mb-5'>
                         Клиника профессора Асымбековой организована в 2003 году.<br /> Имеет соответствия и лицензию МЗ КР.<br /> В клинике работают более 100 сотрудников:<br /> профессора, доценты, доктора и кандидаты <br />медицинских наук; акушеры-гинекологи, <br />неонатологи, педиатры,<br /> анестезиологи, терапевты, врачи смежных специальностей,<br /> акушерки и медсестры с высшей категорией.
                     </p>
                     <p className='mt-5 mb-5 pb-5 h5'>
@@ -72,83 +75,64 @@ function MainContainers({ setShow }) {
                                 <h1>{e.name}</h1>
                                 <p style={{ color: "white" }}>{e.text} </p>
                             </Carousel.Item>
-
                         )
                     })}
-
-
-
-
                 </Carousel>
             </div>
             <div className='container'>
-                <h1 className='text-center pt-5 pb-5 '>УСЛУГИ  КЛИНИКИ:</h1>
-
-
-
+                <h1 className='text-center pt-3 pb-5 '>УСЛУГИ  КЛИНИКИ:</h1>
                 <Row>
                     <Col sm={6} xs={12} md={4} className="text-center">
                         <a href='/aboutDental'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Стоматология</Card.Title>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Стоматология</Card.Title>
                                     <Card.Img className='images_item' variant="top" src='https://zub.ru/upload/iblock/041/04174025b93d0621168a8712e846e9ca.jpg' />
-                                </Card.Body>
-                            </Card>
+                            </div>
                         </a>
                     </Col>
                     <Col sm={6} xs={12} md={4} >
                         <a href='/AboutXirurg'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Хирургия</Card.Title>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Хирургия</Card.Title>
                                     <Card.Img className=' images_item ' variant="top" src='https://di-center.ru/upload/images/hiryrgia.jpg' />
 
-                                </Card.Body>
-                            </Card>
+                            </div>
                         </a>
                     </Col>
                     <Col sm={6} xs={12} md={4} >
                         <a href='/AboutTerapiya'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Терапия</Card.Title>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Терапия</Card.Title>
                                     <Card.Img className='images_item' variant="top" src='https://www.promedicina.clinic/assets/images/vlok.jpg' />
 
-                                </Card.Body>
-                            </Card>
+                            </div>
                         </a>
                     </Col>
-                    <Col sm={6} xs={12} md={4} className="text-center">
-                        <a href='/aboutDental'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Стоматология</Card.Title>
-                                    <Card.Img className='images_item' variant="top" src='https://zub.ru/upload/iblock/041/04174025b93d0621168a8712e846e9ca.jpg' />
+                    <Col sm={6} xs={12} md={4} className="text-center ">
+                        <a href='/AboutLaboratory'>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Лаборатория</Card.Title>
+                                    <Card.Img className='images_item' variant="top" src='https://alterainvest.ru/upload/iblock/45a/45ad6847ad7e96d427a0523f2cb2ade0.jpg' />
 
-                                </Card.Body>
-                            </Card>
+                            </div>
                         </a>
                     </Col>
                     <Col sm={6} xs={12} md={4} >
-                        <a href='/AboutXirurg'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Хирургия</Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://di-center.ru/upload/images/hiryrgia.jpg' />
-                                </Card.Body>
-                            </Card>
+                        <a href='/AboutGynecology'>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Гинекология
+                                    </Card.Title>
+                                    <Card.Img className=' images_item ' variant="top" src='https://clinic.kg/wp-content/uploads/2018/12/ginekologicheskie_operacii.jpg' />
+                            </div>
                         </a>
                     </Col>
                     <Col sm={6} xs={12} md={4} >
                         <a href='/AboutTerapiya'>
-                            <Card style={{ marginTop: "10px" }}>
-                                <Card.Body>
-                                    <Card.Title className='text-center'>Терапия</Card.Title>
+                            <div style={{ marginTop: "10px" }}>
+                                    <Card.Title className='text-center pb-3'>Терапия</Card.Title>
                                     <Card.Img className='images_item' variant="top" src='https://www.promedicina.clinic/assets/images/vlok.jpg' />
 
-                                </Card.Body>
-                            </Card>
+                            </div>
                         </a>
                     </Col>
                 </Row>
@@ -171,7 +155,6 @@ function MainContainers({ setShow }) {
                                             <p>{e.text}</p>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-
                                 )
                             })}
 

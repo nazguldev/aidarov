@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import './xirurg.scss'
 import Accordion from '../../components/accrdion/Accordion';
 
@@ -16,7 +15,7 @@ function Price(props) {
             price3: "КТ общее — 5 500 сом.",
             price4: "Составление плана лечения— 5 000 сом.",
             price_price: "Полный чекап — 25 000 сом."
-    
+
         },
         {
             title: "Седация",
@@ -69,12 +68,17 @@ function Price(props) {
             price: "Сложное удаление зуба — 25 000 сом.",
         },
     ]
-    
+
     return (
         <div className='container mt-5'>
-            <h1 className='mt-4 text-center'><span>ЦЕНЫ НА УСЛУГИ КЛИНИКИ</span><br />
-                <span style={{color:"white", marginTop:"15px"}}>ПРОФЕССОРА АСЫМБЕКОВОЙ</span></h1>
-                <Accordion name={data}/>
+            <h1 className='mt-4 text-center'>
+                <span>ЦЕНЫ НА УСЛУГИ КЛИНИКИ</span>
+                <br />
+                <span style={{ color: "white", marginTop: "15px" }}>
+                    ПРОФЕССОРА АСЫМБЕКОВОЙ
+                </span>
+            </h1>
+            <Accordion name={data} />
         </div>
     );
 }

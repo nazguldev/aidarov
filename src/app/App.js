@@ -16,6 +16,8 @@ import Price from '../containers/xirurg/Price';
 import AboutTerapiya from '../containers/terapiya/AboutTerapiya';
 import AdoctorsTerapiya from '../containers/terapiya/AdoctorsTerapiya';
 import PriceTerapiya from '../containers/terapiya/PriceTerapiya';
+import AboutLaboratory from '../containers/laboratory/AboutLaboratory';
+import AboutGynecology from '../containers/gynecology/AboutGynecology';
 
 function App(props) {
   const [show, setShow] = useState(false)
@@ -36,6 +38,8 @@ function App(props) {
         <Route path={'/AboutTerapiya'} element={<AboutTerapiya/>}/>
         <Route path={'/AdoctorsTerapiya'} element={<AdoctorsTerapiya/>}/>
         <Route path={'/PriceTerapiya'} element={<PriceTerapiya/>}/>
+        <Route path={'/AboutLaboratory'} element={<AboutLaboratory/>}/>
+        <Route path={'/AboutGynecology'} element={<AboutGynecology/>}/>
 
       </Routes>
       
