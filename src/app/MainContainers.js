@@ -73,7 +73,7 @@ function MainContainers({ setShow }) {
                             <Carousel.Item>
 
                                 <h1>{e.name}</h1>
-                                <p style={{ color: "white" }}>{e.text} </p>
+                                <h5 style={{ color: "white" }}>{e.text} </h5>
                             </Carousel.Item>
                         )
                     })}
@@ -152,7 +152,7 @@ function MainContainers({ setShow }) {
                                             alt="First slide" />
                                         <Carousel.Caption>
                                             <h3>{e.title}</h3>
-                                            <p>{e.text}</p>
+                                            <h5>{e.text}</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 )
