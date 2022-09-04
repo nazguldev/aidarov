@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Row, Card, Col, Button } from 'react-bootstrap';
-import Accordion from '../../components/accrdion/Accordion';
+import Accordions from '../../components/accrdion/Accordions';
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'
 import RunText from '../../components/runText/RunText';
@@ -43,30 +43,30 @@ function AboutClinicContainer({ setShow }) {
     return (
         <div className={'container aboutClinic mt-5'}>
             <div className='mt-5 text-center '>
-            <DentalNavbar/>
-                    <div className='text-center'>С нами вы<br /> улыбаетесь чаще</div>
-                    <Row>
-                        <Col sm={6} xs={12} md={6} >
-                            <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
-                                поможет обрести улыбку мечты. Ответственность. <br />
-                                Профессионализм. Забота о каждом пациенте.</p>
-                            <Col className='mt-3' sm={6}>
-                                <Button1 setShow={setShow} />
-                            </Col>
+                <DentalNavbar />
+                <div className='text-center'>С нами вы<br /> улыбаетесь чаще</div>
+                <Row>
+                    <Col sm={6} xs={12} md={6} >
+                        <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
+                            поможет обрести улыбку мечты. Ответственность. <br />
+                            Профессионализм. Забота о каждом пациенте.</p>
+                        <Col className='mt-3' sm={6}>
+                            <Button1 setShow={setShow} />
                         </Col>
+                    </Col>
 
-                        <Col sm={6}  xs={12} md={6}>
-                            <AutoVideo />
-                        </Col>
-                    </Row>
-            
+                    <Col sm={6} xs={12} md={6}>
+                        <AutoVideo />
+                    </Col>
+                </Row>
+
             </div>
 
             <div className='text-center ' data-aos="fade-up">
                 <h1 className='mt-5'>5 причин доверить нам улыбку</h1>
             </div>
             <div className=''>
-                <Accordion name={data} />
+                <Accordions name={data} />
             </div>
             <div className='mt-3'>
                 <Row>
@@ -157,7 +157,7 @@ function AboutClinicContainer({ setShow }) {
                         data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
-            <StuffContainer setShow={setShow}/>
+           
             <RunText />
 
         </div>
@@ -165,3 +165,4 @@ function AboutClinicContainer({ setShow }) {
 }
 
 export default AboutClinicContainer;
+

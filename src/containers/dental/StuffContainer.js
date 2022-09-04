@@ -6,6 +6,7 @@ import patient1 from './Image/patient1.jpg'
 import patient2 from './Image/patient2.jpg'
 import patient5 from './Image/patient5.jpg'
 import  './dental.scss'
+import DentalNavbar from './dentalAppbar/DentalNavbar';
 
 
 function StuffContainer({setShow}) {
@@ -67,7 +68,8 @@ function StuffContainer({setShow}) {
     ]
     return (
         <>
-            <Container style={{marginTop:"100px"}}>
+            <Container >
+                <DentalNavbar/>
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     Врачи, которым доверяют
                 </h1>

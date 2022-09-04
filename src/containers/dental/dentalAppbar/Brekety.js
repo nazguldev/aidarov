@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import AOS from 'aos'
-import Accordion from '../../../components/accrdion/Accordion'
+import Accordions from '../../../components/accrdion/Accordions'
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import Button1 from '../../../Button1';
 import RunText from '../../../components/runText/RunText';
@@ -291,7 +291,7 @@ function Brekety({ setShow }) {
             </div>
             <div className="container">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>Частые вопросы</h1>
-                <Accordion name={a} />
+                <Accordions name={a} />
 
 
                 <Row>

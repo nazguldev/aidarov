@@ -1,37 +1,33 @@
 import React from 'react';
-import {Card} from 'react-bootstrap'
+import { Card, Col, Row } from 'react-bootstrap'
+import Button1 from '../../Button1';
 import './xirurg.scss'
 
-function AboutXirurg(props) {
+function AboutXirurg({ setShow }) {
     return (
-        <div className='container row'>
-            AboutXirurg
-            <Card style={{ width: '18rem' }}>
-                <h1>Adoctors</h1>
-                <a href="/Adoctors" style={{ textDecoration: 'none' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                    </a>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                <h1>Price</h1>
-                <a href="/Price" style={{ textDecoration: 'none' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                    </a>
-                </Card>
+        <div className='container aboutXirurg'>
+            <h1 className='text-center'>Хирургия Айдаров</h1>
+
+            <Row>
+                <Col sm={6} xs={12} md={6} >
+                    <p className='text_nav  h5 mt-5'> Хирургический центр "Кортекс" - оснащен всем <br />
+                        необходимым качественным современным оборудованием, <br />
+                        на котором работают высококвалифицированные врачи.
+                        Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
+                        <br /> возраста могли чувствовать себя в ней максимально комфортно.</p>
+                    <Col className='mt-3' sm={6}>
+                        <Button1 setShow={setShow} />
+                    </Col>
+                </Col>
+
+                <Col sm={6} xs={12} md={6}>
+                    <img className='w-75' src='https://vcim.am/uploads/2021/11/Mirijanian.jpg' />
+                </Col>
+            </Row>
+
+
+
+
         </div>
     );
 }

@@ -1,0 +1,20 @@
+.aboutClinic{
+    .help {
+        color: white;
+        background-color: #060608;
+        border: 1px solid #c2b285;
+        height: 200px;
+        padding: 30px;
+        transition: 0.7s;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+      }
+      
+      .help:hover {
+        color: #060608;
+        background-color: #c2b285;
+      }
+
+}
+  

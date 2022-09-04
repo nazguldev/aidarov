@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import Button1 from '../../../Button1';
-import Accordion from '../../../components/accrdion/Accordion';
+import Accordions from '../../../components/accrdion/Accordions';
 import RunText from '../../../components/runText/RunText';
 import AutoVideo from '../../../components/Vidoe/AutoVideo';
 import imgg from '../../../img.aidarov/imgg.jpeg'
@@ -205,7 +205,7 @@ function Iplant({ setShow }) {
                 <h1 style={{ color: "#d3bb7e",  fontFamily: 'GraphikTT Arial sans-serif', marginTop: "100px" }}>
                     Преимущества имплантации в клинике <br/>«Лаборатория улыбок Dr. Aidarov
                 </h1>
-                <Accordion name={data} />
+                <Accordions name={data} />
                 <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     Виды имплантации
                 </p>
@@ -244,7 +244,7 @@ function Iplant({ setShow }) {
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "100px" }}>
                     Частые вопросы
                 </h1>
-                <Accordion name={data1} />
+                <Accordions name={data1} />
             </div>
             <RunText />
 
