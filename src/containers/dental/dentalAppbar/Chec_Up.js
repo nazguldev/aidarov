@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import AutoVideo from '../../../components/Vidoe/AutoVideo'
 import RunText from '../../../components/runText/RunText'
-import Accordion from '../../../components/accrdion/Accordion'
+import Accordions from '../../../components/accrdion/Accordions'
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import AOS from 'aos'
 import DentalNavbar from '../dentalAppbar/DentalNavbar'
@@ -136,7 +136,7 @@ function Chec_Up({ setShow }) {
                     В каких случаях требуется полный чекап полости рта?
                 </h1>
             </div>
-            <Accordion name={data} />
+            <Accordions name={data} />
             <div className="container">
 
             </div>

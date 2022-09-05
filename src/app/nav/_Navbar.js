@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Button1 from '../../Button1';
+import Button1 from '../../Button1';
 import logo from "./logo.png"
 
 function _Navbar(props) {
   return (
     <div>
-     
       <>
-        <Navbar bg="dark" expand="lg" variant='dark'>
+       <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
             <Navbar.Brand href="/"><img width="50px" src={logo} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,6 +25,7 @@ function _Navbar(props) {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
+            <Button1/>
             {/* <Button1/> */}
             <div className='phone_item'>
               <h3>
@@ -40,7 +41,7 @@ function _Navbar(props) {
         </Navbar>
 
       </>
-     
+      
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Card, Col, Row, Table } from 'react-bootstrap';
 import RunText from '../../../components/runText/RunText';
 import AOS from 'aos'
 import AutoVideo from '../../../components/Vidoe/AutoVideo';
-import Accordion from '../../../components/accrdion/Accordion';
+import Accordions from '../../../components/accrdion/Accordions';
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import './Appbar.scss'
 import Button1 from '../../../Button1';
@@ -167,7 +167,7 @@ function Otbali({setShow}) {
                 <h3 style={{ color: "white", marginTop:"20px" }}>
                     Какую систему отбеливания выбрать?
                 </h3>
-                <Accordion name={datas} />
+                <Accordions name={datas} />
                 <h3 style={{ color: "#d3bb7e", marginBottom:"20px" }}>
                     5 шагов до улыбки мечты
                 </h3>

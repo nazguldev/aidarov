@@ -1,0 +1,40 @@
+.terapiya{
+    background-repeat: no-repeat;
+    background-size: cover;
+    .text{
+        color:#d3bb7e; 
+    }
+    .text2{
+        color:white;
+        
+    }
+    .terapiya1{
+        background-image: url("https://funart.pro/uploads/posts/2021-04/1618477336_29-funart_pro-p-oboi-fon-mutnii-fon-29.jpg");
+    }
+    .text3{
+        text-align: center;
+    }
+    .poslezaboltvanie{
+       
+        background-image: url("https://funart.pro/uploads/posts/2021-04/1618477336_29-funart_pro-p-oboi-fon-mutnii-fon-29.jpg");
+       border-radius: 10px;
+       padding: 10px;
+       
+    }
+    .text6{
+        text-align: center;
+        color:#d3bb7e; 
+    }
+
+
+    $accordion-bg: black;
+$accordion-button-active-bg: black;
+$accordion-color: white;
+$accordion-button-active-color: #d3bb7e;
+$accordion-icon-color:    white;
+$accordion-border-color: #d3bb7e;
+
+$font-family-base: 'Philosopher', sans-serif;
+$font-family-sans-serif: 'Philosopher', sans-serif;
+
+}

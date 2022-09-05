@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
+<<<<<<< HEAD
+import { Row, Card, Col, Button } from 'react-bootstrap';
+import Accordions from '../../components/accrdion/Accordions';
+=======
 import { Row, Card, Col,} from 'react-bootstrap';
 import Accordion from '../../components/accrdion/Accordion';
+>>>>>>> naz
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'
 import RunText from '../../components/runText/RunText';
@@ -66,7 +71,7 @@ function AboutClinicContainer({ setShow }) {
                 <h1 className='mt-5'>5 причин доверить нам улыбку</h1>
             </div>
             <div className=''>
-                <Accordion name={data} />
+                <Accordions name={data} />
             </div>
             <div className='mt-3'>
                 <Row>
@@ -136,8 +141,7 @@ function AboutClinicContainer({ setShow }) {
                     </Col>
                 </Row>
             </div>
-            <h1 data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom" className='text_nav text-center mt-5'>Здесь вы можете:</h1>
+            <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='text_nav text-center mt-5'>Здесь вы можете:</h1>
             <div className='container row m-3 p-2'>
                 <Col xs={10} md={6} lg={5} sm={6}>
                     <h3 data-aos="fade-up"
@@ -158,7 +162,11 @@ function AboutClinicContainer({ setShow }) {
                         data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
+<<<<<<< HEAD
+           
+=======
             <StuffContainer setShow={setShow} />
+>>>>>>> naz
             <RunText />
 
         </div>
@@ -166,3 +174,4 @@ function AboutClinicContainer({ setShow }) {
 }
 
 export default AboutClinicContainer;
+
