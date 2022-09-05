@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import AutoVideo from '../../../components/Vidoe/AutoVideo'
 import RunText from '../../../components/runText/RunText'
@@ -62,7 +62,7 @@ function Chec_Up({ setShow }) {
 
     return (
         <div className="container">
-            <DentalNavbar/>
+            <DentalNavbar />
             <Row>
                 <h1 className='mt-5'>
                     Полный чекап. Пошаговый план до улыбки мечты
@@ -170,8 +170,8 @@ function Chec_Up({ setShow }) {
                     </h2>
                     <Col sm={6} className="mt-5">
                         <Button1 setShow={setShow} />
-                    </Col>                
                     </Col>
+                </Col>
 
             </Row>
         </div>

@@ -150,7 +150,7 @@ function Otbali({setShow}) {
             </div>
             <div className="container">
                 <Row className="mt-5">
-                    <Col md={6} className={"m-5"}>
+                    <Col md={6} >
                         <h1 style={{ color: "#d3bb7e",  }}>
                             Виды <br />отбеливания
                         </h1>

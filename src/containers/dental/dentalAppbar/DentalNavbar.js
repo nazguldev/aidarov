@@ -3,11 +3,10 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Appbar.scss';
 import '../../../app/App.scss';
 import logo from "../../../app/nav/logo.png";
-import Button1 from '../../../Button1';
 
 function DentalNavbar(props) {
     return (
-        <div>        
+        <div className='containar'>        
             <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
             <Navbar.Brand href="/"><img width="50px" src={logo} /></Navbar.Brand>
@@ -22,7 +21,16 @@ function DentalNavbar(props) {
                             <Nav.Link href="/stuff">Врачи</Nav.Link>
               </Nav>
             </Navbar.Collapse>
-            <Button1/>
+            <div className='phone_item'>
+              <h3>
+                <a
+                style={{
+                  textDecoration:"none",
+                  color:"white"
+                }}
+                 href='tel:+996709545487'>0709545487</a>
+              </h3>
+            </div>
           </Container>
         </Navbar>
 
