@@ -5,7 +5,7 @@ import AOS from "aos";
 import '../index.scss'
 
 
-function Accordion(props) {
+function Accordions(props) {
     const [selected, setSelected] = useState(null)
     const toggle = (i) => {
         if (selected === i) {
@@ -74,4 +74,4 @@ function Accordion(props) {
 }
 
 
-export default Accordion;
+export default Accordions;

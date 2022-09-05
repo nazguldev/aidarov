@@ -1,6 +1,6 @@
 import React from 'react';
 import './xirurg.scss'
-import Accordion from '../../components/accrdion/Accordion';
+import Accordions from '../../components/accrdion/Accordions';
 
 function Price(props) {
     const data = [
@@ -78,7 +78,7 @@ function Price(props) {
                     ПРОФЕССОРА АСЫМБЕКОВОЙ
                 </span>
             </h1>
-            <Accordion name={data} />
+            <Accordions name={data} />
         </div>
     );
 }

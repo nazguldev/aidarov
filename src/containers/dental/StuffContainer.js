@@ -68,14 +68,9 @@ function StuffContainer({setShow}) {
     ]
     return (
         <>
-<<<<<<< HEAD
             <Container >
                 <DentalNavbar/>
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
-=======
-            <Container style={{marginTop:"100px"}}>
-                <h1 style={{ color: "#d3bb7e",marginTop: "50px" }}>
->>>>>>> naz
                     Врачи, которым доверяют
                 </h1>
                 <Row>
@@ -93,7 +88,7 @@ function StuffContainer({setShow}) {
 
                         </Card.Img>
                     </Col>
-                    <Col md={10} className="m-5">
+                    <Col md={10} >
                         <h1 style={{ color: "#d3bb7e" }}>Наша команда</h1>
                     </Col>
                     <Col md={6} >
@@ -146,9 +141,9 @@ function StuffContainer({setShow}) {
                    
                 </Row>
                 <Row className='mt-5'>
-                    <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
+                    <h5 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                         Наши пациенты
-                    </p>
+                    </h5>
                     {patients.map(e => {
                         return (
                             <>

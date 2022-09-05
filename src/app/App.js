@@ -45,6 +45,7 @@ function App(props) {
         <Route path={'/PriceTerapiya'} element={<PriceTerapiya/>}/>
         <Route path={'/AboutLaboratory'} element={<AboutLaboratory/>}/>
         <Route path={'/AboutGynecology'} element={<AboutGynecology/>}/>
+        <Route path={'/stuff'} element={<StuffContainer/>}/>
 
       </Routes>
       

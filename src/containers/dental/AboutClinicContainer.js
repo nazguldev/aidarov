@@ -1,11 +1,6 @@
 import React, { useEffect } from 'react';
-<<<<<<< HEAD
-import { Row, Card, Col, Button } from 'react-bootstrap';
-import Accordions from '../../components/accrdion/Accordions';
-=======
 import { Row, Card, Col,} from 'react-bootstrap';
-import Accordion from '../../components/accrdion/Accordion';
->>>>>>> naz
+import Accordions from '../../components/accrdion/Accordions';
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'
 import RunText from '../../components/runText/RunText';
@@ -49,7 +44,7 @@ function AboutClinicContainer({ setShow }) {
         <div className={'container aboutClinic mt-5'}>
             <div className='mt-5 text-center '>
                 <DentalNavbar />
-                <div className='text-center'>С нами вы<br /> улыбаетесь чаще</div>
+                <h1 className='text-center'>С нами вы<br /> улыбаетесь чаще</h1>
                 <Row>
                     <Col sm={6} xs={12} md={6} >
                         <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
@@ -94,11 +89,11 @@ function AboutClinicContainer({ setShow }) {
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
                             <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
-                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
+                            <h6 className='text_nav' style={{  lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</h6>
                         </div>
                     </Col>
                     <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
+                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav '>
                             <div >
                                 Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
                                 на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
@@ -114,7 +109,7 @@ function AboutClinicContainer({ setShow }) {
                 </Row>
             </div>
 
-            <div className=' mt-5'>
+            <div className='mt-5'>
                 <Row >
                     <Col xs={12} md={6} lg={6}>
                         <div className='d-block'><span className=' h1'>Давайте познакомимся <br />поближе</span>
@@ -130,7 +125,8 @@ function AboutClinicContainer({ setShow }) {
                     </Col>
                     <Col xs={12} md={6} lg={6}>
                         <img className='w-100' src="https://thumb.tildacdn.com/tild3734-6164-4733-a634-663535363130/-/cover/1000x1200/center/center/-/format/webp/IMG_0723.JPG" />
-                        <div className='d-block'><h2 className=' mt-5 text-white'>Со дня основания в клинике доктора Эльмара созданы сотни красивых улыбок.</h2>
+                        <div className='d-block'>
+                            <h2 className=' mt-5 text-white'>Со дня основания в клинике доктора Эльмара созданы сотни красивых улыбок.</h2>
 
                             <Card.Text className='text_nav'>
                                 Зачастую пациенты становятся нашими друзьями и приводят к нам членов семьи, а также рекомендуют клинику знакомым.
@@ -145,28 +141,24 @@ function AboutClinicContainer({ setShow }) {
             <div className='container row m-3 p-2'>
                 <Col xs={10} md={6} lg={5} sm={6}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">почитать журналы</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">почитать журналы</h3>
                 </Col>
                 <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">выпить чашечку кофе</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">выпить чашечку кофе</h3>
                 </Col>
                 <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">послушать музыку</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">послушать музыку</h3>
                 </Col> <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">пообщаться с сотрудниками</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">пообщаться с сотрудниками</h3>
                 </Col> <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">расслабиться в массажном кресле</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
-<<<<<<< HEAD
            
-=======
-            <StuffContainer setShow={setShow} />
->>>>>>> naz
             <RunText />
 
         </div>

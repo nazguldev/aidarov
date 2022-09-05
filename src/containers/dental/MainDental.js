@@ -248,19 +248,19 @@ function MainContainers({ setShow }) {
           </Col>
           <Row className="mt-5 ">
             <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="m-2">
+              <Card md={4} xs={10}    >
                 <img src={patient1} />
               </Card>
 
             </Col>
             <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="m-2">
+              <Card md={4} xs={10} >
                 <img src={patient5} />
               </Card>
 
             </Col>
             <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="m-2">
+              <Card md={4} xs={10} >
                 <img src={patient2} />
               </Card>
 
