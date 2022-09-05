@@ -2,4 +2,94 @@
     .text_nav{
         color: white;
     }
+<<<<<<< HEAD
+=======
+    .t013__img {
+        max-width: 140px;
+        width: 80px;
+        height: 80px;
+        margin: 8px 0 10px 0;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+
+    .tn-atom {
+        color: #ebebeb;
+        font-size: 24px;
+        font-family: 'Arial', Arial, sans-serif;
+        // line-height: 1.55;
+        // font-weight: 300;
+        border-width: 1px;
+        border-radius: 30px;
+        background-color: #060608;
+        background-position: center center;
+        border-color: #ebebeb;
+        border-style: solid;
+        display: block;
+    }
+    // модальный окно
+
+    .overlay-base {
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        transition-property: background-color, opacity;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        outline: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .overlay-after {
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 1;
+      }
+
+      .overlay-before {
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+      }
+
+      .content-base {
+        position: relative;
+        /*
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        */
+        margin: 0 auto;
+        border: 0;
+        outline: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0%;
+        width: 0%;
+        background-color: transparent;
+        transition-property: background-color, width, height;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+      }
+
+      .content-after {
+        width: 70%;
+        height: 40%;
+        background-color: rgba(250, 190, 190, 0.8);
+      }
+
+      .content-before {
+        width: 0%;
+        height: 0%;
+        background-color: transparent;
+      }
+>>>>>>> naz
 }

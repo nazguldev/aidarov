@@ -1,5 +1,5 @@
 import React from 'react';
-import './xirurg.scss'
+import './gynecolog.scss'
 import { Col, Container, Row, Card, } from 'react-bootstrap';
 import Button1 from '../../Button1'
 

@@ -68,9 +68,14 @@ function StuffContainer({setShow}) {
     ]
     return (
         <>
+<<<<<<< HEAD
             <Container >
                 <DentalNavbar/>
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
+=======
+            <Container style={{marginTop:"100px"}}>
+                <h1 style={{ color: "#d3bb7e",marginTop: "50px" }}>
+>>>>>>> naz
                     Врачи, которым доверяют
                 </h1>
                 <Row>

@@ -19,6 +19,9 @@ import PriceTerapiya from '../containers/terapiya/PriceTerapiya';
 import StuffContainer from './../containers/dental/StuffContainer';
 import AboutClinic from './nav/AboutClinic';
 import MainDental from '../containers/dental/MainDental'
+import AboutLaboratory from '../containers/laboratory/AboutLaboratory';
+import AboutGynecology from '../containers/gynecology/AboutGynecology';
+
 function App(props) {
   const [show, setShow] = useState(false)
   return (
@@ -40,7 +43,8 @@ function App(props) {
         <Route path={'/AboutTerapiya'} element={<AboutTerapiya setShow={setShow}/>}/>
         <Route path={'/AdoctorsTerapiya'} element={<AdoctorsTerapiya/>}/>
         <Route path={'/PriceTerapiya'} element={<PriceTerapiya/>}/>
-        <Route path={'/stuff'} element={<StuffContainer/>}/>
+        <Route path={'/AboutLaboratory'} element={<AboutLaboratory/>}/>
+        <Route path={'/AboutGynecology'} element={<AboutGynecology/>}/>
 
       </Routes>
       

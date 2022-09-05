@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
+<<<<<<< HEAD
 import { Row, Card, Col, Button } from 'react-bootstrap';
 import Accordions from '../../components/accrdion/Accordions';
+=======
+import { Row, Card, Col,} from 'react-bootstrap';
+import Accordion from '../../components/accrdion/Accordion';
+>>>>>>> naz
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'
 import RunText from '../../components/runText/RunText';
@@ -157,7 +162,11 @@ function AboutClinicContainer({ setShow }) {
                         data-aos-anchor-placement="top-bottom" class="tn-atom text-center p-2 m-2">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
+<<<<<<< HEAD
            
+=======
+            <StuffContainer setShow={setShow} />
+>>>>>>> naz
             <RunText />
 
         </div>
