@@ -20,8 +20,7 @@ function DentalNavbar(props) {
                             <Nav.Link href="/Iplant">Имплантация</Nav.Link>
                             <Nav.Link href="/stuff">Врачи</Nav.Link>
               </Nav>
-            </Navbar.Collapse>
-            <div className='phone_item'>
+              <div className='phone_item'>
               <h3>
                 <a
                 style={{
@@ -31,6 +30,8 @@ function DentalNavbar(props) {
                  href='tel:+996709545487'>0709545487</a>
               </h3>
             </div>
+            </Navbar.Collapse>
+            
           </Container>
         </Navbar>
 

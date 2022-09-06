@@ -71,10 +71,10 @@ function Price(props) {
 
     return (
         <div className='container mt-5'>
-            <h1 className='mt-4 text-center'>
+            <h1 className='pt-3 text-center'>
                 <span>ЦЕНЫ НА УСЛУГИ КЛИНИКИ</span>
                 <br />
-                <span style={{ color: "white", marginTop: "15px" }}>
+                <span style={{ color: "white", marginTop: "200px" }}>
                     ПРОФЕССОРА АСЫМБЕКОВОЙ
                 </span>
             </h1>
