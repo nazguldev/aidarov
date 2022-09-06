@@ -34,7 +34,7 @@ function CollSenter(props) {
         centered
       >
         <Modal.Header closeButton onClick={() => props.setShow(false)}
-          style={{ backgroundColor: "black", color: "white" }}>
+          style={{ backgroundColor: "#d3bb7e", color: "white" }}>
           <Modal.Title>Запись на консультацию</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ backgroundColor: "black" }}>
