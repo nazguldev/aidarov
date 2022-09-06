@@ -318,14 +318,13 @@ function MainContainers({ setShow }) {
                         </Col>
 
                     </Row>
-                    <Col md={12} xs={10} className="mt-5">
               <Carousel fade>
                 {
                   feedback.map(e => {
                     return (
                       <Carousel.Item style={{ color: 'white' }}>
                         <Row>
-                          <Col md={6} xs={10}>
+                          <Col md={6} xs={10} sm={6}>
                             <img
 
                               className="d-block w-100"
@@ -333,7 +332,7 @@ function MainContainers({ setShow }) {
                               alt="First slide"
                             />
                           </Col>
-                          <Col>
+                          <Col md={6} xs={10} sm={6}>
                             <p>
                               {e.text}
                             </p>
@@ -345,7 +344,7 @@ function MainContainers({ setShow }) {
                 }
               </Carousel>
 
-            </Col>
+          
                 </div>
 
                 <div className='text-center'>
