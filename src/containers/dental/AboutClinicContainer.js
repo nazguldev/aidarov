@@ -41,13 +41,14 @@ function AboutClinicContainer({ setShow }) {
     ]
 
     return (
-        <div className={'container aboutClinic mt-5'}>
-            <div className='mt-5 text-center '>
+        <>
+        <div className={'container aboutClinic '}>
+            <div className='mt-2'>
                 <DentalNavbar />
-                <h1 className='text-center'>С нами вы<br /> улыбаетесь чаще</h1>
+                <h1 className=''>С нами вы улыбаетесь чаще</h1>
                 <Row>
                     <Col sm={6} xs={12} md={6} >
-                        <p className='text_nav  h5 mt-5'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
+                        <p className='text_nav  h5 mt-3'> Команда клиники «Лаборатория улыбок Dr. Айдаров<br />
                             поможет обрести улыбку мечты. Ответственность. <br />
                             Профессионализм. Забота о каждом пациенте.</p>
                         <Col className='mt-3' sm={6}>
@@ -85,11 +86,11 @@ function AboutClinicContainer({ setShow }) {
             <div className=' mt-5'>
                 <Row>
                     <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in" className='justify-content-evenly a text-center' >
+                        <div data-aos="zoom-in" className='justify-content-evenly text-center' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
                             <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
-                            <h6 className='text_nav' style={{  lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</h6>
+                            <h6 className='text_nav' data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</h6>
                         </div>
                     </Col>
                     <Col xs={12} md={6} lg={6}>
@@ -138,30 +139,30 @@ function AboutClinicContainer({ setShow }) {
                 </Row>
             </div>
             <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" className='text_nav text-center mt-5'>Здесь вы можете:</h1>
-            <div className='container row m-3 p-2'>
-                <Col xs={10} md={6} lg={5} sm={6}>
+            <div className='container row mt-3 pt-3'>
+                <Col xs={10} md={6} lg={5} sm={6} className=''>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">почитать журналы</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">почитать журналы</h3>
+                </Col>
+                <Col xs={10} md={6} lg={5} className=''>
+                    <h3 data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">выпить чашечку кофе</h3>
                 </Col>
                 <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">выпить чашечку кофе</h3>
-                </Col>
-                <Col xs={10} md={6} lg={5}>
-                    <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">послушать музыку</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">послушать музыку</h3>
                 </Col> <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">пообщаться с сотрудниками</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">пообщаться с сотрудниками</h3>
                 </Col> <Col xs={10} md={6} lg={5}>
                     <h3 data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center ">расслабиться в массажном кресле</h3>
+                        data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">расслабиться в массажном кресле</h3>
                 </Col>
             </div>
-           
-            <RunText />
-
         </div>
+            <RunText />
+            </>
+
     );
 }
 

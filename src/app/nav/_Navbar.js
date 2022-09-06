@@ -13,24 +13,29 @@ function _Navbar(props) {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/">О Клинике</Nav.Link>
-                <Nav.Link href="/ContactClinick">Контакты</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+                <NavDropdown title="Услуги" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutUrologi">Урология
+                  </NavDropdown.Item>
                   <NavDropdown.Item href="/AboutXirurg">Хирургия
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+
                 </NavDropdown>
               </Nav>
               <div className='phone_item'>
-                  <h3>
-                    <a
-                      style={{
-                        textDecoration: "none",
-                        color: "white"
-                      }}
-                      href='tel:+996709545487'>0709545487</a>
-                  </h3>
-                </div>
+                <h3>
+                  <a
+                    style={{
+                      textDecoration: "none",
+                      color: "white"
+                    }}
+                    href='tel:+996709545487'>0709545487</a>
+                </h3>
+              </div>
             </Navbar.Collapse>
 
           </Container>

@@ -37,7 +37,7 @@ function Adoctors({ setShow }) {
         
     ]
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 p-3'>
             <h1 className="text-center pt-3">Врачи, которым доверяют</h1>
             <Row>
                 <Col className='mt-5'>
@@ -47,7 +47,8 @@ function Adoctors({ setShow }) {
                 </Col>
                 <Col md={6} >
                     <h3 style={{ color: "white", marginTop: "50px" }}>
-                        Команда клиники «Лаборатория улыбок Dr. Elmar» специализируется на тотальном преображении улыбки и оказывает все виды стоматологических услуг
+                        Команда клиники «Лаборатория улыбок Dr. Elmar» специализируется на тотальном преображении улыбки и оказывает все виды стоматологических услуг.
+                        Команда клиники «Лаборатория улыбок Dr. Elmar» специализируется на тотальном преображении улыбки и оказывает все виды стоматологических услуг.
                     </h3>
                     <Col sm={6} className="mt-3">
                         <Button1 setShow={setShow} />

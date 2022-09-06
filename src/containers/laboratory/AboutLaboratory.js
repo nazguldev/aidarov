@@ -3,6 +3,7 @@ import './Laboratory.scss'
 import _Navbar from "../../app/nav/_Navbar"
 import { Button, Col, Form, Table } from 'react-bootstrap';
 import lab from './product';
+import Button1 from '../../Button1';
 
 function AboutLaboratory({ setShow }) {
     const [filter, setFilter] = useState('')
@@ -28,7 +29,7 @@ function AboutLaboratory({ setShow }) {
                     <p className='text_nav h5 pb-3 mb-2' style={{ color: "black" }}>
                         - это лаборатория надежных и <br />качественных исследований! Это наш большой <br />труд и гордость потому что у нас <br />работают самые лучшие специалисты, имеющие<br /> огромный опыт работы. Все наши лаборанты имеют<br /> высшее образование и специализацию в <br />сфере медико-биологической диагностики.<br /> Весь коллектив лаборатории успешно прошел <br />сертификацию отделом лицензирования Министерства<br /> здравоохранения Кыргызской Республики.
                     </p>
-
+<Button1 setShow={setShow}/>
                 </div>
             </div>
             <h1 className='text-center'>Анализы и цены</h1>
@@ -37,12 +38,11 @@ function AboutLaboratory({ setShow }) {
                     <input type='text'
                         className="form-control"
                         placeholder='Введите название анализа...'
-                        value={filter} 
+                        value={filter}
                         onChange={searchText.bind(this)}
                     /></div>
-                   
-                <Col>
 
+                <Col>
                     <Table striped bordered hover variant='dark' >
                         <thead>
                             <tr>
@@ -61,7 +61,8 @@ function AboutLaboratory({ setShow }) {
                                 )
                             })}
                         </tbody>
-                    </Table></Col>
+                    </Table>
+                </Col>
             </div>
 
         </div>

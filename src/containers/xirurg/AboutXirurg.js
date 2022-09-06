@@ -6,6 +6,7 @@ import _Navbar from "../../app/nav/_Navbar"
 import Accordions from '../../components/accrdion/Accordions'
 import AOS from 'aos';
 import Adoctors from './Adoctors';
+import RunText from '../.././components/runText/RunText'
 import Price from './Price';
 
 function AboutXirurg({ setShow }) {
@@ -37,86 +38,86 @@ function AboutXirurg({ setShow }) {
     ]
 
     return (
-        <div className='container aboutXirurg'>
-            <_Navbar/>
-         
-
-            <Row>
-          
-                <Col sm={6} xs={12} md={6} >
-                <h1 className='pb-0 text-center'>Хирургия Айдаров</h1>
-                    <p className='text_nav  h5 mt-5'> Хирургический центр "Кортекс" - оснащен всем <br />
-                        необходимым качественным современным оборудованием, <br />
-                        на котором работают высококвалифицированные врачи.
-                        Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
-                        <br /> возраста могли чувствовать себя в ней максимально комфортно.
-                        Хирургический центр "Кортекс" - оснащен всем <br />
-                        необходимым качественным современным оборудованием, <br />
-                        на котором работают высококвалифицированные врачи.
-                        Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
-                        <br /> возраста могли чувствовать себя в ней максимально комфортно.Хирургический центр "Кортекс" - оснащен всем <br />
-                        необходимым качественным современным оборудованием, <br />
-                        на котором работают высококвалифицированные врачи.
-                        Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
-                        <br /> возраста могли чувствовать себя в ней максимально комфортно.</p>
-                    <Col className='mt-3' sm={6}>
-                        <Button1 setShow={setShow} />
-                    </Col>
-                </Col>
-
+        <>
+            <div className='container aboutXirurg mt-4'>
+                <_Navbar />
+                <Row>
                 <Col sm={6} xs={12} md={6} className=" mb-3">
-                    <img className='w-100' src='https://deti-euromed.ru/wp-content/uploads/2022/01/8.png' />
-                </Col>
-            </Row>
+                        <img className='w-100' src='https://deti-euromed.ru/wp-content/uploads/2022/01/8.png' />
+                    </Col>
+                    <Col sm={6} xs={12} md={6} >
+                        <h1 className='pt-5 text-center '>Хирургия Айдаров</h1>
+                        <p className='text_nav  h5 mt-5'> Хирургический центр "Кортекс" - оснащен всем <br />
+                            необходимым качественным современным оборудованием, <br />
+                            на котором работают высококвалифицированные врачи.
+                            Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
+                            <br /> возраста могли чувствовать себя в ней максимально комфортно.
+                            Хирургический центр "Кортекс" - оснащен всем <br />
+                            необходимым качественным современным оборудованием, <br />
+                            на котором работают высококвалифицированные врачи.
+                            Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
+                            <br /> возраста могли чувствовать себя в ней максимально комфортно.Хирургический центр "Кортекс" - оснащен всем <br />
+                            необходимым качественным современным оборудованием, <br />
+                            на котором работают высококвалифицированные врачи.
+                            Каждая палата, в нашем центре, подготовлена таким образом, <br /> чтобы все пациенты, вне зависимости от
+                            <br /> возраста могли чувствовать себя в ней максимально комфортно.</p>
+                        <Col className='mt-3' sm={6}>
+                            <Button1 setShow={setShow} />
+                        </Col>
+                    </Col>
+
+                    
+                </Row>
+            </div>
+
+            <RunText />
             <div className='container'>
-                <h1 className='text-center'>Наша Хурургия</h1>
+                <h1 className='text-center mt-5'>Наша Хурургия</h1>
                 <Accordions name={data} />
-                <div className='mt-3'>
+                <div className='mt-5'>
                     <Row>
                         <Col xs={12} md={4} >
-                            <img  data-aos="fade-up-right" className=' h-100 w-100' src='https://med122.com/news/1/2867775.jpg' alt='' />
+                            <img data-aos="fade-up-right" className='pt-3 h-100 w-100' src='https://med122.com/news/1/2867775.jpg' alt='' />
                         </Col>
                         <Col xs={12} md={4} >
-                            <img  data-aos="fade-down"
+                            <img data-aos="fade-down"
                                 data-aos-easing="linear"
-                                data-aos-duration="1500" className='w-100  h-100' src='https://thumbs.dreamstime.com/b/%D1%85%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B8%D1%8F-11-7465323.jpg' alt='' /></Col>
+                                data-aos-duration="1500" className='pt-3 h-100 w-100' src='https://thumbs.dreamstime.com/b/%D1%85%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B8%D1%8F-11-7465323.jpg' alt='' />
+                        </Col>
                         <Col xs={12} md={4}>
-                            <img data-aos="fade-left" className='w-100 h-100 ' src='https://www.anadolumedicalcenter.ru/wp-content/uploads/2020/12/hirurgiya-golovy.jpg' alt='' />
+                            <img data-aos="fade-left" className=' mt-3 h-100 w-100' src='https://www.anadolumedicalcenter.ru/wp-content/uploads/2020/12/hirurgiya-golovy.jpg' alt='' />
                         </Col>
                     </Row>
                 </div>
                 <Row className='mt-5'>
                     <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in" className='justify-content-evenly a text-center' >
+                        <div data-aos="zoom-in" className='justify-content-evenly mt-5 text-center' >
                             <img class=" t013__img t-img" src={'https://www.cchp.ru/upload/iblock/60f/60f75d25040a7b4b1cb0e484e4e7c322.jpg'} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
                             <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
-                            <h6 className='text_nav' style={{ lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач хирургии</h6>
+                            <h6 className='text_nav' data-customstyle="yes">Основатель и<br /> главный врач хирургии</h6>
                         </div>
                     </Col>
                     <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav '>
-                            <div >
+                        <div data-aos="zoom-in-up" className='container justify-content-evenly text_nav '>
+                            <div  className=''>
                                 Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
                                 на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
                                 ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены. А у нас даже зона
                                 ресепшена больше похожа на лобби-бар в отеле, где во время ожидания можно <br />послушать музыку, почитать
                                 что-нибудь интересное или выпить чашечку кофе.
                             </div>
-                            <div className='mt-5'>
+                            <div className='mt-4'>
                                 Все пациенты — наши друзья! Те, кто приходит сюда впервые, знакомятся с нами и, пройдя вместе путь <br />от стоматологического кресла до красивой улыбки и здоровых зубов, остаются с нашей командой в прекрасных отношениях.
                             </div>
                         </div>
                     </Col>
                 </Row>
             </div>
-            <Adoctors/>
-            <Price/>
-
-
-
-
-        </div>
+            <Adoctors />
+            <Price />
+            <RunText />
+        </>
     );
 }
 
