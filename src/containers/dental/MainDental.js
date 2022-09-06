@@ -198,11 +198,11 @@ function MainContainers({ setShow }) {
         </Row>
       </Container>
       <Container>
-        <Row>
+        <Row> 
           <Row className="mt-5">
             <Col md={6} xs={10}>
               <Card md={6} xs={10} style={{ backgroundColor: 'black', }}>
-                <img src={aidarov} />
+                <img src={aidarov}/>
               </Card>
             </Col>
             <Col md={6} xs={10} style={{ color: 'white', }}>

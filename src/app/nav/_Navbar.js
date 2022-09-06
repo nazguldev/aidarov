@@ -26,16 +26,16 @@ function _Navbar(props) {
 
                 </NavDropdown>
               </Nav>
-              <div className='phone_item'>
-                <h3>
-                  <a
-                    style={{
-                      textDecoration: "none",
-                      color: "white"
-                    }}
-                    href='tel:+996709545487'>0709545487</a>
-                </h3>
-              </div>
+             <Nav>
+             <NavDropdown title="Контакты" id="basic-nav-dropdown">
+                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                </NavDropdown>
+
+             </Nav>
+             
+            
             </Navbar.Collapse>
 
           </Container>
