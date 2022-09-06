@@ -23,9 +23,10 @@ import result31 from '../dental/Image/result31.jpg'
 import konsultasya from '../dental/Image/konsultasya.png'
 import Accordion from 'react-bootstrap/Accordion'
 import Button1 from '../../Button1'
-import  './MainDental.scss'
+import './MainDental.scss'
 import '../../app/App.scss'
 import DentalNavbar from '../dental/dentalAppbar/DentalNavbar'
+import AutoVideo from '../../components/Vidoe/AutoVideo'
 
 function MainContainers({ setShow }) {
 
@@ -53,12 +54,7 @@ function MainContainers({ setShow }) {
   ]
 
   const accordion = [
-    {
-      key: 0,
-      title: 'Оборудование, которое видит больше, чем врач',
-      img: `${kachestvo}`,
-      text: 'Мы предлагаем нашим пациентам только самые современные в сфере стоматологии технологии и оборудование, которые исключают возможность врачебной ошибки.',
-    },
+
     {
       key: 1,
       title: 'Высокое качество услуг и сервиса',
@@ -175,10 +171,10 @@ function MainContainers({ setShow }) {
 
   return (
     <>
-    <DentalNavbar/>
-      <Container className='maindental' style={{ marginTop: "100px" }}>
+      <DentalNavbar />
+      <div className='maindental container' style={{ marginTop: "20px" }}>
         <Row >
-          <Col  md={6} xs={10}>
+          <Col sm={6} xs={12} md={4}>
             <h1 className='text-center'>
               Ваша улыбка - наша забота!
             </h1>
@@ -187,25 +183,24 @@ function MainContainers({ setShow }) {
               Превратите её в свою визитную карточку, как это уже сделали многие звёзды, певцы, спортсмены, политики и
               предприниматели
             </p>
-            <div className="text-center col-sm-6"> <Button1 setShow={setShow} /></div>
-
+            <div className="text-center pb-2">
+              <Button1 setShow={setShow} /></div>
           </Col>
-          <Col md={6} xs={10}>
-            <Card md={6} style={{ backgroundColor: 'black' }}>
-              <img src={aidarov2} />
-            </Card>
+          <Col md={6} xs={10} sm={6}>
+            <AutoVideo/>
           </Col>
         </Row>
-      </Container>
+      </div>
       <Container>
         <Row> 
           <Row className="mt-5">
-            <Col md={6} xs={10}>
-              <Card md={6} xs={10} style={{ backgroundColor: 'black', }}>
-                <img src={aidarov}/>
+            <Col md={6} xs={10} sm={6}>
+              <Card md={6} xs={10} sm={6} style={{ backgroundColor: 'black', }}>
+                <img src={aidarov} />
+
               </Card>
             </Col>
-            <Col md={6} xs={10} style={{ color: 'white', }}>
+            <Col md={6} xs={10} sm={6} style={{ color: 'white', }}>
               <Card.Text>
                 <b> Здравствуйте!
                   Меня зовут Бекмамат Айдаров.
@@ -241,44 +236,42 @@ function MainContainers({ setShow }) {
               </div>
             </Col>
           </Row>
-          <Col xs={10} md={8}>
+          <Col sm={6} xs={12} md={4}>
             <h1 className='mt-5'>
               Наши довольные пациенты
             </h1>
           </Col>
           <Row className="mt-5 ">
-            <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="mt-2"   >
+            <Col sm={6} xs={12} md={4}>
+              <Card sm={6} xs={12} md={4} className="mt-2"   >
                 <img src={patient1} />
               </Card>
 
             </Col>
-            <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="mt-2">
+            <Col sm={6} xs={12} md={4}>
+              <Card sm={6} xs={12} md={4} className="mt-2">
                 <img src={patient5} />
               </Card>
 
             </Col>
-            <Col md={4} xs={10}>
-              <Card md={4} xs={10} className="mt-2">
+            <Col sm={6} xs={12} md={4}>
+              <Card sm={6} xs={12} md={4} className="mt-2">
                 <img src={patient2} />
               </Card>
 
             </Col>
           </Row>
-        
-
           <Row>
             <h1 className='mt-5 mb-3 text-center'>
               Почему клиника Айдарова?
             </h1>
-            <Col md={4} xs={10}>
-              <Card md={3} xs={10} style={{ borderColor: 'black' }}>
+            <Col sm={6} xs={12} md={4}>
+              <Card >
                 <img src={komanda} />
               </Card>
             </Col>
-            <Col md={8} xs={10}>
-              <Accordion defaultActiveKey={['0']} alwaysClose style={{ backgroundColor: 'black', color: '#d3bb7e' }}>
+            <Col sm={6} xs={12} md={4}>
+              <Accordion defaultActiveKey={['0']} alwaysClose style={{ backgroundColor: 'black', color: '#d3bb7e', }}>
                 {
                   accordion.map(e => {
                     return (
@@ -303,80 +296,43 @@ function MainContainers({ setShow }) {
               </Accordion>
             </Col>
           </Row>
-          <Col md={10} xs={10}>
-            <h1
-              className='mt-5 text-center'>
-              Наши результаты
-            </h1>
-          </Col>
-          <Row className="justify-content-center">
-            <Col md={10} xs={10} className="mt-5">
-              <Carousel fade>
-                {
-                  result.map(e => {
-                    return (
+          <h1
+            className='mt-3 text-center'>
+            Наши результаты
+          </h1>
 
-                      <Carousel.Item style={{ backgroundColor: 'black' }}>
+
+          <Carousel fade>
+            {
+              feedback.map(e => {
+                return (
+                  <Carousel.Item style={{ color: 'white' }}>
+                    <Row>
+                      <Col sm={6} xs={12} md={6}>
                         <img
                           className="d-block w-100"
                           src={e.img}
                           alt="First slide"
                         />
-                        <Carousel.Caption>
-                          <h3>{e.text}</h3>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                    )
-                  })
-                }
-              </Carousel>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={10} xs={10}>
-              <h1 className='mt-5'>
-                Наши отзывы
-              </h1>
-            </Col>
-            <Col md={12} xs={10} className="mt-5">
-              <Carousel fade>
-                {
-                  feedback.map(e => {
-                    return (
-                      <Carousel.Item style={{ color: 'white' }}>
-                        <Row>
-                          <Col md={6} xs={10}>
-                            <img
+                      </Col>
+                      <Col sm={6} xs={12} md={6}>
+                        <p>
+                          {e.text}
+                        </p>
+                      </Col>
+                    </Row>
+                  </Carousel.Item>
+                )
+              })
+            }
+          </Carousel>
+          <h1 className='mt-5 text-center'>
+            Наша команда
+          </h1>
 
-                              className="d-block w-100"
-                              src={e.img}
-                              alt="First slide"
-                            />
-                          </Col>
-                          <Col>
-                            <p>
-                              {e.text}
-                            </p>
-                          </Col>
-                        </Row>
-                      </Carousel.Item>
-                    )
-                  })
-                }
-              </Carousel>
-
-            </Col>
-          </Row>
-          <Col md={10} xs={10}>
-            <h1 className='mt-5'>
-              Наша команда
-            </h1>
-          </Col>
           <Row>
-            <Col md={6} xs={10}>
-              <h4 style={{ color: '#d3bb7e', fontFamily: 'GraphikTT Arial sans-serif' }}>
-                Наша команда
-              </h4>
+            <Col sm={6} xs={12} md={4}>
+
               <h5 style={{ color: 'white', fontFamily: 'GraphikTT Arial sans-serif' }}>
                 Наши пациенты как будто попадают в будущее. Мы можем полностью визуализировать всё для пациентов: на
                 специальных мониторах показать зубы в разных проекциях, в разрезе, можем сделать подробный полный чекап
@@ -389,18 +345,16 @@ function MainContainers({ setShow }) {
                 </p>
               </h5>
             </Col>
-            <Col md={6} xs={10}>
-              <Card md={6} xs={10} style={{ borderColor: 'black' }}>
+            <Col sm={6} xs={12} md={4}>
+              <Card sm={6} xs={12} md={4}>
                 <img src={komanda} />
               </Card>
             </Col>
           </Row>
-          <Col md={8} xs={10}>
-            <h1 className='mt-5'>
-              Часто задаваемые вопросы
-            </h1>
-          </Col>
-          <Col md={12} xs={10}>
+          <h1 className='mt-3 text-center'>
+            Часто задаваемые вопросы
+          </h1>
+          <Col >
             <Accordion defaultActiveKey={['0']} alwaysClose style={{ backgroundColor: 'black', color: '#d3bb7e' }}>
               {
                 accordion2.map(e => {
