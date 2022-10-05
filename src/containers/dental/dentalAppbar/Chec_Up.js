@@ -145,11 +145,13 @@ function Chec_Up({ setShow }) {
                 <br />и ровной улыбке на консультации
             </h1>
             <Row>
-                <Col className='mt-5'>
-                    <Card.Img src='https://thumb.tildacdn.com/tild6634-3836-4936-a564-373436383964/-/format/webp/IMG_1360.JPG'>
+                <Col sm={6} xs={12} md={4} className='mt-3'>
+                   {/* <Card sm={6} xs={12} md={4}> */}
+                   <Card.Img src='https://thumb.tildacdn.com/tild6634-3836-4936-a564-373436383964/-/format/webp/IMG_1360.JPG'>
                     </Card.Img>
+                   {/* </Card> */}
                 </Col>
-                <Col md={6} >
+                <Col sm={6} xs={12} md={6}>
                     <h2 style={{ color: "#d3bb7e", marginTop: "40px" }}>
                         Чекап включает в себя:
                     </h2>

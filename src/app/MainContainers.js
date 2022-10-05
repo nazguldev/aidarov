@@ -141,7 +141,7 @@ function MainContainers({ setShow }) {
                     <Carousel className=' text-center container'>
                         {info.map((e) => {
                             return (
-                                <Carousel.Item>
+
                                     <h1>{e.name}</h1>
                                     <h5 style={{ color: "white" }}>{e.text} </h5>
                                 </Carousel.Item>
@@ -218,7 +218,7 @@ function MainContainers({ setShow }) {
                     </Row>
                     <Row className="mt-5">
                         <Col xs={12} md={6} lg={6}>
-                            <div className='justify-content-evenly text-center  ' >
+                            <div className='justify-content-evenly text-center' >
                                 <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                                 </img>
                                 <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
@@ -256,7 +256,7 @@ function MainContainers({ setShow }) {
                                                 className="d-block w-100 text-center"
                                                 src={e.img}
                                                 alt="First slide" />
-                                            <Carousel.Caption>
+                                            <Carousel.Caption className='d-none'>
                                                 <h3>{e.title}</h3>
                                                 <h5>{e.text}</h5>
                                             </Carousel.Caption>
@@ -309,17 +309,19 @@ function MainContainers({ setShow }) {
 
                     </Row>
                     <Row className=" justify-content-center mt-5">
-                        <Col md={8} xs={10}>
+                        <Col sm={6} xs={12} md={6} >
                             <h1 className='mb-5'>
                                 Часто задаваемые вопросы
                             </h1>
+                            <Card bg='dark' sm={6} xs={12} md={6}>
+                                <img src='https://www.ftn.cz/files/homepage/2.png' />
+                            </Card>
                         </Col>
-                        <Col md={10} xs={10}  >
+                        <Col sm={6} xs={12} md={6} className='pt-3'>
                             <Accordions name={accordion2} />
                         </Col>
-
                     </Row>
-                    <Carousel fade>
+                    <Carousel fade className='mt-3'>
                         {
                             feedback.map(e => {
                                 return (

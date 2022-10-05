@@ -296,7 +296,7 @@ function Brekety({ setShow }) {
 
                 <Row>
 
-                    <Col md={6} >
+                    <Col sm={6} xs={12} md={6}>
                         <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>Получите пошаговый план к здоровой <br />и красивой улыбке на консультации</h1>
                         <h3 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', }}>
                             Получите пошаговый план к здоровой и красивой улыбке на консультацииВ стоматологической клинике «Лаборатории улыбок Dr. Elmar» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona Orthophos XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
@@ -306,9 +306,10 @@ function Brekety({ setShow }) {
                         </Card.Text>
                         <Col sm={6}>
                             <Button1 setShow={setShow} />
-                        </Col>                    </Col>
-                    <Col className='mt-5'>
-                        <Card.Img className=" w-75" src='https://static.tildacdn.com/tild3765-3739-4430-a535-323165376139/IMG_3201.JPG'>
+                        </Col>
+                    </Col>
+                    <Col sm={6} xs={12} md={4} className='mt-5'>
+                        <Card.Img  src='https://static.tildacdn.com/tild3765-3739-4430-a535-323165376139/IMG_3201.JPG'>
                         </Card.Img>
                     </Col>
                 </Row>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Row,Table } from 'react-bootstrap';
+import { Card, Col, Row, Table } from 'react-bootstrap';
 import _Navbar from "../../app/nav/_Navbar"
 import Button1 from '../../Button1';
 import RunText from '../../components/runText/RunText';
@@ -8,79 +8,82 @@ import Accordions from '../../components/accrdion/Accordions';
 
 
 function AboutUrologi({ setShow }) {
-    const data =[
+    const data = [
         {
-        title:"text",
-        text:"text"
-    },
-    {
-        title:"text",
-        text:"text"
-    },
-    {
-        title:"text",
-        text:"text"
-    },
-    {
-        title:"text",
-        text:"text"
-    },
-]
-const patients = [
-    { img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
-    title: "TITLE",
-    known_for: "TEXT",
-    },
-    {
-        img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
-        title: "TITLE",
-        known_for: "TEXT",
-    },
-    {
-        
-        img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
-        title: "TITLE",
-        known_for: "TEXT",
-    }
-]
-const as= [
-    {
-        id:1,
-        title:"Прием врача терапевта, гастроэнтеролога",
-        price:"	700 сом",
+            title: "text",
+            text: "text"
+        },
+        {
+            title: "text",
+            text: "text"
+        },
+        {
+            title: "text",
+            text: "text"
+        },
+        {
+            title: "text",
+            text: "text"
+        },
+    ]
+    const patients = [
+        {
+            img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
+            title: "TITLE",
+            known_for: "TEXT",
+        },
+        {
+            img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
+            title: "TITLE",
+            known_for: "TEXT",
+        },
+        {
 
-    },
-    {
-        id:2,
-        title:"Прием врача невролога",
-        price:"		1000 сом",
+            img: `https://crb-vyksa.ru/netcat_files/11/1/deontlogiya.jpg`,
+            title: "TITLE",
+            known_for: "TEXT",
+        }
+    ]
+    const as = [
+        {
+            id: 1,
+            title: "Прием врача терапевта, гастроэнтеролога",
+            price: "	700 сом",
 
-    },
-    {
-        id:3,
-        title:"Прием врача эндокринолога",
-        price:"	700 сом",
+        },
+        {
+            id: 2,
+            title: "Прием врача невролога",
+            price: "		1000 сом",
 
-    },
-    {
-        id:4,
-        title:"Прием врача иммунолога первичный (прием только с анализами)",
-        price:"	1000 сом",
+        },
+        {
+            id: 3,
+            title: "Прием врача эндокринолога",
+            price: "	700 сом",
 
-    },
-    {
-        id:5,
-        title:"Прием врача уролог (с осмотром)",
-        price:"	700 сом",
+        },
+        {
+            id: 4,
+            title: "Прием врача иммунолога первичный (прием только с анализами)",
+            price: "	1000 сом",
 
-    },
-    
+        },
+        {
+            id: 5,
+            title: "Прием врача уролог (с осмотром)",
+            price: "	700 сом",
 
-]
+        },
+
+
+    ]
     return (
-        <>        <_Navbar />
-            <div className='container AboutUrolog'>
+        <> 
+      
 
+            <div className='container AboutUrolog'>
+            <_Navbar />
                 <Row>
 
                     <Col className="mt-5" md={6} >
@@ -101,46 +104,46 @@ const as= [
                 <h1 className='mt-3'>С какими симптомами следует<br /> обращаться к урологу?</h1>
                 <Accordions name={data} />
                 <Row>
-                        <Col xs={12} md={6} lg={6}>
-                            <div className='justify-content-evenly text-center  ' >
-                                <img class=" t013__img t-img" src={'https://pngimg.com/uploads/doctor/doctor_PNG15980.png'} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
-                                </img>
-                                <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
-                                <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач урологии </span>
+                    <Col xs={12} md={6} lg={6}>
+                        <div className='justify-content-evenly text-center  ' >
+                            <img class=" t013__img t-img" src={'https://pngimg.com/uploads/doctor/doctor_PNG15980.png'} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
+                            </img>
+                            <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
+                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач урологии </span>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} lg={6}>
+                        <div className='justify-content-evenly text_nav mt-3'>
+                            <div >
+                                ОПЫТНЫЕ ВРАЧИ. КАЧЕСТВЕННЫЙ СЕРВИС. ОПТИМАЛЬНЫЕ ПРОГРАММЫ.
+                                Prime Сlinic - это современная клиника. Мы поможем вам пройти обследования у квалифицированных врачей и подберём оптимальные программы лечения.
                             </div>
-                        </Col>
-                        <Col xs={12} md={6} lg={6}>
-                            <div className='justify-content-evenly text_nav mt-3'>
-                                <div >
-                                    ОПЫТНЫЕ ВРАЧИ. КАЧЕСТВЕННЫЙ СЕРВИС. ОПТИМАЛЬНЫЕ ПРОГРАММЫ.
-                                    Prime Сlinic - это современная клиника. Мы поможем вам пройти обследования у квалифицированных врачей и подберём оптимальные программы лечения.
-                                </div>
 
-                                <div className='mt-3'>
-                                <Button1 setShow={setShow}/>
+                            <div className='mt-3'>
+                                <Button1 setShow={setShow} />
 
-                                </div>
                             </div>
-                        </Col>
-                    </Row>
-                    <Row className='mt-5'>
-                        <h1 className='text-center mb-3'>
-                            Наши пациенты
-                        </h1>
-                        {patients.map(e => {
-                            return (
-                                <>
-                                    <Col md={4} sm={6} xs={12} >
-                                        <div>
-                                            <Card.Img className='W-100 h-100' src={e.img}></Card.Img>
-                                            <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
-                                            <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
-                                        </div>
-                                    </Col>
-                                </>
-                            )
-                        })}
-                    </Row>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className='mt-5'>
+                    <h1 className='text-center mb-3'>
+                        Наши пациенты
+                    </h1>
+                    {patients.map(e => {
+                        return (
+                            <>
+                                <Col md={4} sm={6} xs={12} >
+                                    <div>
+                                        <Card.Img className='W-100 h-100' src={e.img}></Card.Img>
+                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
+                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
+                                    </div>
+                                </Col>
+                            </>
+                        )
+                    })}
+                </Row>
             </div>
             <RunText />
             <div className='container'>

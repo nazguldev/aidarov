@@ -26,7 +26,7 @@ import Button1 from '../../Button1'
 import './MainDental.scss'
 import '../../app/App.scss'
 import DentalNavbar from '../dental/dentalAppbar/DentalNavbar'
-import AutoVideo from '../../components/Vidoe/AutoVideo'
+import aidarovs from '../../img.aidarov/aidarovs.jpg'
 
 function MainContainers({ setShow }) {
 
@@ -172,7 +172,8 @@ function MainContainers({ setShow }) {
   return (
     <>
       <DentalNavbar />
-      <div className='maindental container' style={{ marginTop: "20px" }}>
+      <div className='maindental ' style={{ marginTop: "20px" }}>
+        <Container>
         <Row >
           <Col sm={6} xs={12} md={4}>
             <h1 className='text-center'>
@@ -186,21 +187,26 @@ function MainContainers({ setShow }) {
             <div className="text-center pb-2">
               <Button1 setShow={setShow} /></div>
           </Col>
-          <Col md={6} xs={10} sm={6}>
-            <AutoVideo/>
-          </Col>
+          <Col sm={6} xs={12} md={6}>
+              <Card sm={6} xs={12} md={6} style={{ backgroundColor: 'black', }}className="mt-2"   >
+                <img src={aidarovs} />
+
+              </Card>
+            </Col>
         </Row>
+        </Container>
       </div>
+      <RunText/>
       <Container>
-        <Row> 
-          <Row className="mt-5">
-            <Col md={6} xs={10} sm={6}>
-              <Card md={6} xs={10} sm={6} style={{ backgroundColor: 'black', }}>
+        <>
+          <Row className="mt-3">
+            <Col md={6} xs={12} sm={12}>
+              <Card md={6} xs={12} sm={12} style={{ backgroundColor: 'black', }}>
                 <img src={aidarov} />
 
               </Card>
             </Col>
-            <Col md={6} xs={10} sm={6} style={{ color: 'white', }}>
+            <Col sm={6} xs={12} md={6} style={{ color: 'white', }}>
               <Card.Text>
                 <b> Здравствуйте!
                   Меня зовут Бекмамат Айдаров.
@@ -227,12 +233,7 @@ function MainContainers({ setShow }) {
               <div style={{ display: 'flex', justifyContent: 'between', color: 'black', marginTop: '50px' }}>
                 <Button1 setShow={setShow} />
 
-                <div className="div_b">
-                  Образование
-                </div>
-                <div className="div_b">
-                  Социальные сети
-                </div>
+
               </div>
             </Col>
           </Row>
@@ -265,12 +266,12 @@ function MainContainers({ setShow }) {
             <h1 className='mt-5 mb-3 text-center'>
               Почему клиника Айдарова?
             </h1>
-            <Col sm={6} xs={12} md={4}>
+            <Col sm={6} xs={12} md={6}>
               <Card >
                 <img src={komanda} />
               </Card>
             </Col>
-            <Col sm={6} xs={12} md={4}>
+            <Col sm={6} xs={12} md={6}>
               <Accordion defaultActiveKey={['0']} alwaysClose style={{ backgroundColor: 'black', color: '#d3bb7e', }}>
                 {
                   accordion.map(e => {
@@ -331,7 +332,7 @@ function MainContainers({ setShow }) {
           </h1>
 
           <Row>
-            <Col sm={6} xs={12} md={4}>
+            <Col sm={6} xs={12} md={6}>
 
               <h5 style={{ color: 'white', fontFamily: 'GraphikTT Arial sans-serif' }}>
                 Наши пациенты как будто попадают в будущее. Мы можем полностью визуализировать всё для пациентов: на
@@ -375,7 +376,7 @@ function MainContainers({ setShow }) {
               }
             </Accordion>
           </Col>
-        </Row>
+        </>
       </Container>
 
 

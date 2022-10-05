@@ -21,6 +21,7 @@ function Vinery({setShow}) {
         <div className="container">
             <DentalNavbar/>
             <Row>
+
                 <h1 className='mt-5'>
                     Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Айдарова
                 </h1>
@@ -40,7 +41,7 @@ function Vinery({setShow}) {
             <div className="container">
 
                 <Row className="mt-5">
-                    <Col xs={12} md={6} lg={6}>
+                    <Col sm={6} xs={12} md={6}  >
                         <div className='justify-content-evenly text-center  ' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
@@ -48,7 +49,7 @@ function Vinery({setShow}) {
                             <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} lg={6}>
+                    <Col sm={6} xs={12} md={6}  >
                         <div className='justify-content-evenly text_nav m-3'>
                             <div >
                                 Звезды и знаменитости, доверяющие нам свои улыбки, люди состоятельные. Но даже они ценят и считают свои деньги. А к нам в клинику приходят за высочайшим качеством в стоматологии по демократичной цене, без необходимости выезжать заграницу.
@@ -74,11 +75,13 @@ function Vinery({setShow}) {
                     </Card.Text>
                 </Col>
             </Row>
+
            
             <div className="container">
                 <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
+
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
-                </p>
+                </h1>
                 <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
                 <Col sm={3}>
                 <Button1 setShow={setShow}/>
@@ -89,7 +92,7 @@ function Vinery({setShow}) {
                     Получите пошаговый план к здоровой и красивой улыбке на консультации
                 </h1>
                 <Row>
-               
+              
                 <Col md={6} >
                     <Card.Title style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif',marginTop:"150px" }}>
                     В стоматологической клинике «Клиника Айдарова» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona ORTHOPHOS XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
@@ -101,8 +104,8 @@ function Vinery({setShow}) {
                   <Button1 setShow={setShow}/>  
                     </Col>
                 </Col> 
-                <Col className='mt-5'>
-                    <Card.Img className=" w-75" src='https://static.tildacdn.com/tild3765-3739-4430-a535-323165376139/IMG_3201.JPG'>
+                <Col  sm={6} xs={12} md={4}   className='mt-5'>
+                    <Card.Img className="" src='https://static.tildacdn.com/tild3765-3739-4430-a535-323165376139/IMG_3201.JPG'>
                     </Card.Img>
 
                 </Col>

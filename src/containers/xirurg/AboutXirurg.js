@@ -77,15 +77,13 @@ function AboutXirurg({ setShow }) {
                 <div className='mt-5'>
                     <Row>
                         <Col xs={12} md={4} >
-                            <img data-aos="fade-up-right" className='pt-3 h-100 w-100' src='https://med122.com/news/1/2867775.jpg' alt='' />
+                            <img data-aos="zoom-in" className='pt-3 h-100 w-100' src='https://med122.com/news/1/2867775.jpg' alt='' />
                         </Col>
                         <Col xs={12} md={4} >
-                            <img data-aos="fade-down"
-                                data-aos-easing="linear"
-                                data-aos-duration="1500" className='pt-3 h-100 w-100' src='https://thumbs.dreamstime.com/b/%D1%85%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B8%D1%8F-11-7465323.jpg' alt='' />
+                            <img data-aos="zoom-in" className='pt-3 h-100 w-100' src='https://thumbs.dreamstime.com/b/%D1%85%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B8%D1%8F-11-7465323.jpg' alt='' />
                         </Col>
                         <Col xs={12} md={4}>
-                            <img data-aos="fade-left" className=' mt-3 h-100 w-100' src='https://www.anadolumedicalcenter.ru/wp-content/uploads/2020/12/hirurgiya-golovy.jpg' alt='' />
+                            <img data-aos="zoom-in" className=' pt-3 h-100 w-100' src='https://www.anadolumedicalcenter.ru/wp-content/uploads/2020/12/hirurgiya-golovy.jpg' alt='' />
                         </Col>
                     </Row>
                 </div>

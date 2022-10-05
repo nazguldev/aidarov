@@ -22,7 +22,7 @@ function Accordions(props) {
         <div className=' container mt-5 '>
             <hr />
 
-            <Col sm={6} xs={12} md={6}>
+            <Col>
                 <div className='accordion '>
                     {props.name.map((item, i) => {
                         return (
