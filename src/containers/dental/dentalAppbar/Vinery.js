@@ -22,7 +22,7 @@ function Vinery({setShow}) {
             <DentalNavbar/>
             <Row>
                 <h1 className='mt-5'>
-                    Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Эльмара
+                    Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Айдарова
                 </h1>
                 <Col md={6} >
                     <h2 style={{ color: "white", marginTop: "40px" }} >
@@ -74,7 +74,7 @@ function Vinery({setShow}) {
                     </Card.Text>
                 </Col>
             </Row>
-            <StuffContainer setShow={setShow}/>
+           
             <div className="container">
                 <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
@@ -92,7 +92,7 @@ function Vinery({setShow}) {
                
                 <Col md={6} >
                     <Card.Title style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif',marginTop:"150px" }}>
-                    В стоматологической клинике «Лаборатории улыбок Dr. Elmar» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona ORTHOPHOS XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
+                    В стоматологической клинике «Клиника Айдарова» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona ORTHOPHOS XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
                     </Card.Title>
                     <Card.Title style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     С его помощью изготавливаются 2D-, 3D- и ОПТГ- (панорамные) снимки, наличие которых обязательно для постановки правильного диагноза и выбора метода лечения.
