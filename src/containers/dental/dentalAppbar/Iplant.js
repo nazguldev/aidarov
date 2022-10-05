@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import Button1 from '../../../Button1';
 import Accordions from '../../../components/accrdion/Accordions';
@@ -7,8 +7,13 @@ import AutoVideo from '../../../components/Vidoe/AutoVideo';
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import './Appbar.scss'
 import DentalNavbar from '../dentalAppbar/DentalNavbar'
+import AOS from 'aos'
 
 function Iplant({ setShow }) {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     const patients = [
         {
             img: "https://thumb.tildacdn.com/tild3534-3033-4632-b064-356232633331/-/cover/720x1100/center/center/-/format/webp/G_98zN2SdVE.jpg",
@@ -146,7 +151,7 @@ function Iplant({ setShow }) {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <Col className='mt-5'>
+                    <Col >
                         <Card.Img className="h-100 w-100" src='https://thumb.tildacdn.com/tild6663-6334-4062-b764-356234363039/-/format/webp/diagnostika-min.jpg'>
                         </Card.Img>
                     </Col>

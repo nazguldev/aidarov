@@ -5,11 +5,11 @@ import imgg from '../../img.aidarov/imgg.jpeg'
 import patient1 from './Image/patient1.jpg'
 import patient2 from './Image/patient2.jpg'
 import patient5 from './Image/patient5.jpg'
-import  './dental.scss'
+import './dental.scss'
 import DentalNavbar from './dentalAppbar/DentalNavbar';
 
 
-function StuffContainer({setShow}) {
+function StuffContainer({ setShow }) {
     const doctors = [
         {
             id: 1,
@@ -69,61 +69,55 @@ function StuffContainer({setShow}) {
     return (
         <>
             <Container >
-                <DentalNavbar/>
-                <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
-                    Врачи, которым доверяют
-                </h1>
-                <Row>
-                    <Col md={6} >
-                        <h3 style={{ color: "white",  }}>
+                {/* <DentalNavbar/> */}
+
+                <Row className='mt-5'>
+                    <Col md={6} className='mt-3'>
+                        <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "20px" }}>
+                            Врачи, которым доверяют
+                        </h1>
+                        <h3 style={{ color: "white", }}>
                             Команда клиники «Лаборатория улыбок Dr. Elmar» специализируется на тотальном преображении улыбки и оказывает все виды стоматологических услуг
                         </h3>
-                        <Col sm={6}>
-                        <Button1 setShow={setShow}/>
+                        <Col sm={6} className='pb-2'>
+                            <Button1 setShow={setShow} />
 
                         </Col>
                     </Col>
-                    <Col className='mt-5'>
-                        <Card.Img width={'200px'} src='https://static.tildacdn.com/tild3331-3833-4964-b366-656665383262/photo.svg'>
+                    <Col className=''>
+                        <Card.Img src='https://static.tildacdn.com/tild3331-3833-4964-b366-656665383262/photo.svg'>
 
                         </Card.Img>
                     </Col>
-                    <Col md={10} >
-                        <h1 style={{ color: "#d3bb7e" }}>Наша команда</h1>
-                    </Col>
-                    <Col md={6} >
-                        <Card.Img className='w-75 h-100 mt-3' src={imgg}>
+                </Row>
+                <Row>
+                    <h1 style={{ color: "#d3bb7e" }}>Наша команда</h1>
+                    <Col sm={6} xs={12} md={6}>
+                        <Card.Img className=' mt-3' src={imgg}>
                         </Card.Img>
                     </Col>
-                    <Col md={6} className='mt-5'>
+                    <Col sm={6} xs={12} md={6} className='mt-3'>
                         <h4 style={{ color: "white" }}>
                             Бекмамат Айдаров — основатель и главный врач клиники «Лаборатория улыбок Dr. Elmar». Кандидат медицинских наук, стоматолог-ортопед.   </h4>
-                        <p className='textdoctor'>
+                        <p style={{ color: "white" }}>
                             Благодаря высокому качеству оказываемых услуг, к доктору Эльмару приезжают пациенты из разных точек мира.
                             Трудолюбие, уважительное отношение к каждому пациенту и любовь к красоте делают доктора Эльмара настоящим профессионалом в сфере стоматологии.
                         </p>
 
-                        <p className='textdoctor'>
+                        <p style={{ color: "white" }}>
                             Улыбки, созданные доктором Эльмаром, отличаются естественностью, высоким уровнем эстетики, а его обаяние и душевная теплота создают в клинике приятную, дружескую атмосферу.
 
                         </p>
-                        <p className='textdoctor'>
+                        <p style={{ color: "white" }}>
                             Звезды шоу-бизнеса, спорта, популярные блогеры доверили свои улыбки именно доктору Эльмару и стали обладателями ослепительных улыбок.
                         </p >
-                        <Row>
-                            <Col >
-                                <div className='div_b'>
-                                    Образование
-                                </div>
-                            </Col>
-                            <Col className=''>
-                                <div className='div_b '>
-                                    Социальные сети
-                                </div>
-                            </Col>
-                        </Row>
+
+
                     </Col>
                 </Row>
+
+
+
                 <Row className='mt-5'>
                     {doctors.map(e => {
                         return (
@@ -133,17 +127,17 @@ function StuffContainer({setShow}) {
                                     <Card.Text style={{ color: "white", textAlign: "center" }}> {e.title}</Card.Text>
                                     <Card.Text style={{ color: "white", textAlign: "center" }}>{e.position}</Card.Text>
                                     <Card.Text style={{ color: "white", textAlign: "center" }}>{e.experience}</Card.Text>
-                                  <Button1 setShow={setShow}/>
+                                    <Button1 setShow={setShow} />
                                 </Col>
                             </>
                         )
                     })}
-                   
+
                 </Row>
-                <Row className='mt-5'>
-                    <h5 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
+                <Row className='mt-3'>
+                    <h1 className='text-center' style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>
                         Наши пациенты
-                    </h5>
+                    </h1>
                     {patients.map(e => {
                         return (
                             <>

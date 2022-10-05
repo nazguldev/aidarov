@@ -57,48 +57,47 @@ function AboutGynecology({ setShow }) {
     const as = [
         {
             id: 1,
-            title: "Гинекологические операции (внематочная беременность,надвлагалищная ампутация матки, экстирпация матки)",
-             price: "42 500 сом"
+            title: "Гинекологические операции ",
+            price: "42 500 сом"
         },
-         {
+        {
             id: 2,
-            title: "Надбавка к двухэтапной операции (гинекологические)",
-             price: "8 500 сом"
+            title: "Надбавка к двухэтапной операции ",
+            price: "8 500 сом"
         }, {
             id: 3,
             title: "Лапароскопия",
-             price: "34 000 сом"
+            price: "34 000 сом"
         }, {
             id: 4,
             title: "Гистероскопия",
-             price: "	17 000 сом"
+            price: "	17 000 сом"
         }, {
             id: 5,
-            title: "Гистерорезектоскопия+Гистероскопия",
-             price: "25 500 сом"
+            title: "Гистерорезектоскопия",
+            price: "25 500 сом"
         }, {
             id: 6,
-            title: "Лапароскопия+Гистероскопия по программе ВРТ",
-             price: "34 000 сом"
+            title: "Лапароскопия",
+            price: "34 000 сом"
         }, {
             id: 7,
             title: "Гинекологические операции ",
-             price: "85 000 сом"
+            price: "85 000 сом"
         }, {
             id: 8,
             title: "Дополнительные медицинские расходные материалы",
-             price: "2000 сом"
+            price: "2000 сом"
         },
     ]
     return (
         <>
             <div className='AboutGynecology'>
                 <div className='container'>
-
                     <_Navbar />
                     <Row >
 
-                        <Col className="" md={6}>
+                        <Col md={6}>
                             <h1 className="mt-3 text">Кто такой гинеколог?</h1>
                             <p className="text2 mt-3">
                                 Гинеколог - это врач, который занимается профилактикой, диагностикой и лечением заболеваний женской половой сферы с учетом возраста женщины и её индивидуальных особенностей.
@@ -135,7 +134,7 @@ function AboutGynecology({ setShow }) {
                                 </div>
 
                                 <div className='mt-3'>
-                                <Button1 setShow={setShow}/>
+                                    <Button1 setShow={setShow} />
 
                                 </div>
                             </div>
@@ -150,7 +149,7 @@ function AboutGynecology({ setShow }) {
                                 <>
                                     <Col md={4} sm={6} xs={12} >
                                         <div>
-                                            <Card.Img className='W-100 h-100' src={e.img}></Card.Img>
+                                            <Card.Img className='w-100 h-100' src={e.img}></Card.Img>
                                             <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
                                             <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
                                         </div>
@@ -178,7 +177,7 @@ function AboutGynecology({ setShow }) {
                                 return (
                                     <tr>
                                         <td>{a.id}</td>
-                                        <td>{a.title}</td>
+                                        <td >{a.title}</td>
                                         <td>{a.price}</td> </tr>
                                 )
                             })}

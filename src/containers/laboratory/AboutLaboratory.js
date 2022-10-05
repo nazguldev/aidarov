@@ -29,7 +29,10 @@ function AboutLaboratory({ setShow }) {
                     <p className='text_nav h5 pb-3 mb-2' style={{ color: "black" }}>
                         - это лаборатория надежных и <br />качественных исследований! Это наш большой <br />труд и гордость потому что у нас <br />работают самые лучшие специалисты, имеющие<br /> огромный опыт работы. Все наши лаборанты имеют<br /> высшее образование и специализацию в <br />сфере медико-биологической диагностики.<br /> Весь коллектив лаборатории успешно прошел <br />сертификацию отделом лицензирования Министерства<br /> здравоохранения Кыргызской Республики.
                     </p>
-<Button1 setShow={setShow}/>
+                    <div className='pb-2 text-center'>
+                    <Button1 setShow={setShow} />
+
+                    </div>
                 </div>
             </div>
             <h1 className='text-center'>Анализы и цены</h1>
@@ -40,7 +43,8 @@ function AboutLaboratory({ setShow }) {
                         placeholder='Введите название анализа...'
                         value={filter}
                         onChange={searchText.bind(this)}
-                    /></div>
+                    />
+                </div>
 
                 <Col>
                     <Table striped bordered hover variant='dark' >

@@ -157,7 +157,7 @@ function AboutTerapiya({ setShow }) {
         </h1>
         <Container>
           <Row>
-            <Col>
+            <Col sm={6} xs={12} md={6}>
               <h2 className='text'>Заболевания</h2>
               <ul className='text2'>
                 <li> ОРВИ</li>
@@ -177,7 +177,7 @@ function AboutTerapiya({ setShow }) {
 
               </ul>
             </Col>
-            <Col>
+            <Col sm={6} xs={12} md={6}  >
               <p>
                 <h2 className='text'>Симптомы</h2>
                 <ul className='text2'>
@@ -283,13 +283,13 @@ function AboutTerapiya({ setShow }) {
             })}
 
           </Row>
-          <Row className=" justify-content-center mt-5">
+          <>
             <Col md={8} xs={10}>
-              <h1 className='mb-5'>
+              <h1 className='pt-5 text-center pb-3'>
                 Часто задаваемые вопросы
               </h1>
             </Col>
-            <Col md={10} xs={10}  >
+            <Col  >
               <Accordion defaultActiveKey={['0']} style={{ backgroundColor: 'black', color: '#d3bb7e' }}>
                 {
                   accordion2.map(e => {
@@ -311,41 +311,37 @@ function AboutTerapiya({ setShow }) {
               </Accordion>
             </Col>
 
-          </Row>
+          </>
           <Row>
-            <Col md={10} xs={10}>
-              <h1 className='mt-5'>
-                Наши отзывы
-              </h1>
-            </Col>
-            <Col md={12} xs={10} className="mt-5">
-              <Carousel fade>
-                {
-                  feedback.map(e => {
-                    return (
-                      <Carousel.Item style={{ color: 'white' }}>
-                        <Row>
-                          <Col md={6} xs={10}>
-                            <img
+            <h1 className='mt-3 pb-3 text-center'>
+              Наши отзывы
+            </h1>
+            <Carousel fade>
+              {
+                feedback.map(e => {
+                  return (
+                    <Carousel.Item style={{ color: 'white' }}>
+                      <Row>
+                        <Col sm={6} xs={12} md={6}>
+                          <img
 
-                              className="d-block w-100"
-                              src={e.img}
-                              alt="First slide"
-                            />
-                          </Col>
-                          <Col>
-                            <p>
-                              {e.text}
-                            </p>
-                          </Col>
-                        </Row>
-                      </Carousel.Item>
-                    )
-                  })
-                }
-              </Carousel>
+                            className="d-block w-100"
+                            src={e.img}
+                            alt="First slide"
+                          />
+                        </Col>
+                        <Col sm={6} xs={12} md={6}>
+                          <p>
+                            {e.text}
+                          </p>
+                        </Col>
+                      </Row>
+                    </Carousel.Item>
+                  )
+                })
+              }
+            </Carousel>
 
-            </Col>
           </Row>
         </Container>
       </div>
