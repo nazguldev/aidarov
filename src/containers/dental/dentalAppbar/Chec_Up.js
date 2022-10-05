@@ -82,7 +82,7 @@ function Chec_Up({ setShow }) {
             <RunText />
             <div className="container">
                 <h1 className='mt-5'>
-                    Звезды и знаменитости, сделавшие тотальное преображение улыбки у доктора Эльмара
+                    Звезды и знаменитости, сделавшие тотальное преображение улыбки у доктора Айдарова
                 </h1>
                 <Row className='mt-5'>
 
@@ -106,7 +106,7 @@ function Chec_Up({ setShow }) {
                         <div className='justify-content-evenly text-center  ' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
-                            <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
+                            <Card.Title className='text_nav'>Доктор Бекмамат Айдаров</Card.Title>
                             <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
                         </div>
                     </Col>

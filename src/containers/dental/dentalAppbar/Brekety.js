@@ -103,7 +103,7 @@ function Brekety({ setShow }) {
             <RunText />
             <div className="container">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                    Звезды и знаменитости, сделавшие<br /> тотальное преображение улыбки<br /> у доктора Эльмара
+                    Звезды и знаменитости, сделавшие<br /> тотальное преображение улыбки<br /> у доктора Айдарова
                 </h1>
                 <Row className='mt-5'>
                     <h1 className="text-center" style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif' }}>
@@ -129,7 +129,7 @@ function Brekety({ setShow }) {
                         <div data-aos="zoom-in" className='justify-content-evenly text-center' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                             </img>
-                            <Card.Title className='text_nav'>Доктор Эльмар</Card.Title>
+                            <Card.Title className='text_nav'>Доктор Бекмамат</Card.Title>
                             <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
                         </div>
                     </Col>

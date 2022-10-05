@@ -21,8 +21,9 @@ function Vinery({setShow}) {
         <div className="container">
             <DentalNavbar/>
             <Row>
-                <h1 className='mt-3'>
-                    Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Эльмара
+
+                <h1 className='mt-5'>
+                    Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Айдарова
                 </h1>
                 <Col md={6} >
                     <h2 style={{ color: "white", marginTop: "40px" }} >
@@ -74,9 +75,11 @@ function Vinery({setShow}) {
                     </Card.Text>
                 </Col>
             </Row>
-            <StuffContainer setShow={setShow}/>
-            <div className="container mt-3">
-                <h1 style={{ color: "#d3bb7e",  fontFamily: 'GraphikTT Arial sans-serif', }}>
+
+           
+            <div className="container">
+                <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
+
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
                 </h1>
                 <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
@@ -89,10 +92,10 @@ function Vinery({setShow}) {
                     Получите пошаговый план к здоровой и красивой улыбке на консультации
                 </h1>
                 <Row>
-               
-                <Col sm={6} xs={12} md={6}    className='mt-5'>
-                    <Card.Title style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif',}}>
-                    В стоматологической клинике «Лаборатории улыбок Dr. Elmar» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona ORTHOPHOS XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
+              
+                <Col md={6} >
+                    <Card.Title style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif',marginTop:"150px" }}>
+                    В стоматологической клинике «Клиника Айдарова» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona ORTHOPHOS XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
                     </Card.Title>
                     <Card.Title style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     С его помощью изготавливаются 2D-, 3D- и ОПТГ- (панорамные) снимки, наличие которых обязательно для постановки правильного диагноза и выбора метода лечения.

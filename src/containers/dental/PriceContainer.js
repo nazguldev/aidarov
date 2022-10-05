@@ -95,10 +95,17 @@ function PriceContainer(props) {
                             </p>
                         </div>
                     </Col>
+
+
                 </Row>
             </div>
+
+
             <div className='text-center container clinick col-sm-5 mt-5 p-2'>
                 <h2>Услуги клиники</h2>
+                
+                
+
             </div>
             <div >
                 <Accordion name={data} />
@@ -109,6 +116,8 @@ function PriceContainer(props) {
                 <h1 className='h mt-2'>
                     Экономия 25 тысяч*.
                 </h1>
+                
+                
                 <div className='h mt-5'>
                     Оставьте контакты, и мы свяжемся с вами, чтобы
                 </div>
@@ -116,6 +125,8 @@ function PriceContainer(props) {
                     подобрать удобное время для записи на консультацию.
                 </div>
             </div>
+
+
             
             <RunText/>
         </div>
