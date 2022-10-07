@@ -141,7 +141,7 @@ function MainContainers({ setShow }) {
                     <Carousel className=' text-center container'>
                         {info.map((e) => {
                             return (
-
+                                <Carousel.Item>
                                     <h1>{e.name}</h1>
                                     <h5 style={{ color: "white" }}>{e.text} </h5>
                                 </Carousel.Item>
@@ -218,7 +218,7 @@ function MainContainers({ setShow }) {
                     </Row>
                     <Row className="mt-5">
                         <Col xs={12} md={6} lg={6}>
-                            <div className='justify-content-evenly text-center' >
+                            <div className='justify-content-evenly text-center  ' >
                                 <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                                 </img>
                                 <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
@@ -228,15 +228,11 @@ function MainContainers({ setShow }) {
                         <Col xs={12} md={6} lg={6}>
                             <div className='justify-content-evenly text_nav m-3'>
                                 <div >
-                                    Выступая на фестивале ATX, авторы и актёры сериала «Клиника» поделились мыслями о возможном ребуте шоу.
-                                    Создатель шоу Билл Лоуренс так прокомментировал планы на воссоединение «Клиники»:
+                             "Клиника Айдарова"-Многопрофильная Клиника, оказывающая полный спектр медицинских услуг. В нашей клинике работают лучшие врачи нашего города. Мы решим любую задачу комплексно и в срок. Обращайтесь - мы будем рады помочь Вам! Для того, чтобы ознакомиться со всеми врачами перейдите в соответствующий раздел.
                                 </div>
-                                <div className='mt-5'>
-                                    «Мы собираемся сделать это, потому что людям не всё равно. Нам нравится проводить время друг с другом. Если у вас когда-нибудь появится повод поработать с людьми, с которыми вы всегда хотели поработать, воспользуйтесь им».
+                               
                                     <div className='mt-3'>
                                         <Button1 setShow={setShow} />
-
-                                    </div>
                                 </div>
                             </div>
                         </Col>
@@ -256,7 +252,7 @@ function MainContainers({ setShow }) {
                                                 className="d-block w-100 text-center"
                                                 src={e.img}
                                                 alt="First slide" />
-                                            <Carousel.Caption className='d-none'>
+                                            <Carousel.Caption>
                                                 <h3>{e.title}</h3>
                                                 <h5>{e.text}</h5>
                                             </Carousel.Caption>
@@ -308,20 +304,22 @@ function MainContainers({ setShow }) {
                         </Col>
 
                     </Row>
+                    <div className='text-center'>
+                      <RunText />
+                   </div>
                     <Row className=" justify-content-center mt-5">
-                        <Col sm={6} xs={12} md={6} >
+                        <Col md={8} xs={10}>
                             <h1 className='mb-5'>
                                 Часто задаваемые вопросы
                             </h1>
-                            <Card bg='dark' sm={6} xs={12} md={6}>
-                                <img src='https://www.ftn.cz/files/homepage/2.png' />
-                            </Card>
                         </Col>
-                        <Col sm={6} xs={12} md={6} className='pt-3'>
+                        <Col md={10} xs={10}  >
                             <Accordions name={accordion2} />
                         </Col>
+
                     </Row>
-                    <Carousel fade className='mt-3'>
+                    
+                    <Carousel fade>
                         {
                             feedback.map(e => {
                                 return (
@@ -349,9 +347,7 @@ function MainContainers({ setShow }) {
 
                 </div>
 
-                <div className='text-center'>
-                    <RunText />
-                </div>
+              
 
 
             </div>

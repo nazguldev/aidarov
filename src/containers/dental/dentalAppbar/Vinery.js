@@ -81,7 +81,7 @@ function Vinery({setShow}) {
                 <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
 
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
-                </h1>
+                </p>
                 <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
                 <Col sm={3}>
                 <Button1 setShow={setShow}/>
