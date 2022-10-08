@@ -59,7 +59,51 @@ function Chec_Up({ setShow }) {
             known_for: "Black Star",
         }
     ]
-
+    const text= [
+        { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, 
+     ]
     return (
         <div className="container">
             <DentalNavbar />
@@ -79,7 +123,7 @@ function Chec_Up({ setShow }) {
                     <AutoVideo name={data} />
                 </Col>
             </Row>
-            <RunText />
+            <RunText name={text}/>
             <div className="container">
                 <h1 className='mt-5'>
                     Звезды и знаменитости, сделавшие тотальное преображение улыбки у доктора Айдарова

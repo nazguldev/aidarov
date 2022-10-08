@@ -168,6 +168,51 @@ function MainContainers({ setShow }) {
       text: 'Спасибо огромное доктору Айдарову!',
     },
   ]
+  const text= [
+    { 
+     texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+     t:'/'
+ },  { 
+     texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+     t:'/'
+ },  { 
+     texts:'ГАРАНТИЯ 25 ЛЕТ',
+     t:'/'
+ },  { 
+     texts:'ГАРАНТИЯ 25 ЛЕТ',
+     t:'/'
+ },  { 
+     texts:' АВТОРСКИЕ ВИНИРЫ',
+     t:'/'
+ },  { 
+     texts:'ЛЕЧЕНИЕ ВО СНЕ',
+     t:'/'
+ },  { 
+     texts:' БЕЗ БОЛИ',
+     t:'/'
+ }, { 
+     texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+     t:'/'
+ },  { 
+     texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+     t:'/'
+ },  { 
+     texts:'ГАРАНТИЯ 25 ЛЕТ',
+     t:'/'
+ },  { 
+     texts:'ГАРАНТИЯ 25 ЛЕТ',
+     t:'/'
+ },  { 
+     texts:' АВТОРСКИЕ ВИНИРЫ',
+     t:'/'
+ },  { 
+     texts:'ЛЕЧЕНИЕ ВО СНЕ',
+     t:'/'
+ },  { 
+     texts:' БЕЗ БОЛИ',
+     t:'/'
+ }, 
+ ]
 
   return (
     <>
@@ -196,7 +241,7 @@ function MainContainers({ setShow }) {
         </Row>
         </Container>
       </div>
-      <RunText/>
+      <RunText name={text}/>
       <Container>
         <>
           <Row className="mt-3">

@@ -44,7 +44,7 @@ function CollSenter(props) {
             >
               <Form.Label >Ваше имя</Form.Label>
               <Form.Control
-                type="email"
+                type="text"
                 placeholder="name@example.com"
                 autoFocus
                 style={{ backgroundColor: "black", color: "white" }}
@@ -52,8 +52,8 @@ function CollSenter(props) {
               />
               <Form.Label >Телефон номер</Form.Label>
               <Form.Control
-                type="text"
-                placeholder="+996773000000"
+                type="number"
+                  placeholder="+996773000000"
                 autoFocus
                 style={{ backgroundColor: "black", color: "white" }}
                 onChange={e => setNumber(e.target.value)}
