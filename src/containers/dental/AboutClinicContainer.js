@@ -3,7 +3,7 @@ import { Row, Card, Col,} from 'react-bootstrap';
 import Accordions from '../../components/accrdion/Accordions';
 import AutoVideo from '../../components/Vidoe/AutoVideo'
 import './dental.scss'
-import RunText from '../../components/runText/RunText';
+// import RunText from '../../components/runText/RunText';
 import AOS from "aos";
 import imgg from '../../img.aidarov/imgg.jpeg'
 import Button1 from '../../Button1';
@@ -160,7 +160,7 @@ function AboutClinicContainer({ setShow }) {
                 </Col>
             </div>
         </div>
-            <RunText />
+            {/* <RunText /> */}
             </>
 
     );

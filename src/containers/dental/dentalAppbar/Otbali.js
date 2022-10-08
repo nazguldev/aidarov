@@ -53,6 +53,51 @@ function Otbali({setShow}) {
             Домашнее отбеливание с созданными специально для пациента капами`
         }
     ]
+    const text= [
+        { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, 
+     ]
     return (
         <>
             <div className="container">
@@ -77,7 +122,7 @@ function Otbali({setShow}) {
                 </Row>
             </div>
             <div className="mt-5">
-                <RunText />
+                <RunText name={text} />
             </div>
             <div className="container">
                 <h1 className="mt-5 text-center" style={{ color: "#d3bb7e",  }}>
@@ -199,7 +244,7 @@ function Otbali({setShow}) {
                     </tbody>
                 </Table>
             </div>
-            <RunText />
+            <RunText name={text} />
         </>
 
     );

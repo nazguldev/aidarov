@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table } from 'react-bootstrap'
 import './Laboratory.scss'
 import _Navbar from "../../app/nav/_Navbar"
-import { Button, Col, Form, Table } from 'react-bootstrap';
 import lab from './product';
 import Button1 from '../../Button1';
 
@@ -22,7 +22,40 @@ function AboutLaboratory({ setShow }) {
 
     return (
         <div className={'Laboratory'}>
-            <_Navbar />
+             <Navbar bg="dark" expand="lg" variant='dark'>
+          <Container>
+            <Navbar.Brand href="/"><img width="50px" src={'http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png'} /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/">О Клинике</Nav.Link>
+                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+                <NavDropdown title="Услуги" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutUrologi">Урология
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutXirurg">Хирургия
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+
+                </NavDropdown>
+              </Nav>
+             <Nav>
+             <NavDropdown title="Контакты" id="basic-nav-dropdown">
+                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                </NavDropdown>
+
+             </Nav>
+             
+            
+            </Navbar.Collapse>
+
+          </Container>
+        </Navbar>
             <div class={"slider__item "}>
                 <div className='container'>
                     <h1 className='text-center pt-2' style={{ color: "#d3bb7e" }}>Лаборатория </h1>

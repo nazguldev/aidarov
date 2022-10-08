@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { Card, Col, Row, Table } from 'react-bootstrap'
+import React from 'react';
+import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table } from 'react-bootstrap'
 import Button1 from '../../Button1';
 import './gynecolog.scss'
-import _Navbar from "../../app/nav/_Navbar"
 import Accordions from '../../components/accrdion/Accordions';
 import RunText from '../../components/runText/RunText';
 function AboutGynecology({ setShow }) {
@@ -35,6 +34,18 @@ function AboutGynecology({ setShow }) {
         {
             title: "Беременность",
             text: "Не наступление беременности, при регулярной половой жизни без контрацепции, в течении года."
+        },
+        {
+            title: "Лапароскопия",
+            text: "Лапароскопия – это один из методов оперативной гинекологии (и хирургии вообще), который позволяет обходиться без послойного разреза брюшной стенки."
+        },
+        {
+            title: "Гистероскопия",
+            text: "Гистероскопия — метод лечения и диагностики заболеваний в полости матки. Используется в гинекологии как малотравматичный метод обследования и лечения заболеваний матки. Гистероскопическая операция — это безболезненный, комфортный, безопасный и эффективный способ избавиться от различных патологических состояний матки."
+        },
+        {
+            title: "Влагалищные гинекологические операции",
+            text: "Влагалищные гинекологические операции — это оперативные вмешательства, при которых доступ к внутренним половым органам женщины осуществляется через влагалище. Вагинальный доступ в настоящее время считается наиболее безопасным и применяется у женщин с гинекологическими заболеваниями разных типов."
         },
     ]
     const patients = [
@@ -90,11 +101,81 @@ function AboutGynecology({ setShow }) {
             price: "2000 сом"
         },
     ]
+    const text = [
+        {
+            texts:"Зуд и жжение",
+            t:"/"
+        },
+        {
+            texts:"Болевой синдром",
+            t:"/"
+        },  {
+            texts:"Новообразования",
+            t:"/"
+        },  {
+            texts:"Нарушение цикла",
+            t:"/"
+        },  {
+            texts:"Кровянистые выделения",
+            t:"/"
+        },  {
+            texts:"Контрацептивы",
+            t:"/"
+        },  {
+            texts:"Климакс",
+            t:"/"
+        },  {
+            texts:"Беременность",
+            t:"/"
+        },{
+            texts:"Лапароскопия",
+            t:"/"
+        },{
+            texts:"Гистероскопия",
+            t:"/"
+        },{
+            texts:"Влагалищные гинекологические операции",
+            t:"/"
+        },
+    ]
     return (
         <>
             <div className='AboutGynecology'>
                 <div className='container'>
-                    <_Navbar />
+                <Navbar bg="dark" expand="lg" variant='dark'>
+          <Container>
+            <Navbar.Brand href="/"><img width="50px" src={'https://agsmedico.com/img/especialidades/GinecologiayObstetricia.png'} /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/">О Клинике</Nav.Link>
+                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+                <NavDropdown title="Услуги" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutUrologi">Урология
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutXirurg">Хирургия
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+
+                </NavDropdown>
+              </Nav>
+             <Nav>
+             <NavDropdown title="Контакты" id="basic-nav-dropdown">
+                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                </NavDropdown>
+
+             </Nav>
+             
+            
+            </Navbar.Collapse>
+
+          </Container>
+        </Navbar>
                     <Row >
 
                         <Col md={6}>
@@ -130,7 +211,7 @@ function AboutGynecology({ setShow }) {
                             <div className='justify-content-evenly text_nav mt-3'>
                                 <div >
                                     ОПЫТНЫЕ ВРАЧИ. КАЧЕСТВЕННЫЙ СЕРВИС. ОПТИМАЛЬНЫЕ ПРОГРАММЫ.
-                                    Prime Сlinic - это современная клиника. Мы поможем вам пройти обследования у квалифицированных врачей и подберём оптимальные программы лечения.
+                                    Aidarov Clinic - это современная клиника. Мы поможем вам пройти обследования у квалифицированных врачей и подберём оптимальные программы лечения.
                                 </div>
 
                                 <div className='mt-3'>
@@ -140,6 +221,15 @@ function AboutGynecology({ setShow }) {
                             </div>
                         </Col>
                     </Row>
+                    <div>
+                        <h1 className='text-center mt-3'>ГИНЕКОЛОГИЧЕСКИЕ ОПЕРАЦИИ</h1>
+                        <p className='text_nav'> 
+                        Гинекологические операции – это один из методов лечения заболеваний женской половой системы. Операции в гинекологии имеют огромное значение. Они позволяют справляться с заболеваниями, которые ранее считались неизлечимыми. Но детородная функция женщины устроена очень тонко, и потому решение о хирургическом вмешательстве принимается врачом лишь в исключительных случаях, когда медикаментозное лечение не помогает.
+                        </p>
+                        <p className='text_nav pt-3 '> 
+                        В медицине различают большие и малые гинекологические операции. Каждый вид оперативного вмешательства имеет свои особенности, и используется при определенных медицинских показаниях. В клинике профессора Асымбековой работают врачи-хирурги с огромным практическим опытом в оперативной гинекологии. Наши специалисты – это не просто высококлассные хирурги и гинекологи, но и обладатели ученых степеней. Многие из них являются авторами инновационных хирургических методик.
+                        </p>
+                    </div>
                     <Row className='mt-5'>
                         <h1 className='text-center mb-3'>
                             Наши пациенты
@@ -160,7 +250,7 @@ function AboutGynecology({ setShow }) {
                     </Row>
                 </div>
             </div>
-            <RunText />
+            <RunText name={text}/>
             <div className='container'>
                 <h1 className='text-center'>ЦЕНЫ</h1>
                 <Col>

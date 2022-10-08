@@ -21,32 +21,11 @@ function Footer() {
               <h5 className="textinfooter">
                 <img
                   style={{ width: '80px', height: '80px', borderRadius: '50%' }}
-                  src={image} /> Dr.Aidarov
+                  src={image} /> КЛИНИКА АЙДАРОВ
               </h5>
               <p className="textdoctor">Медицинская лицензия</p>
             </div>
-            <div className="col">
-              <h6 className="textinfooter">Хиты</h6>
-              <h6 className="textinfooter2">Hollywood Smile</h6>
-              <h6 className="textinfooter2"> Выравнивание зубов </h6>
-              <h6 className="textinfooter2"> Эффект бриллиант</h6>
-
-            </div>
-            {/* colum2 */}
-            <div className="col">
-              <div className="textinfooter">Услуги</div>
-              <div className="textinfooter2">Консультация</div>
-              <div className="textinfooter2">Полное обследование</div>
-              <div className="textinfooter2">Виниры / Люминиры</div>
-              <div className="textinfooter2">Элайнеры</div>
-              <div className="textinfooter2">Отбеливание</div>
-              <div className="textinfooter2">Профессиональная гиена полости рта</div>
-              <div className="textinfooter2"> Лечение</div>
-              <div className="textinfooter2"> Брекеты</div>
-              <div className="textinfooter2"> Имплантация</div>
-              <div className="textinfooter2"> Протезирование</div>
-            </div>
-            {/* colum3 */}
+           
             <div className="col">
               <div className="textinfooter">Адресс</div>
               <div className="textinfooter2">г. Ош, ст. Фрунзенская,</div>
@@ -55,6 +34,19 @@ function Footer() {
                 +996 (776) 000 000
               </a>
               <div className="div_a"><p> Записаться на прием</p></div>
+            </div>
+            <div className="col">
+              <div className="textinfooter">Услуги</div>
+              <h6 className="textinfooter2">Терапия</h6>
+              <h6 className="textinfooter2">Хирургия</h6>
+              <h6 className="textinfooter2">Стоматология</h6>
+            </div>
+
+            <div className="col">
+              <div className="textinfooter">Услуги</div>
+              <h6 className="textinfooter2"> Лаборатория</h6>
+              <h6 className="textinfooter2"> Гинекология</h6>
+              <h6 className="textinfooter2"> Урология</h6>
             </div>
           </div>
           <div className="col">

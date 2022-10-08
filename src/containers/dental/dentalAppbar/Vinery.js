@@ -16,7 +16,52 @@ function Vinery({setShow}) {
         AOS.init();
         AOS.refresh();
     }, []);
-    
+    const text= [
+        { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, 
+     
+     ]  
     return (
         <div className="container">
             <DentalNavbar/>
@@ -37,7 +82,7 @@ function Vinery({setShow}) {
                     <AutoVideo />
                 </Col>
             </Row>
-            <RunText />
+            <RunText name={text}/>
             <div className="container">
 
                 <Row className="mt-5">
@@ -78,10 +123,10 @@ function Vinery({setShow}) {
 
            
             <div className="container">
-                <p style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
+                <h2 style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
 
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
-                </h1>
+                </h2>
                 <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
                 <Col sm={3}>
                 <Button1 setShow={setShow}/>

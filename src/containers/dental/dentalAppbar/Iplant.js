@@ -71,6 +71,51 @@ function Iplant({ setShow }) {
 
         },
     ]
+    const text= [
+        { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, { 
+         texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
+         t:'/'
+     },  { 
+         texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:'ГАРАНТИЯ 25 ЛЕТ',
+         t:'/'
+     },  { 
+         texts:' АВТОРСКИЕ ВИНИРЫ',
+         t:'/'
+     },  { 
+         texts:'ЛЕЧЕНИЕ ВО СНЕ',
+         t:'/'
+     },  { 
+         texts:' БЕЗ БОЛИ',
+         t:'/'
+     }, 
+     ]
     return (
         <>
             <div className="container">
@@ -108,7 +153,7 @@ function Iplant({ setShow }) {
                 </Row>
             </div>
 
-            <RunText />
+            <RunText name={text}/>
             <div className="container">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     Звезды и знаменитости, сделавшие тотальное<br /> преображение улыбки у доктора Эльмара
@@ -251,7 +296,7 @@ function Iplant({ setShow }) {
                 </h1>
                 <Accordions name={data1} />
             </div>
-            <RunText />
+            <RunText name={text} />
 
         </>
     );
