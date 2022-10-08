@@ -127,6 +127,7 @@ function Vinery({setShow}) {
 
                     Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
                 </h2>
+
                 <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
                 <Col sm={3}>
                 <Button1 setShow={setShow}/>
