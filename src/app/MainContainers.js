@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card, Carousel, Col, Row } from 'react-bootstrap';
+import React,{useState} from 'react';
+import { Card, Carousel, Col, Row, Table } from 'react-bootstrap';
 import Button1 from '../Button1';
 import AutoVideo from '../components/Vidoe/AutoVideo';
 import _Navbar from './nav/_Navbar'
@@ -12,8 +12,10 @@ import Accordions from '../components/accrdion/Accordions';
 import patient1 from '../containers/dental/Image/patient1.jpg'
 import patient2 from '../containers/dental/Image/patient2.jpg'
 import patient5 from '../containers/dental/Image/patient5.jpg'
+import PriceMain from './PriceMain'
 
 function MainContainers({ setShow }) {
+    const t = PriceMain.price1
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -123,22 +125,37 @@ function MainContainers({ setShow }) {
                 <div className='header_banner  w-100 h-100 '>
                     <div className='container'>
                         <h1 className='text-center pt-5'>Добро пожаловать </h1>
-                        <p className=' h5 mt-5 mb-5'>
-                            Клиника профессора Айдарова организована в 2003 году.<br /> Имеет соответствия и лицензию МЗ КР.<br /> В клинике работают более 100 сотрудников:<br /> профессора, доценты, доктора и кандидаты <br />медицинских наук; акушеры-гинекологи, <br />неонатологи, педиатры,<br /> анестезиологи, терапевты, врачи смежных специальностей,<br /> акушерки и медсестры с высшей категорией.
+                        <Col sm={8} md={6} lg={6}>
+                        <p className=' h5 mt-5 mb-5' >
+                         Оснаватель  ОсОО Медицинского центра Айдарова Камалдина  заслуженный врач акушер-гинеколог и директор МЦ Айдаров Камалдин Абдурахманович.<p/>
+                        <p> Родился 16.03.1964году в ЖалалАбадской области р Базар-Коргон село Карача. В 1988году закончил КГМА имени Ахунбаева в г Бишкек после прошол ординатуру в г Ош родильном стационаре Ошской териториальной городской больницы. Там же работал с 1989года по 2003год после открыл свою первую частную клинику возле ТГБ№2.</p> 
+                        <p>Работая не покладая рук, проведя своевременное диагностирование и лечение гинекологических и репродуктивных заболевании с уверенностью может заявить о сохранении супружеской жизни более 3000 семейных пар. Клиника начала расширяться, в 2019году  переехали по адресу г.Ош ул Масалиева 73 и стал многопрофильным ОсОО Медицинским центром Айдарова Камалдина где работают лучшие специалисты своего дела.</p> 
                         </p>
+                        </Col>
+                        <Col sm={8} md={6} lg={6}>
                         <p className='mt-5 mb-5 pb-0 h5'>
-                            Лечебная работа клиники основана на<br /> международных стандартах, по которым <br />работают ведущие учреждения зарубежных стран.
+                        В ОсОО МЦ Айдарова К.А есть широкий спектр медицинских услуг:
+                                Хирургия
+                                Урология
+                                Акушерство и Гинекология
+                                Терапия
+                                Кардиология
+                                Стоматология
+                                Неврология
                             <div className="pb-3 pt-3">
                                 <Button1 setShow={setShow} />
 
                             </div>
                         </p>
+                        </Col>
+                        
+                     
 
 
                     </div>
                 </div>
                 <div className='container'>
-                    <Carousel className=' text-center container'>
+                    <Carousel className='text-center container'>
                         {info.map((e) => {
                             return (
                                 <Carousel.Item>
@@ -221,14 +238,18 @@ function MainContainers({ setShow }) {
                             <div className='justify-content-evenly text-center  ' >
                                 <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
                                 </img>
-                                <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
+                                <Card.Title className='text_nav'>Доктор К.А
+                                 Айдаров</Card.Title>
                                 <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, </span>
                             </div>
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <div className='justify-content-evenly text_nav m-3'>
                                 <div >
-                             "Клиника Айдарова"-Многопрофильная Клиника, оказывающая полный спектр медицинских услуг. В нашей клинике работают лучшие врачи нашего города. Мы решим любую задачу комплексно и в срок. Обращайтесь - мы будем рады помочь Вам! Для того, чтобы ознакомиться со всеми врачами перейдите в соответствующий раздел.
+                               <p> Оснаватель  ОсОО Медицинского центра Айдарова Камалдина  заслуженный врач акушер-гинеколог и директор МЦ Айдаров Камалдин Абдурахманович.</p>
+                              <p>Родился 16.03.1964году в ЖалалАбадской области р Базар-Коргон село Карача. В 1988году закончил КГМА имени Ахунбаева в г Бишкек после прошол ординатуру в г Ош родильном стационаре Ошской териториальной городской больницы. Там же работал с 1989года по 2003год после открыл свою первую частную клинику возле ТГБ№2.</p>  
+                                <p> Родился 16.03.1964году в ЖалалАбадской области р Базар-Коргон село Карача. В 1988году закончил КГМА имени Ахунбаева в г Бишкек после прошол ординатуру в г Ош родильном стационаре Ошской териториальной городской больницы. Там же работал с 1989года по 2003год после открыл свою первую частную клинику возле ТГБ№2.</p> 
+
                                 </div>
                                
                                     <div className='mt-3'>
@@ -238,7 +259,29 @@ function MainContainers({ setShow }) {
                         </Col>
                     </Row>
                 </div>
-
+                
+                <Col>
+                    <Table striped bordered hover variant='dark' >
+                        <thead>
+                            <tr>
+                                <th >№</th>
+                                <th>Прейскурант </th>
+                                <th>Стоимость услуг</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {/* {t.map((b) => {
+                                return (
+                                    <tr>
+                                        <td>{b.id}</td>
+                                        <td>{b.title}</td>
+                                        <td>{b.price}</td>
+                                    </tr>
+                                )
+                            })} */}
+                        </tbody>
+                    </Table>
+                </Col>
                 <div className='container'>
                     <h1 className='text-center pt-5 pb-5'>Наши Врачи</h1>
                     <Row>

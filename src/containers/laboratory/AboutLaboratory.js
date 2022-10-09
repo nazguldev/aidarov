@@ -51,7 +51,7 @@ function AboutLaboratory({ setShow }) {
                         <thead>
                             <tr>
                                 <th >№</th>
-                                <th>Общий мазок на флору    </th>
+                                <th>Гематологические исследования   </th>
                                 <th>Стоимость услуг</th>
                             </tr>
                         </thead>
