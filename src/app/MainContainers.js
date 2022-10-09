@@ -13,6 +13,7 @@ import patient1 from '../containers/dental/Image/patient1.jpg'
 import patient2 from '../containers/dental/Image/patient2.jpg'
 import patient5 from '../containers/dental/Image/patient5.jpg'
 import PriceMain from './PriceMain'
+// import logo from '../app/nav/logo.png'
 
 function MainContainers({ setShow }) {
     const t = PriceMain.price1
@@ -117,6 +118,47 @@ function MainContainers({ setShow }) {
             text: '«Я ходил в разные клиники, и мне всё время всё не нравилось.Всегда вырывали зубы, было больно, я потом ходил мучился.  И я как-то попал в клинику доктора Эльмара, и тут всё было как по волшебству.Пришёл, у меня была дикая зубная боль, сажусь к доктору на кресло, проходит 5 минут, и я пишу доктору (говорить-то я не могу):  „Можно уже говорить?“. А он такой: „А я уже всё тебе сделал“. Невероятно просто! Здесь происходит реальная магия, прямо так, как делаю я.  Приходите лечиться к доктору Эльмару!» «Я ходил в разные клиники, и мне всё время всё не нравилось.Всегда вырывали зубы, было больно, я потом ходил мучился. И я как-то попал в клинику доктора Эльмара, и тут всё было как по волшебству.Пришёл, у меня была дикая зубная боль, сажусь к доктору на кресло, проходит 5 минут, и я пишу доктору (говорить-то я не могу): „Можно уже говорить?“. А он такой: „А я уже всё тебе сделал“. Невероятно просто! Здесь происходит реальная магия, прямо так, как делаю я. Приходите лечиться к доктору Эльмару!»«Я ходил в разные клиники, и мне всё время всё не нравилось.Всегда вырывали зубы, было больно, я потом ходил мучился. И я как-то попал в клинику доктора Эльмара, и тут всё было как по волшебству.Пришёл, у меня была дикая зубная боль, сажусь к доктору на кресло, проходит 5 минут, и я пишу доктору (говорить-то я не могу): „Можно уже говорить?“. А он такой: „А я уже всё тебе сделал“. Невероятно просто! Здесь происходит реальная магия, прямо так, как делаю я. Приходите лечиться к доктору Эльмару!»',
         },
     ]
+const text =[
+    {
+        texts:"Клининика Айдарова",
+        t:"/"
+    },
+    {
+        texts:"Стоматология",
+        t:"/"
+    },{
+        texts:"Хирургия",
+        t:"/"
+    },{
+        texts:"Лаборатория",
+        t:"/"
+    },{
+        texts:"Гинекология",
+        t:"/"
+    },{
+        texts:"Урология",
+        t:"/"
+    },{
+        texts:"Клининика Айдарова",
+        t:"/"
+    },
+    {
+        texts:"Стоматология",
+        t:"/"
+    },{
+        texts:"Хирургия",
+        t:"/"
+    },{
+        texts:"Лаборатория",
+        t:"/"
+    },{
+        texts:"Гинекология",
+        t:"/"
+    },{
+        texts:"Урология",
+        t:"/"
+    },
+]
     return (
         <>
 
@@ -166,7 +208,7 @@ function MainContainers({ setShow }) {
                         })}
                     </Carousel>
                 </div>
-                <RunText />
+                <RunText name={text}/>
 
                 <div className='container'>
                     <h1 className='text-center pt-5 pb-5 '>УСЛУГИ  КЛИНИКИ:</h1>
@@ -174,21 +216,21 @@ function MainContainers({ setShow }) {
                     <Row>
                         <Col sm={6} xs={12} md={4}>
                             <a href='/aboutDental'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
 
                                         <Card.Title className='text-center pb-3'>Стоматология</Card.Title>
-                                        <Card.Img className='images_item' variant="top" src='https://zub.ru/upload/iblock/041/04174025b93d0621168a8712e846e9ca.jpg' />
+                                        <Card.Img className='images_item' variant="top" src='https://images1-fabric.practo.com/rekha-dental-clinic-and-implant-center-ghaziabad-1464245959-57469ec7e278c.png' />
                                     </Card.Body>
                                 </div>
                             </a>
                         </Col>
                         <Col sm={6} xs={12} md={4} >
                             <a href='/AboutXirurg'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
                                         <Card.Title className='text-center pb-3'>Хирургия</Card.Title>
-                                        <Card.Img className=' images_item ' variant="top" src='https://di-center.ru/upload/images/hiryrgia.jpg' />
+                                        <Card.Img className=' images_item ' variant="top" src='https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png' />
 
                                     </Card.Body>
                                 </div>
@@ -196,10 +238,10 @@ function MainContainers({ setShow }) {
                         </Col>
                         <Col sm={6} xs={12} md={4} >
                             <a href='/AboutTerapiya'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
                                         <Card.Title className='text-center pb-3'>Терапия</Card.Title>
-                                        <Card.Img className='images_item' variant="top" src='https://www.promedicina.clinic/assets/images/vlok.jpg' />
+                                        <Card.Img className='images_item' variant="top" src='http://linoko.by/wp-content/uploads/2019/01/logo-1024x576.png' />
 
                                     </Card.Body>
                                 </div>
@@ -208,27 +250,27 @@ function MainContainers({ setShow }) {
 
                         <Col sm={6} xs={12} md={4} className="text-center ">
                             <a href='/AboutLaboratory'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Лаборатория</Card.Title>
-                                    <Card.Img className='images_item' variant="top" src='https://alterainvest.ru/upload/iblock/45a/45ad6847ad7e96d427a0523f2cb2ade0.jpg' />
+                                    <Card.Img className='images_item' variant="top" src='http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png' />
 
                                 </div>
                             </a>
                         </Col>
                         <Col sm={6} xs={12} md={4} >
                             <a href='/AboutGynecology'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Гинекология
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://clinic.kg/wp-content/uploads/2018/12/ginekologicheskie_operacii.jpg' />
+                                    <Card.Img className=' images_item ' variant="top" src='https://agsmedico.com/img/especialidades/GinecologiayObstetricia.png' />
                                 </div>
                             </a>
                         </Col> <Col sm={6} xs={12} md={4} >
                             <a href='/AboutUrologi'>
-                                <div style={{ marginTop: "10px" }}>
+                                <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Урология
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://www.medicanahealthpoint.com/wp-content/uploads/2020/10/urology-medicana-health-point.jpg' />
+                                    <Card.Img className=' images_item ' variant="top" src='https://st2.depositphotos.com/26044198/47235/v/600/depositphotos_472358090-stock-illustration-urology-and-organ-transplantation-concept.jpg' />
                                 </div>
                             </a>
                         </Col>
@@ -251,9 +293,13 @@ function MainContainers({ setShow }) {
                                 <p> Родился 16.03.1964году в ЖалалАбадской области р Базар-Коргон село Карача. В 1988году закончил КГМА имени Ахунбаева в г Бишкек после прошол ординатуру в г Ош родильном стационаре Ошской териториальной городской больницы. Там же работал с 1989года по 2003год после открыл свою первую частную клинику возле ТГБ№2.</p> 
 
                                 </div>
-                               
-                                    <div className='mt-3'>
-                                        <Button1 setShow={setShow} />
+                                <div className='mt-5'>
+                                    «Мы собираемся сделать это, потому что людям не всё равно. Нам нравится проводить время друг с другом. Если у вас когда-нибудь появится повод поработать с людьми, с которыми вы всегда хотели поработать, воспользуйтесь им».
+                                        <div className='mt-3'>
+                                            <Button1 setShow={setShow} />
+
+                                        </div>
+
                                 </div>
                             </div>
                         </Col>
@@ -313,7 +359,6 @@ function MainContainers({ setShow }) {
                                 data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">01</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Стоматология
                             </p>
-
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
@@ -343,7 +388,7 @@ function MainContainers({ setShow }) {
                             <h3 data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">06  </h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">
-                                Гинекология</p>
+                            Урология</p>
                         </Col>
 
                     </Row>
@@ -390,7 +435,10 @@ function MainContainers({ setShow }) {
 
                 </div>
 
-              
+                <div className='text-center'>
+                    <RunText name={text}/>
+                </div>
+
 
 
             </div>

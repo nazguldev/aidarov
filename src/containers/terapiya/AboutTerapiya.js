@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Row, Col, Carousel } from 'react-bootstrap';
+import { Card, Container, Row, Col, Carousel, Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import './terapiay.scss'
 import '../../app/App.scss'
 import _Navbar from './../../app/nav/_Navbar';
@@ -120,7 +120,40 @@ function AboutTerapiya({ setShow }) {
 
   return (
     <div className='terapiya' style={{ width: "100%" }}>
-      <_Navbar />
+       <Navbar bg="dark" expand="lg" variant='dark'>
+          <Container>
+            <Navbar.Brand href="/"><img width="50px" src={'http://linoko.by/wp-content/uploads/2019/01/logo-1024x576.png'} /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/">О Клинике</Nav.Link>
+                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+                <NavDropdown title="Услуги" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutUrologi">Урология
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutXirurg">Хирургия
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+
+                </NavDropdown>
+              </Nav>
+             <Nav>
+             <NavDropdown title="Контакты" id="basic-nav-dropdown">
+                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                </NavDropdown>
+
+             </Nav>
+             
+            
+            </Navbar.Collapse>
+
+          </Container>
+        </Navbar>
       <div className='terapiya1'>
         <Container>
           <Row>

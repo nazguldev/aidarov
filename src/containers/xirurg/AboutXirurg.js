@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { Card, Col, Row } from 'react-bootstrap'
+import { Card, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 import Button1 from '../../Button1';
 import './xirurg.scss'
 import _Navbar from "../../app/nav/_Navbar"
 import Accordions from '../../components/accrdion/Accordions'
 import AOS from 'aos';
 import Adoctors from './Adoctors';
-import RunText from '../.././components/runText/RunText'
 import Price from './Price';
 
 function AboutXirurg({ setShow }) {
@@ -44,7 +43,40 @@ function AboutXirurg({ setShow }) {
     return (
         <>
             <div className='container aboutXirurg mt-4'>
-                <_Navbar />
+            <Navbar bg="dark" expand="lg" variant='dark'>
+          <Container>
+            <Navbar.Brand href="/"><img width="50px" src={'https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png'} /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/">О Клинике</Nav.Link>
+                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+                <NavDropdown title="Услуги" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutUrologi">Урология
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutXirurg">Хирургия
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+
+                </NavDropdown>
+              </Nav>
+             <Nav>
+             <NavDropdown title="Контакты" id="basic-nav-dropdown">
+                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                </NavDropdown>
+
+             </Nav>
+             
+            
+            </Navbar.Collapse>
+
+          </Container>
+        </Navbar>
                 <Row>
                 <Col sm={6} xs={12} md={6} className=" mb-3">
                         <img className='w-100' src='https://deti-euromed.ru/wp-content/uploads/2022/01/8.png' />
@@ -70,7 +102,6 @@ function AboutXirurg({ setShow }) {
                 </Row>
             </div>
 
-            <RunText />
             <div className='container'>
                 <p className='text_nav mt-5'>
                 В частном МЦ Айдарова К.А у вас есть возможность пройти хирургии внешним путем эндоскопии и лапороскопии где лучшие и опытные специалисты своего дела в первую очередь в 100% случаях решаются провести оргонасохраняющую хирургическую вмешательству
@@ -116,6 +147,7 @@ function AboutXirurg({ setShow }) {
             </div>
             <Adoctors />
             <Price />
+            {/* <RunText /> */}
             <div className='container'>
 
            
