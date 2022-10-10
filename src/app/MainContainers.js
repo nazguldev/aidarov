@@ -12,11 +12,10 @@ import Accordions from '../components/accrdion/Accordions';
 import patient1 from '../containers/dental/Image/patient1.jpg'
 import patient2 from '../containers/dental/Image/patient2.jpg'
 import patient5 from '../containers/dental/Image/patient5.jpg'
-import PriceMain from './PriceMain'
-// import logo from '../app/nav/logo.png'
+import price1 from './PriceMain'
 
 function MainContainers({ setShow }) {
-    const t = PriceMain.price1
+    const t = price1
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -196,7 +195,7 @@ const text =[
 
                     </div>
                 </div>
-                <div className='container'>
+                {/* <div className='container'>
                     <Carousel className='text-center container'>
                         {info.map((e) => {
                             return (
@@ -207,11 +206,10 @@ const text =[
                             )
                         })}
                     </Carousel>
-                </div>
-                <RunText name={text}/>
+                </div> */}
 
                 <div className='container'>
-                    <h1 className='text-center pt-5 pb-5 '>УСЛУГИ  КЛИНИКИ:</h1>
+                    <h1 className='text-center pt-3 pb-3 '>УСЛУГИ  КЛИНИКИ:</h1>
 
                     <Row>
                         <Col sm={6} xs={12} md={4}>
@@ -274,6 +272,28 @@ const text =[
                                 </div>
                             </a>
                         </Col>
+                        <Col>
+                    <Table striped bordered hover variant='dark' >
+                        <thead>
+                            <tr>
+                                <th >№</th>
+                                <th>Прейскурант </th>
+                                <th>Стоимость услуг</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {t.map((b) => {
+                                return (
+                                    <tr>
+                                        <td>{b.id}</td>
+                                        <td>{b.title}</td>
+                                        <td>{b.price}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </Table>
+                </Col>
                     </Row>
                     <Row className="mt-5">
                         <Col xs={12} md={6} lg={6}>
@@ -306,28 +326,7 @@ const text =[
                     </Row>
                 </div>
                 
-                <Col>
-                    <Table striped bordered hover variant='dark' >
-                        <thead>
-                            <tr>
-                                <th >№</th>
-                                <th>Прейскурант </th>
-                                <th>Стоимость услуг</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {/* {t.map((b) => {
-                                return (
-                                    <tr>
-                                        <td>{b.id}</td>
-                                        <td>{b.title}</td>
-                                        <td>{b.price}</td>
-                                    </tr>
-                                )
-                            })} */}
-                        </tbody>
-                    </Table>
-                </Col>
+               
                 <div className='container'>
                     <h1 className='text-center pt-5 pb-5'>Наши Врачи</h1>
                     <Row>

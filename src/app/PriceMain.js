@@ -104,31 +104,8 @@ const price1 =[
             id:"26",
             title:"Лечение за 10 дней услуга",
             price:"6 600 сом"
-        },{
-            id:"",
-            title:"",
-            price:","
-        },{
-            id:"",
-            title:"",
-            price:","
-        },{
-            id:"",
-            title:"",
-            price:","
-        },{
-            id:"",
-            title:"",
-            price:","
-        },{
-            id:"",
-            title:"",
-            price:","
-        },{
-            id:"",
-            title:"",
-            price:","
         }
 
    
 ]
+export default price1
