@@ -189,25 +189,8 @@ const text =[
                             </div>
                         </p>
                         </Col>
-                        
-                     
-
-
                     </div>
                 </div>
-                {/* <div className='container'>
-                    <Carousel className='text-center container'>
-                        {info.map((e) => {
-                            return (
-                                <Carousel.Item>
-                                    <h1>{e.name}</h1>
-                                    <h5 style={{ color: "white" }}>{e.text} </h5>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel>
-                </div> */}
-
                 <div className='container'>
                     <h1 className='text-center pt-3 pb-3 '>УСЛУГИ  КЛИНИКИ:</h1>
 
