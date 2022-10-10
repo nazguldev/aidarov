@@ -393,7 +393,7 @@ const text =[
 
                     </Row>
                     <div className='text-center'>
-                      <RunText />
+                      <RunText name={text}/>
                    </div>
                     <Row className=" justify-content-center mt-5">
                         <Col md={8} xs={10}>
