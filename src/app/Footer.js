@@ -28,8 +28,8 @@ function Footer() {
            
             <div className="col">
               <div className="textinfooter">Адресс</div>
-              <div className="textinfooter2">г. Ош, ст. Фрунзенская,</div>
-              <div className="textinfooter2">Оболенский переулок, д. 9, корп. 8</div>
+              <div className="textinfooter2">г. Ош, ст. Масалиева 73,</div>
+              {/* <div className="textinfooter2">Оболенский переулок, д. 9, корп. 8</div> */}
               <a href={'tel:+996776000000'} className={'p-2 textinfooter2 rounded'}>
                 +996 (776) 000 000
               </a>

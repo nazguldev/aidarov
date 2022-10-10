@@ -3,7 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import RunText from '../../../components/runText/RunText';
 import AOS from 'aos'
 import AutoVideo from '../../../components/Vidoe/AutoVideo';
-import StuffContainer from '../StuffContainer';
+import StuffContainer from './StuffContainer';
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import './Appbar.scss'
 import Button1 from '../../../Button1';
@@ -68,7 +68,7 @@ function Vinery({setShow}) {
             <Row>
 
                 <h1 className='mt-5'>
-                    Получите улыбку как у звёзд благодаря сверхтонким винирам от доктора Айдарова
+                    Получите улыбку как у звёзд благодаря<br/> сверхтонким винирам от доктора<br/> Айдарова
                 </h1>
                 <Col md={6} >
                     <h2 style={{ color: "white", marginTop: "40px" }} >
@@ -85,26 +85,7 @@ function Vinery({setShow}) {
             <RunText name={text}/>
             <div className="container">
 
-                <Row className="mt-5">
-                    <Col sm={6} xs={12} md={6}  >
-                        <div className='justify-content-evenly text-center  ' >
-                            <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
-                            </img>
-                            <Card.Title className='text_nav'>Доктор Айдаров</Card.Title>
-                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
-                        </div>
-                    </Col>
-                    <Col sm={6} xs={12} md={6}  >
-                        <div className='justify-content-evenly text_nav m-3'>
-                            <div >
-                                Звезды и знаменитости, доверяющие нам свои улыбки, люди состоятельные. Но даже они ценят и считают свои деньги. А к нам в клинику приходят за высочайшим качеством в стоматологии по демократичной цене, без необходимости выезжать заграницу.
-                            </div>
-                            <div className='mt-5'>
-                                Поэтому наши двери всегда открыты, и открыты для всех. А высочайшее качество и сервис мы гарантируем каждому, как популярным людям, так и людям не столь публичным.
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
+                
             </div>
             <Row>
                 <Col xs={12} md={6} lg={6} className='mt-5'>
@@ -122,17 +103,7 @@ function Vinery({setShow}) {
             </Row>
 
            
-            <div className="container">
-                <h2 style={{ color: "#d3bb7e", fontSize: "50px", fontFamily: 'GraphikTT Arial sans-serif', }}>
-
-                    Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* руб.
-                </h2>
-
-                <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
-                <Col sm={3}>
-                <Button1 setShow={setShow}/>
-                </Col>
-            </div>
+           
             <div className="container">
                 <h1 style={{ color: "white",  fontFamily: 'GraphikTT Arial sans-serif',marginTop:"50px" }}>
                     Получите пошаговый план к здоровой и красивой улыбке на консультации

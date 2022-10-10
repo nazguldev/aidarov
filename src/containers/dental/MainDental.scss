@@ -15,7 +15,9 @@
         color: #060608;
         background-color: #c2b285;
       }
-      
+      .carousel-indicators{
+        display: none;
+      }
       $accordion-bg: black;
       $accordion-button-active-bg: black;
       $accordion-color: white;

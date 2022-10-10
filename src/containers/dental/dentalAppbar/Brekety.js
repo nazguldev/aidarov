@@ -77,51 +77,32 @@ function Brekety({ setShow }) {
             text: "Твёрдая пища (сухарики, орехи, морковь, мясо) оказывает на дуги дополнительную нагрузку. Поэтому мясо и овощи следует разрезать на мелкие кусочки, а от сухарей и орехов желательно отказаться вовсе."
         },
     ]
-    const text= [
-       { 
-        texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
-        t:'/'
-    },  { 
-        texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
-        t:'/'
-    },  { 
-        texts:'ГАРАНТИЯ 25 ЛЕТ',
-        t:'/'
-    },  { 
-        texts:'ГАРАНТИЯ 25 ЛЕТ',
-        t:'/'
-    },  { 
-        texts:' АВТОРСКИЕ ВИНИРЫ',
-        t:'/'
-    },  { 
-        texts:'ЛЕЧЕНИЕ ВО СНЕ',
-        t:'/'
-    },  { 
-        texts:' БЕЗ БОЛИ',
-        t:'/'
-    }, { 
-        texts:'ТЕСТ ДРАЙВ УЛЫБКИ',
-        t:'/'
-    },  { 
-        texts:'ИСПРАВЛЕНИЕ ПРИКУСА',
-        t:'/'
-    },  { 
-        texts:'ГАРАНТИЯ 25 ЛЕТ',
-        t:'/'
-    },  { 
-        texts:'ГАРАНТИЯ 25 ЛЕТ',
-        t:'/'
-    },  { 
-        texts:' АВТОРСКИЕ ВИНИРЫ',
-        t:'/'
-    },  { 
-        texts:'ЛЕЧЕНИЕ ВО СНЕ',
-        t:'/'
-    },  { 
-        texts:' БЕЗ БОЛИ',
-        t:'/'
-    }, 
-    ]
+    const text = [
+        {
+            texts: 'ТЕСТ ДРАЙВ УЛЫБКИ',
+            t: '/'
+        }, {
+            texts: 'ИСПРАВЛЕНИЕ ПРИКУСА',
+            t: '/'
+        },  {
+            texts: 'ЛЕЧЕНИЕ ВО СНЕ',
+            t: '/'
+        }, {
+            texts: ' БЕЗ БОЛИ',
+            t: '/'
+        }, {
+            texts: 'ТЕСТ ДРАЙВ УЛЫБКИ',
+            t: '/'
+        }, {
+            texts: 'ИСПРАВЛЕНИЕ ПРИКУСА',
+            t: '/'
+        }, {
+            texts: 'ЛЕЧЕНИЕ ВО СНЕ',
+            t: '/'
+        }, {
+            texts: ' БЕЗ БОЛИ',
+            t: '/'
+        },]
     return (
         <>
             <div className="container">
@@ -145,30 +126,9 @@ function Brekety({ setShow }) {
                     </Col>
                 </Row>
             </div>
-            <RunText name={text}/>
+            <RunText name={text} />
             <div className="container">
-                <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                    Звезды и знаменитости, сделавшие<br /> тотальное преображение улыбки<br /> у доктора Айдарова
-                </h1>
-                <Row className='mt-5'>
-                    <h1 className="text-center" style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif' }}>
-                        Наши пациенты
-                    </h1>
-                    {patients.map(e => {
-                        return (
-                            <>
-                                <Col md={4} sm={6} xs={12}>
-                                    <div className='mt-5'>
-                                        <Card.Img src={e.img}></Card.Img>
-                                        <Card.Title className="mt-3" style={{ color: "white", }}>{e.title}</Card.Title>
-                                        <Card.Text className="mt-1" style={{ color: "white", }}>{e.known_for}</Card.Text>
-                                    </div>
-                                </Col>
-                            </>
-                        )
-                    })}
 
-                </Row>
                 <Row className="mt-5">
                     <Col xs={12} md={6} lg={6}>
                         <div data-aos="zoom-in" className='justify-content-evenly text-center' >
@@ -181,10 +141,9 @@ function Brekety({ setShow }) {
                     <Col xs={12} md={6} lg={6}>
                         <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
                             <div >
-                                Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
+                            Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
                                 на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
-                                ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены. А у нас даже зона
-                                ресепшена больше похожа на лобби-бар в отеле, где во время ожидания можно <br />послушать музыку, почитать
+                                ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены.  где во время ожидания можно <br />послушать музыку, почитать
                                 что-нибудь интересное или выпить чашечку кофе.
                             </div>
                             <div className='mt-5'>
@@ -193,29 +152,8 @@ function Brekety({ setShow }) {
                         </div>
                     </Col>
                 </Row>
-                <Row className="mt-5">
-                    <Col className='mt-5'>
-                        <Card.Img className="h-100 w-100" src='https://thumb.tildacdn.com/tild6663-6334-4062-b764-356234363039/-/format/webp/diagnostika-min.jpg'>
-                        </Card.Img>
-                    </Col>
-                    <Col md={6} >
-                        <Card.Text style={{ color: "#d3bb7e", fontSize: "30px", marginTop: "50px" }}>
-                            Любое правильное ортодонтическое лечение (исправление прикуса, имплантация зубов или виниры) начинается с полной диагностики текущего состояния пациента, — чекапа.
-                        </Card.Text>
-                        <Card.Text style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "5px" }}>
-                            В нашей клинике чекап не растягивается на несколько приемов, его можно пройти всего за 40-60 минут
-                        </Card.Text>
-                    </Col>
-                </Row>
-                <div className="container">
-                    <h1 className="mt-3" style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                        Запишитесь на бесплатный чекап полости рта.<br /> Экономия 25 тысяч* .
-                    </h1>
-                    <Col sm={3}>
-                        <Button1 setShow={setShow} />
-                    </Col>
-                    <p style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', }}>* эта сумма будет зачислена вам на баланс для последующего лечения</p>
-                </div>
+
+
             </div>
             <div className="container">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
@@ -330,34 +268,16 @@ function Brekety({ setShow }) {
                             fontSize: "15px"
                         }}>120 000 сом.</span>
                             (на одну челюсть)</p>
+                        <p style={{ color: "#d3bb7e" }} className="text-center p-2 m-2">
+                            ЦЕНЫ БУДУТЬ ЗАВИСЯТЬ ОТ СЛОЖНОСТИ ЗУБОВ И ОТ ВЫБОРА МАТЕРИАЛА БРЕКЕТОВ!</p>
                     </Col>
+                    
                 </Row>
 
             </div>
             <div className="container">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>Частые вопросы</h1>
                 <Accordions name={a} />
-
-
-                <Row>
-
-                    <Col sm={6} xs={12} md={6}>
-                        <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>Получите пошаговый план к здоровой <br />и красивой улыбке на консультации</h1>
-                        <h3 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                            Получите пошаговый план к здоровой и красивой улыбке на консультацииВ стоматологической клинике «Лаборатории улыбок Dr. Elmar» проводится первичная консультация для оценки состояния зубов и дёсен с помощью сверхточного рентгеновского аппарата Sirona Orthophos XG, который обеспечивает высокое качество снимков при минимальной дозе облучения.
-                        </h3>
-                        <Card.Text style={{ color: "white", fontSize: "20px", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "5px" }}>
-                            С его помощью изготавливаются 2D-, 3D- и ОПТГ- (панорамные) снимки, наличие которых обязательно для постановки правильного диагноза и выбора метода лечения.
-                        </Card.Text>
-                        <Col sm={6}>
-                            <Button1 setShow={setShow} />
-                        </Col>
-                    </Col>
-                    <Col sm={6} xs={12} md={4} className='mt-5'>
-                        <Card.Img  src='https://static.tildacdn.com/tild3765-3739-4430-a535-323165376139/IMG_3201.JPG'>
-                        </Card.Img>
-                    </Col>
-                </Row>
             </div>
         </>
     );
