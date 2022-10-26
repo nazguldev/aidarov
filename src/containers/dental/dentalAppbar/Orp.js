@@ -43,33 +43,11 @@ function Orp({setShow}) {
             <DentalNavbar />
             <h1 className=''>Ортопедия
             </h1>
-            <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br/>отсутствия зубов можно <br/>восстанавить с не съемный<br/> мостовидными конструкциями<br/> или съемными.</h2>
+            <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br/>отсутствия зубов можно <br/>восстанавить с несъемный<br/> мостовидными конструкциями<br/> или съемными.</h2>
             <Col sm={6}>
                 <Button1 setShow={setShow} />
             </Col>
-            <Row className="mt-5">
-                    <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in" className='justify-content-evenly text-center' >
-                            <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
-                            </img>
-                            <Card.Title className='text_nav'>Доктор Бекмамат</Card.Title>
-                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач клиники, <br />стоматолог-ортопед</span>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
-                            <div >
-                                Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
-                                на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
-                                ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены.  где во время ожидания можно <br />послушать музыку, почитать
-                                что-нибудь интересное или выпить чашечку кофе.
-                            </div>
-                            <div className='mt-5'>
-                                Все пациенты — наши друзья! Те, кто приходит сюда впервые, знакомятся с нами и, пройдя вместе путь <br />от стоматологического кресла до красивой улыбки и здоровых зубов, остаются с нашей командой в прекрасных отношениях.
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
+           
             <h1 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}> Ортопедический услуги</h1>
             <h2 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "30px" }}>
                 Выбор способа зависит от клинической ситуации пациента
@@ -167,6 +145,26 @@ function Orp({setShow}) {
                     </div>
                 </Col>
             </div>
+            <Row className="mt-5">
+                    <Col xs={12} md={6} lg={6}>
+                        <div data-aos="zoom-in" className='justify-content-evenly text-center' >
+                            <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
+                            </img>
+                            <Card.Title className='text_nav'>Доктор Бекмамат</Card.Title>
+                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель <br/>врач стоматолог общей <br/>практики и имплантолог</span>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} lg={6}>
+                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
+                            <div >
+                                Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
+                                на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
+                                ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены.  где во время ожидания можно <br />послушать музыку, почитать
+                                что-нибудь интересное или выпить чашечку кофе.
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
             <RunText name={text} />
 
         </div>

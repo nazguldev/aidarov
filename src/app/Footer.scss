@@ -19,3 +19,24 @@
     line-height: 1.55;
     font-weight: 400;
   }
+  .div__a {
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-radius: 50px;
+    background-position: center;
+    position: center;
+    border-color: #d3bb7e;
+    border-style: solid;
+    display: flex;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+}
+a{
+  text-decoration: none;
+}

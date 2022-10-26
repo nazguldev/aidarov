@@ -23,6 +23,8 @@ function _Navbar(props) {
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/AboutTerapiya">Терапия</NavDropdown.Item>
                   <NavDropdown.Item href="/AboutLaboratory">Лаборатория</NavDropdown.Item>
+                  <NavDropdown.Item href="/AboutLor">Лор</NavDropdown.Item>
+                  <NavDropdown.Item href="/Okilist">Окулист </NavDropdown.Item>
 
                 </NavDropdown>
               </Nav>

@@ -30,10 +30,10 @@ function Footer() {
               <div className="textinfooter">Адресс</div>
               <div className="textinfooter2">г. Ош, ст. Масалиева 73,</div>
               {/* <div className="textinfooter2">Оболенский переулок, д. 9, корп. 8</div> */}
-              <a href={'tel:+996776000000'} className={'p-2 textinfooter2 rounded'}>
+              <a  href={'tel:+996776000000'} className={'p-2 textinfooter2 rounded'}>
                 +996 (776) 000 000
               </a>
-              <div className="div_a"><p> Записаться на прием</p></div>
+              <div className="div__a"><a href={'tel:+996776000000'} style={{textDecoration:"none"}} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a></div>
             </div>
             <div className="col">
               <div className="textinfooter">Услуги</div>

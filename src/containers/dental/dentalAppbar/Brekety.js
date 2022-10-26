@@ -129,7 +129,7 @@ function Brekety({ setShow }) {
             <RunText name={text} />
             <div className="container">
 
-                <Row className="mt-5">
+                {/* <Row className="mt-5">
                     <Col xs={12} md={6} lg={6}>
                         <div data-aos="zoom-in" className='justify-content-evenly text-center' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
@@ -151,7 +151,7 @@ function Brekety({ setShow }) {
                             </div>
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
 
 
             </div>
@@ -169,7 +169,7 @@ function Brekety({ setShow }) {
                             Несъёмная конструкция  зубной ряд
                         </h2>
                         <span style={{ color: "white", fontSize: "25px" }}>
-                            , которая фиксируется на наружную или внутреннюю поверхность зубов и  плавно выравнивает
+                             которая фиксируется на наружную или внутреннюю поверхность зубов и  плавно выравнивает
                         </span>
                         <span style={{ color: "#d3bb7e", fontSize: "25px", padding: "3px" }}>
                             зубной ряд
@@ -242,12 +242,9 @@ function Brekety({ setShow }) {
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">01. Чек-ап</h3>
-                        <span style={{ color: "white", fontSize: "1rem" }}>-полный осмотр и диагностика;</span><br />
-                        <span style={{ color: "white", fontSize: "1rem" }}>-создание цифровых слепков нижней<br /> и верхней челюстей;</span><br />
-                        <span style={{ color: "white", fontSize: "1rem" }}>-3D-моделирование зубов;</span><br />
-                        <span style={{ color: "white", fontSize: "1rem" }}> -консультация врача;</span><br />
-                        <span style={{ color: "white", fontSize: "1rem" }}>-консилиум врачей с опытом<br /> работы более 15 лет;</span><br />
-                    </Col>
+                            <p style={{ color: "white" }} className="text-center p-2 m-2">-полный осмотр и диагностика;<br /> -создание цифровых слепков нижней<br /> при необходимости.<br /> и верхней челюстей;<br/>-3D-моделирование зубов;<br/>-консультация врача;<br/>-консилиум врачей с опытом<br /> работы более 15 лет;</p>
+
+                        </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">02. Лечение</h3>

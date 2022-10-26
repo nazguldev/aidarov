@@ -82,14 +82,13 @@ function Otbali({ setShow }) {
                 <DentalNavbar />
                 <Row>
                     <Col xs={12} md={6}>
-                        <h1 className='text-center mt-3' >Отбеливания</h1>
-                        <h4 className='text-center mt-3' style={{ color: "#d3bb7e", }}>
-                            <i className='mt-3'> Белоснежная улыбка без вреда для зубов!</i>
+                        <h1 className='' >Отбеливания</h1>
+                        <h4 className='' style={{ color: "#d3bb7e", }}>Белоснежная улыбка без вреда для зубов!
                         </h4>
                         <h3 className='mt-3' style={{ color: "white" }}>Метод 3-х этапного отбаливание:</h3>
-                        <h4 className=' mt-3' style={{ color: "white" }}>1.Ультра звуковая щетка    500с</h4>
-                        <h4 className=' mt-3' style={{ color: "white" }}>2.Полировка с пастой   500с</h4>
-                        <h4 className=' mt-3' style={{ color: "white" }}>3.Air Flow    500с</h4>
+                        <h4 className=' mt-3' style={{ color: "white" }}>1.Ультра звуковая 500с</h4>
+                        <h4 className=' mt-3' style={{ color: "white" }}>2.Полировка с пастой 500с</h4>
+                        <h4 className=' mt-3' style={{ color: "white" }}>3.Air Flow   500с</h4>
 
                         <div className="text-center"> <Button1 setShow={setShow} />
                         </div>                    </Col>
@@ -99,8 +98,41 @@ function Otbali({ setShow }) {
                 <RunText name={text} />
             </div>
             <div className="container">
+            <h3 style={{ color: "white", marginTop: "20px" }}>
+                    Какую систему отбеливания выбрать?
+                </h3>
+                <Accordions name={datas} />
+                <h3 style={{ color: "#d3bb7e", marginBottom: "20px" }}>
+                    5 шагов до улыбки мечты
+                </h3>
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th style={{ color: 'white', textAlign: "center" }}>01</th>
+                            <th style={{ color: 'white', textAlign: "center" }}>В запись на консультацию.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                <Row className="mt-5">
+                        <tr>
+                            <th style={{ color: 'white', textAlign: "center" }}>02</th>
+                            <th style={{ color: 'white', textAlign: "center" }}>Первичная консультация у врача-специалиста для оценки состояния зубов и дёсен.</th>
+                        </tr>
+                        <tr>
+                            <th style={{ color: 'white', textAlign: "center" }}>03</th>
+                            <th style={{ color: 'white', textAlign: "center" }}>Проведение профессиональной гигиены полости рта для устранения налёта, чтобы ничего не помешало качественному отбеливанию.</th>
+                        </tr>
+                        <tr>
+                            <th style={{ color: 'white', textAlign: "center" }}>04</th>
+                            <th style={{ color: 'white', textAlign: "center" }}>Отбеливание.</th>
+                        </tr>
+                        <tr>
+                            <th style={{ color: 'white', textAlign: "center" }}>05</th>
+                            <th style={{ color: 'white', textAlign: "center" }}>Белоснежная улыбка.</th>
+                        </tr>
+                    </tbody>
+                </Table>
+                {/* <Row className="mt-5">
                     <Col xs={12} md={6} lg={6}>
                         <div data-aos="zoom-in" className='justify-content-evenly text-center' >
                             <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
@@ -122,7 +154,7 @@ function Otbali({ setShow }) {
                             </div>
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
 
             </div>
 
@@ -147,41 +179,8 @@ function Otbali({ setShow }) {
                         </img>
                     </Col>
                 </Row>
-                <h3 style={{ color: "white", marginTop: "20px" }}>
-                    Какую систему отбеливания выбрать?
-                </h3>
-                <Accordions name={datas} />
-                <h3 style={{ color: "#d3bb7e", marginBottom: "20px" }}>
-                    5 шагов до улыбки мечты
-                </h3>
-                <Table striped bordered hover>
-                    <thead>
-                        <tr>
-                            <th style={{ color: 'white', textAlign: "center" }}>01</th>
-                            <th style={{ color: 'white', textAlign: "center" }}>ВЗапись на консультацию.</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <th style={{ color: 'white', textAlign: "center" }}>02</th>
-                            <th style={{ color: 'white', textAlign: "center" }}>Первичная консультация у врача-специалиста для оценки состояния зубов и дёсен.</th>
-                        </tr>
-                        <tr>
-                            <th style={{ color: 'white', textAlign: "center" }}>03</th>
-                            <th style={{ color: 'white', textAlign: "center" }}>Проведение профессиональной гигиены полости рта для устранения налёта, чтобы ничего не помешало качественному отбеливанию.</th>
-                        </tr>
-                        <tr>
-                            <th style={{ color: 'white', textAlign: "center" }}>04</th>
-                            <th style={{ color: 'white', textAlign: "center" }}>Отбеливание.</th>
-                        </tr>
-                        <tr>
-                            <th style={{ color: 'white', textAlign: "center" }}>05</th>
-                            <th style={{ color: 'white', textAlign: "center" }}>Белоснежная улыбка.</th>
-                        </tr>
-                    </tbody>
-                </Table>
-                <h3 style={{ color: "white", marginTop: "20px" }}>Отбеливание с пастой имеются 5 тонов 12150сом (150$)</h3>
+                
+                <h3 style={{ color: "white", marginTop: "20px" }}>Отбеливание с пастой имеются 5 тонов 150$ ( 12150 сом)</h3>
             </div>
             <RunText name={text} />
         </>

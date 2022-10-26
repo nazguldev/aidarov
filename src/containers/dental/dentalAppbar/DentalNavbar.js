@@ -12,7 +12,9 @@ function DentalNavbar(props) {
           <Navbar.Brand href="/"><img width="50px" src={logo} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+            
             <Nav className="me-auto">
+            <Nav.Link href="/aboutDental"> О  стоматологии</Nav.Link>
               <Nav.Link href="/Iplant">Имплантация</Nav.Link>
               <Nav.Link href="/Orp">Ортопедия</Nav.Link>
               <Nav.Link href="/Vinery">Виниры</Nav.Link>
@@ -28,7 +30,7 @@ function DentalNavbar(props) {
                     textDecoration: "none",
                     color: "white"
                   }}
-                  href='tel:+996709545487'>0709545487</a>
+                  href='tel:+996776245758'>0776245758</a>
               </h3>
             </div>
           </Navbar.Collapse>

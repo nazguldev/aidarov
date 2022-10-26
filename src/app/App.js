@@ -22,6 +22,8 @@ import MainDental from '../containers/dental/MainDental'
 import AboutLaboratory from '../containers/laboratory/AboutLaboratory';
 import AboutGynecology from '../containers/gynecology/AboutGynecology';
 import AboutUrologi from '../containers/urology/AboutUrologi';
+import AboutLor from '../containers/lor.js/AboutLor'
+import Okilist from '../containers/Okilist/Okilist';
 
 function App(props) {
   const [show, setShow] = useState(false)
@@ -32,7 +34,7 @@ function App(props) {
         <Route path={'/'} element={<MainContainers setShow={setShow}/>}  />
         <Route path={'/AboutClinic'} element={<AboutClinic/>}/>
         <Route path={'/aboutDental'} element={<MainDental setShow={setShow}/>}/>
-        <Route path={'Terapii'} element={<Terapii/>} />
+        <Route path={'Terapii'} element={<Terapii setShow={setShow}/>} />
         <Route path={"/Vinery"} element={<Vinery setShow={setShow}/>} />
         <Route path={'/Brekety'} element={<Brekety setShow={setShow} />} />
         <Route path={'/whiting'} element={<Otbali setShow={setShow}/>} />
@@ -40,7 +42,7 @@ function App(props) {
         <Route path={'/AboutXirurg'} element={<AboutXirurg setShow={setShow}/>}/>
         <Route path={'/Adoctors'} element={<Adoctors setShow={setShow}/>}/>
         <Route path={'/Price'} element={<Price/>}/>
-        <Route path={'/Orp'} element={<Orp/>}/>
+        <Route path={'/Orp'} element={<Orp setShow={setShow}/>}/>
         <Route path={'/AboutTerapiya'} element={<AboutTerapiya setShow={setShow}/>}/>
         <Route path={'/AdoctorsTerapiya'} element={<AdoctorsTerapiya setShow={setShow}/>}/>
         <Route path={'/PriceTerapiya'} element={<PriceTerapiya setShow={setShow}/>}/>
@@ -48,6 +50,8 @@ function App(props) {
         <Route path={'/AboutGynecology'} element={<AboutGynecology setShow={setShow}/>}/>
         <Route path={'/stuff'} element={<StuffContainer setShow={setShow}/>}/>
         <Route path={'/AboutUrologi'} element={<AboutUrologi setShow={setShow}/>}/>
+        <Route path={'/Okilist'} element={<Okilist setShow={setShow}/>}/>
+        <Route path={'/AboutLor'} element={<AboutLor setShow={setShow}/>}/>
 
       </Routes>
       
