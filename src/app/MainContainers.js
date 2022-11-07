@@ -183,9 +183,8 @@ function MainContainers({ setShow }) {
                                 Кардиология,
                                 Стоматология,
                                 Неврология
-                                <div className="pb-3 pt-3">
-                                    <Button1 setShow={setShow} />
-
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
                                 </div>
                             </p>
                         </Col>
@@ -311,13 +310,13 @@ function MainContainers({ setShow }) {
                                 <div >
                                     <p> Оснаватель  ОсОО Медицинского центра Айдарова Камалдина  заслуженный врач акушер-гинеколог и директор МЦ Айдаров Камалдин Абдурахманович.</p>
                                     <p>Родился 16.03.1964году в ЖалалАбадской области р Базар-Коргон село Карача. В 1988году закончил КГМА имени Ахунбаева в г Бишкек после прошол ординатуру в г Ош родильном стационаре Ошской териториальной городской больницы. Там же работал с 1989года по 2003год после открыл свою первую частную клинику возле ТГБ№2.</p>
-                                   
+
 
                                 </div>
-                                
-                                    <div className='mt-3'>
-                                        <Button1 setShow={setShow} />
-                                    </div>
+
+                                <div className='mt-3'>
+                                    <Button1 setShow={setShow} />
+                                </div>
                             </div>
                         </Col>
                     </Row>

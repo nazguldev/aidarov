@@ -76,7 +76,10 @@ function Okilist({ setShow }) {
 
                     </p>
                     <Col className='mt-3' sm={6}>
-                        <Button1 setShow={setShow} />
+                        {/* <Button1 setShow={setShow} /> */}
+                        <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                     </Col>
                 </Col>
             </Row>

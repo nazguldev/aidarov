@@ -26,6 +26,15 @@ function CollSenter(props) {
 
 
   return (
+  //   <div className="col">
+  //   <div className="textinfooter">Услуги</div>
+  //   <div className="textinfooter2">г. Ош, ст. Фрунзенская,</div>
+  //   <div className="textinfooter2">Оболенский переулок, д. 9, корп. 8</div>
+  //   <a href={'tel:+996776000000'} className={'p-2 textinfooter2 rounded'}>
+  //     +996 (776) 000 000
+  //   </a>
+  //   <div className="div_a"><p> Записаться на прием</p></div>
+  // </div>
     <div>
       <Modal show={props.show}
         onHide={handleClose}

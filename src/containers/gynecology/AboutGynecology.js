@@ -185,7 +185,10 @@ function AboutGynecology({ setShow }) {
                             </p>
 
                             <p className='mt-5'>
-                                <Button1 setShow={setShow} />
+                                {/* <Button1 setShow={setShow} /> */}
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                             </p>
                         </Col>
                         <Col md={6} xs={8} sm={10}>
@@ -212,7 +215,10 @@ function AboutGynecology({ setShow }) {
                                 </div>
 
                                 <div className='mt-3'>
-                                    <Button1 setShow={setShow} />
+                                    {/* <Button1 setShow={setShow} /> */}
+                                    <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
 
                                 </div>
                             </div>
@@ -264,7 +270,10 @@ function AboutGynecology({ setShow }) {
                                 Айдарова Маргарита Камалдиновна в 2012году окончила ОшГУ медицинский факультет лечебное дело. С 2012 по 2013год проходила интернатуру в Ошмкой городской териториальной больнице родильном стационаре. В 2014году  устроилась ассистеном кафедры «Акушерства и гинекологии» ЮФКГМИПиПК имени С.Б.Даниярова. где работаю по совместительству по сей день.  В 2015 году устроилась ночным дежурным врачом акушер-гинекологом в родильный стационар при ТГБ. С 2013года работаю на основной ставке в частном медицинском центре ОсОО Айдарова Камалдина Абдурахмановича, на должности врача акушер-гинеколога и врача ультразвуковой диагностики  </div>
 
                             <div className='mt-3'>
-                                <Button1 setShow={setShow} />
+                                {/* <Button1 setShow={setShow} /> */}
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
 
                             </div>
                         </div>

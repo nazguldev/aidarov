@@ -59,7 +59,9 @@ function Vinery({setShow}) {
                         С помощью передовых методик создаём белоснежную улыбку, которой хочется делиться с окружающими
                     </h2>
                     <Col sm={6}>
-                   <Button1 setShow={setShow}/>
+                    <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                     </Col>
                 </Col>
                 
@@ -97,7 +99,10 @@ function Vinery({setShow}) {
                     С его помощью изготавливаются 2D-, 3D- и ОПТГ- (панорамные) снимки, наличие которых обязательно для постановки правильного диагноза и выбора метода лечения.
                     </Card.Title>
                     <Col sm={6} className="mt-4">
-                  <Button1 setShow={setShow}/>  
+                  {/* <Button1 setShow={setShow}/>   */}
+                  <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                     </Col>
                 </Col> 
               
