@@ -45,7 +45,9 @@ function Orp({setShow}) {
             </h1>
             <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br/>отсутствия зубов можно <br/>восстанавить с несъемный<br/> мостовидными конструкциями<br/> или съемными.</h2>
             <Col sm={6}>
-                <Button1 setShow={setShow} />
+            <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
             </Col>
            
             <h1 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}> Ортопедический услуги</h1>
@@ -132,13 +134,7 @@ function Orp({setShow}) {
                                             <td style={{ textAlign: "center" }}>Пластмасса</td>
                                             <td style={{ textAlign: "center" }}>1000 сом</td>
                                         </tr>
-                                        {/* <tr>
-                                            <td style={{textAlign: "center" }}>04</td>
-                                            <td style={{textAlign: "center" }}>Бюгельный</td>
-                                            <td style={{textAlign: "center" }}>15000 сом</td>
-                                        </tr> */}
-
-                                    </tbody>
+                                       </tbody>
                                 </Table>
                             </h3>
                         </Card.Body>

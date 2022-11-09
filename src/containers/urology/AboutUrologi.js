@@ -182,7 +182,10 @@ function AboutUrologi({ setShow }) {
                         <p className="text2 mt-3">Урология является не только терапевтической, но и хирургической специальностью. Поэтому врачи обеспечивают и проведение оперативных вмешательств, которые могут быть направлены как на устранение различных патологий, так и врожденных и приобретенных эстетических дефектов.</p>
 
                         <p className='mt-5'>
-                            <Button1 setShow={setShow} />
+                            {/* <Button1 setShow={setShow} /> */}
+                            <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                         </p>
                     </Col>
                     <Col md={6} xs={8} sm={10}>
@@ -207,7 +210,10 @@ function AboutUrologi({ setShow }) {
                             </div>
 
                             <div className='mt-3'>
-                                <Button1 setShow={setShow} />
+                                {/* <Button1 setShow={setShow} /> */}
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
 
                             </div>
                         </div>

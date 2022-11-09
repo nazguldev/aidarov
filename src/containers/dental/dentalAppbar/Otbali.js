@@ -56,7 +56,7 @@ function Otbali({ setShow }) {
         }, {
             texts: 'ИСПРАВЛЕНИЕ ПРИКУСА',
             t: '/'
-        },  {
+        }, {
             texts: 'ЛЕЧЕНИЕ ВО СНЕ',
             t: '/'
         }, {
@@ -90,15 +90,18 @@ function Otbali({ setShow }) {
                         <h4 className=' mt-3' style={{ color: "white" }}>2.Полировка с пастой 500с</h4>
                         <h4 className=' mt-3' style={{ color: "white" }}>3.Air Flow   500с</h4>
 
-                        <div className="text-center"> <Button1 setShow={setShow} />
-                        </div>                    </Col>
+                        <div className="text-center"><div className="pb-3 pt-3 mt-2 div__a">
+                            <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                        </div>
+                        </div>
+                    </Col>
                 </Row>
             </div>
             <div className="mt-5">
                 <RunText name={text} />
             </div>
             <div className="container">
-            <h3 style={{ color: "white", marginTop: "20px" }}>
+                <h3 style={{ color: "white", marginTop: "20px" }}>
                     Какую систему отбеливания выбрать?
                 </h3>
                 <Accordions name={datas} />
@@ -161,10 +164,10 @@ function Otbali({ setShow }) {
 
             <div className="container text-center">
                 <Row> <h1 style={{ color: "#d3bb7e", }}>
-                            Виды <br />отбеливания
-                        </h1>
+                    Виды <br />отбеливания
+                </h1>
                     <Col xs={12} md={4}>
-                       
+
                         <img class=" t013__img t-img" src={''} >
                         </img>
 
@@ -179,7 +182,7 @@ function Otbali({ setShow }) {
                         </img>
                     </Col>
                 </Row>
-                
+
                 <h3 style={{ color: "white", marginTop: "20px" }}>Отбеливание с пастой имеются 5 тонов 150$ ( 12150 сом)</h3>
             </div>
             <RunText name={text} />

@@ -118,7 +118,9 @@ function Brekety({ setShow }) {
                             Исправление прикуса с помощью несъёмных<br /> ортодонтических конструкций. Эффективный<br /> способ борьбы с проблемой искривлённых<br /> зубов и неправильного прикуса.
                         </h5>
                         <Col sm={6} className="mt-2">
-                            <Button1 className="mt-2" setShow={setShow} />
+                        <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                         </Col>
                     </Col>
                     <Col xs={12} md={6}>

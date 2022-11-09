@@ -74,7 +74,10 @@ function Terapii({ setShow }) {
                             <p className='text_nav  h5 mt-3'>Терапевтическая стоматология – раздел медицины, занимающийся диагностикой и лечением болезней зубов, околозубных тканей и слизистой оболочки полости рта. Здоровые зубы – неотъемлемый атрибут успешного современного человека.</p>
                             <p className='text_nav  h5 mt-3'> Будущее вашего зуба, будет зависить от эндодонтического лечение!</p>
                             <Col className='mt-3' sm={6}>
-                                <Button1 setShow={setShow} />
+                                {/* <Button1 setShow={setShow} /> */}
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
                             </Col>
                         </Col>
                     </Row>

@@ -26,7 +26,7 @@ import aidarovs from '../../img.aidarov/aidarovs.jpg'
 
 function MainContainers({ setShow }) {
 
-  
+
 
   const accordion = [
 
@@ -173,56 +173,56 @@ function MainContainers({ setShow }) {
       t: '/'
     },
   ]
-  const p =[
+  const p = [
     {
-      id:1,
-      title:"Консультация",
-      price:"150 "
+      id: 1,
+      title: "Консультация",
+      price: "150 "
     },
     {
-      id:2,
-      title:"Консультация главного врача",
-      price:"300"
+      id: 2,
+      title: "Консультация главного врача",
+      price: "300"
     }, {
-      id:3,
-      title:"Консультация главного врача с составлением плана лечения (слепки, модели, фото)",
-      price:"1000"
-      
+      id: 3,
+      title: "Консультация главного врача с составлением плана лечения (слепки, модели, фото)",
+      price: "1000"
+
     }, {
-      id:4,
-      title:"Вторичный приём (за каждый визит)",
-      price:"50"
-     
+      id: 4,
+      title: "Вторичный приём (за каждый визит)",
+      price: "50"
+
     }, {
-      id:5,
-      title:"Отбеливание после эндолечения (1 посещ)",
-      price:"500"
+      id: 5,
+      title: "Отбеливание после эндолечения (1 посещ)",
+      price: "500"
     }, {
-      id:6,
-      title:"Установка украшений на зубы (скайсы)",
-      price:"500"
+      id: 6,
+      title: "Установка украшений на зубы (скайсы)",
+      price: "500"
     }, {
-      id:7,
-      title:"Домашнее отбеливание Opalescencе",
-      price:"4000"
+      id: 7,
+      title: "Домашнее отбеливание Opalescencе",
+      price: "4000"
     },
     {
-      id:8,
-      title:"Анестезия",
-      price:"150"
+      id: 8,
+      title: "Анестезия",
+      price: "150"
     }, {
-      id:9,
-      title:"Периапикальный рентген снимок",
-      price:"100"
-    
-     
+      id: 9,
+      title: "Периапикальный рентген снимок",
+      price: "100"
+
+
     },
     {
-      id:10,
-      title:"Наложение раббердама, одноразового ретрактора",
-      price:"200"
+      id: 10,
+      title: "Наложение раббердама, одноразового ретрактора",
+      price: "200"
     },
-    
+
   ]
 
   return (
@@ -243,7 +243,11 @@ function MainContainers({ setShow }) {
 
               </h2>
               <div className="text-center pb-2">
-                <Button1 setShow={setShow} /></div>
+                {/* <Button1 setShow={setShow} /> */}
+                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                  <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                </div>
+              </div>
             </Col>
             <Col sm={6} xs={12} md={6}>
               <Card sm={6} xs={12} md={6} style={{ backgroundColor: 'black', }} className="mt-2"   >
@@ -289,8 +293,10 @@ function MainContainers({ setShow }) {
                 Добро пожаловать в клинику «Dr. Aidarov»!
               </h5>
               <div style={{ display: 'flex', justifyContent: 'between', color: 'black', marginTop: '50px' }}>
-                <Button1 setShow={setShow} />
-
+                {/* <Button1 setShow={setShow} /> */}
+                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                  <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                </div>
 
               </div>
             </Col>
@@ -356,27 +362,27 @@ function MainContainers({ setShow }) {
             </Col>
           </Row>
           <div>
-          <h1 className='mt-5 text-center'>Цены</h1>
-          <Table striped bordered hover variant='dark' >
-                            <thead>
-                                <tr>
-                                    <th >№</th>
-                                    <th>Прейскурант </th>
-                                    <th>Стоимость услуг</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {p.map((b) => {
-                                    return (
-                                        <tr>
-                                            <td>{b.id}</td>
-                                            <td>{b.title}</td>
-                                            <td>{b.price}</td>
-                                        </tr>
-                                    )
-                                })}
-                            </tbody>
-                        </Table>
+            <h1 className='mt-5 text-center'>Цены</h1>
+            <Table striped bordered hover variant='dark' >
+              <thead>
+                <tr>
+                  <th >№</th>
+                  <th>Прейскурант </th>
+                  <th>Стоимость услуг</th>
+                </tr>
+              </thead>
+              <tbody>
+                {p.map((b) => {
+                  return (
+                    <tr>
+                      <td>{b.id}</td>
+                      <td>{b.title}</td>
+                      <td>{b.price}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </Table>
           </div>
 
           <h1 className='mt-5 text-center'>

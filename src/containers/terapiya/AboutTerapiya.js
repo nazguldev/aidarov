@@ -173,15 +173,13 @@ function AboutTerapiya({ setShow }) {
               <hr className='mb-5 mt-5' />
 
               <p className='mt-5'>
-                <Button1 setShow={setShow} />
+                {/* <Button1 setShow={setShow} /> */}
+                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                </div>
               </p>
             </Col>
-
-
           </Row>
-
-
-
         </Container>
       </div>
       <div className=' terapiya5'>
