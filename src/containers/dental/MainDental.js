@@ -245,13 +245,13 @@ function MainContainers({ setShow }) {
               <div className="text-center pb-2">
                 {/* <Button1 setShow={setShow} /> */}
                 <div className="pb-3 pt-3 mt-2 mb-3 div__a">
-                  <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                  <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}> Записаться на прием</a>
                 </div>
               </div>
             </Col>
             <Col sm={6} xs={12} md={6}>
               <Card sm={6} xs={12} md={6} style={{ backgroundColor: 'black', }} className="mt-2"   >
-                <img src={aidarovs} />
+                <img  src={aidarovs} />
 
               </Card>
             </Col>
