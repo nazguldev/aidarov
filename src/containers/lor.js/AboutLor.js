@@ -200,6 +200,87 @@ function AboutLor({ setShow }) {
                 </Row>
                 <h1 className='mt-3'>С какими симптомами следует<br /> обращаться к лору?</h1>
                 <Accordions name={data} />
+                <h1 className='text-center'>СХЕМА ЭФФЕКТИВНОГО ЛЕЧЕНИЯ</h1>
+                <div style={{
+                    width: 'auto',
+                    // textAlign: "center",
+                    border: '2px solid #d3bb7e',
+                    padding: "15px"
+                }}>
+                    <Row>
+                        <Col xs={12} md={6} lg={6}>
+
+                            <h3 className='justify-content-evenly text-center text2 mt-3' >
+                                ШАГ 1 первечный прием
+                            </h3>
+                            <p className='text2 text-center mt-3'>При первом посещении врач проктолог «Клиника Айдаров» проводит комплексное обследование пациента.  Длительность первичного приема 30 минут. Выбор методов лечения проктологических заболеваний основан на данных высокоточной диагностики, которая включает ряд процедур для оценки состояния и функций органов  и систем организма.</p>
+                        </Col>
+                        <Col xs={12} md={6} lg={6}>
+                            <h3 className='justify-content-evenly text-center text2 mt-3' >
+                                МЕТОДЫ ДИАГНОСТИКИ:
+                            </h3>
+                            <ol className='mt-3' style={{ color: "white" }}>
+                                <li>сбор анамнеза</li>
+                                <li>осмотр пациента</li>
+                                <li>эндоскопическое обследование уха, горла, носа</li>
+                                <li>сдача анализов крови</li>
+                            </ol>
+                        </Col>
+                    </Row>
+                </div>
+                <div style={{
+                    width: 'auto',
+                    // textAlign: "center",
+                    border: '2px solid #d3bb7e',
+                    padding: "15px",
+                    marginTop:"15px"
+                    
+                }}>
+                <Row>
+                    <Col xs={12} md={6} lg={6}>
+                        <h3 className='justify-content-evenly text-center text2 mt-3' >
+                            ШАГ 2 лечение
+                        </h3>
+                        <p className='text2 text-center mt-3'>Лечение в нашей клинике проводится не только традиционными, но и инновационными методами, которые доказали свою эффективность.</p>
+                    </Col>
+                    <Col xs={12} md={6} lg={6}>
+                        <h3 className='justify-content-evenly text-center text2 mt-3' >
+                            МЕТОДЫ ЛЕЧЕНИЯ:
+                        </h3>
+                        <ol className='mt-3' style={{ color: "white" }}>
+                            <li>медикаментозная терапия</li>
+                            <li>ингаляции</li>
+                            <li>соляная комната</li>
+                            <li>лечебный плазмаферез</li>
+                        </ol>
+                    </Col>
+                </Row>
+                </div>
+                <div style={{
+                    width: 'auto',
+                    // textAlign: "center",
+                    border: '2px solid #d3bb7e',
+                    padding: "15px",
+                    marginTop:"15px"
+                }}>
+                <Row>
+                    <Col xs={12} md={6} lg={6}>
+                        <h3 className='justify-content-evenly text-center text2 mt-3' >
+                            ШАГ 3 прафилактический прием
+                        </h3>
+                        <p className='text2 text-center mt-3'>С особым вниманием наши врачи относятся к вопросам профилактики патологий. В зависимости от диагноза необходимо посещать врача для планового медицинского осмотра раз в 3, 6 или 12 месяцев.</p>
+                    </Col>
+                    <Col xs={12} md={6} lg={6}>
+                        <h3 className='justify-content-evenly text-center text2 mt-3' >
+                            МЕТОДЫ ДИАГНОСТИКИ:
+                        </h3>
+                        <ol className='mt-3' style={{ color: "white" }}>
+                            <li>плановый медицинский осмотр</li>
+
+                        </ol>
+                    </Col>
+                </Row>
+                </div>
                 <Row>
                     <Col xs={12} md={6} lg={6}>
                         <div className='justify-content-evenly text-center  ' >
@@ -216,7 +297,7 @@ function AboutLor({ setShow }) {
                             </div>
 
                             <div className='mt-3'>
-                            <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
                                     <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
                                 </div>
 
