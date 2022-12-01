@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import Button1 from '../../Button1';
 import Accordions from '../../components/accrdion/Accordions';
+import hhh from './hhh.jpeg'
 
 function Okilist({ setShow }) {
     useEffect(() => {
@@ -145,7 +146,7 @@ function Okilist({ setShow }) {
 
                     <Col sm={6} xs={12} md={6} >
                         <p className='text_nav mt-2'>
-                            Отвечая на вопрос, какой это врач — офтальмолог и что он лечит, мы перечислим список наиболее распространённых заболеваний.
+                            В ОсОО МЦ Айдарова К.А.  вы можете обращаться по следующим распространенным видом заболеваний
                         </p>
                         <ol style={{ color: "white" }}>
                             {litext.map(a => {
@@ -156,10 +157,10 @@ function Okilist({ setShow }) {
                         </ol>
                     </Col>
                     <Col sm={6} xs={12} md={6} >
-                        <img style={{ maxWidth: '340px',marginTop:"10px" }} src='https://www.lensmaster.ru/upload/medialibrary/151/151ff9fa7ebf68806acbaf610fa172dd.png' />
+                        <img style={{ maxWidth: '340px', marginTop: "10px" }} src='https://www.lensmaster.ru/upload/medialibrary/151/151ff9fa7ebf68806acbaf610fa172dd.png' />
                     </Col>
                 </Row>
-                <h1 className='mt-4'>Когда нужно обратиться к офтальмологу?</h1>
+                <h1 className='mt-4'>Записаться к офтальмологу?</h1>
                 <p className='text_nav '>
                     Офтальмолог — это глазной врач. Поэтому записаться к нему нужно при проявлении любых проблем с глазами. Лучше не затягивать с визитом к доктору: некоторые заболевания, которые кажутся несерьезными, такие как конъюнктивит, могут иметь тяжелые осложнения: воспаление роговицы, образование бельма, снижение зрения и др.
                 </p>
@@ -170,15 +171,93 @@ function Okilist({ setShow }) {
                     <p className='text_nav'>{a.text}</p>
                 ))}
 
-               
+
                 <div className='text-center'>
-                    <img style={{ maxHeight: '340px', maxWidth: '100%',marginTop:"10px" }} src='https://www.lensmaster.ru/upload/medialibrary/f2f/f2faab1d0eb69fef931bee6f9415e7f0.jpg' />
+                    <img style={{ maxHeight: '340px', maxWidth: '100%', marginTop: "10px" }} src='https://www.lensmaster.ru/upload/medialibrary/f2f/f2faab1d0eb69fef931bee6f9415e7f0.jpg' />
                 </div>
-                <h3  style={{color:"#d3bb7e", marginTop:"15px"}}>Проверка зрения у детей</h3>
-                <p className='text_nav mt-2'>Объяснить детям, какой врач лечит глаза и как по-другому называется офтальмолог, можно, записавшись на прием к врачу. Проверка зрения у детей должна проводиться регулярно: в младшем возрасте она позволит убедиться, что у ребенка нет врожденных патологий и развитие органов зрения проходит в соответствии с нормой, а в старшем — предотвратить развитие близорукости. Самый уязвимый возраст для миопатии — 8-14 лет, когда резко возрастает нагрузка на глаза, а соблюдать гигиену рабочего места дети еще не приучены.</p>
+                <h3 style={{ color: "#d3bb7e", marginTop: "15px" }}>Проверка зрения у детей</h3>
+                <p className='text_nav mt-2'>Проверка зрения у детей должна проводиться регулярно: в младшем возрасте она позволит убедиться, что у ребенка нет врожденных патологий и развитие органов зрения проходит в соответствии с нормой, а в старшем — предотвратить развитие близорукости. Самый уязвимый возраст для миопатии — 8-14 лет, когда резко возрастает нагрузка на глаза, а соблюдать гигиену рабочего места дети еще не приучены.</p>
                 <p className='text_nav mt-3'>Обязательно нужно посещать окулиста детям с плохой наследственностью. В детском возрасте проще выявить и вылечить многие нарушения — астигматизм, косоглазие, дальнозоркость, близорукость и др. Своевременное назначение коррекции позволит избежать развития других заболеваний — косоглазия и амблиопии. Наблюдаться у окулиста детям желательно как минимум раз в год. </p>
             </div>
 
+            <h3 style={{ color: "#d3bb7e", marginTop: "15px",textAlign:"center" }}>Что лучше очки или линзы для глаз?</h3>
+            <div className='text-center'>
+                <img style={{ maxHeight: '100%', maxWidth: '100%', marginTop: "10px" }} src="https://img.tsn.ua/cached/075/tsn-ed71814124f95cefb3093cdb7dd2dd14/thumbs/1200x630/5b/17/f318eef54fa6734f40fef55598fa175b.jpeg" />
+            </div>
+            <div style={{
+                width: 'auto',
+                border: '2px solid #d3bb7e',
+                padding: "15px",
+                marginTop: "15px"
+            }}>
+
+                <Col >
+                    <h3 style={{ color: "#d3bb7e" }}>➕️Плюсы ношения очков :</h3>
+                    <ul style={{ color: "white" }}>
+                        <li>Оказывают лечебный эффект (помогают остановить процесс ухудшения зрения)</li>
+                        <li>простой уход;</li>
+                        <li>минимум противопоказаний;</li>
+                        <li>простота в использовании для всех людей, в том числе для детей;
+                        </li>
+                    </ul>
+                </Col>
+            </div>
+            <div style={{
+                width: 'auto',
+                // textAlign: "center",
+                border: '2px solid #d3bb7e',
+                padding: "15px",
+                marginTop: "15px"
+            }}>
+
+                <Col >
+                    <h3 style={{ color: "#d3bb7e" }}>➖️Минусы ношения очков :</h3>
+                    <ul style={{ color: "white" }}>
+                        <li>Изменение внешнего вида;</li>
+                        <li>ограничения по некоторым видам деятельности и профессий;</li>
+                        <li>зрительные искажения и ограниченный боковой обзор;</li>
+                        <li>малоэффективны при сочетанных дефектах зрения;
+                        </li>
+                    </ul>
+                </Col>
+            </div>
+
+            <div style={{
+                width: 'auto',
+                // textAlign: "center",
+                border: '2px solid white',
+                padding: "15px",
+                marginTop: "15px"
+            }}>
+
+                <Col >
+                    <h3 style={{ color: "white" }}>➕️Плюсы ношения контактных линз :</h3>
+                    <ol style={{ color: "#d3bb7e" }}>
+                        <li>Зрительный комфорт (улучшенная чёткость изображения, более высокое качество зрения, в том числе боковое, по сравнению с очковыми линзами);</li>
+                        <li>возможность подбора для каждого глаза в отдельности (важно при разнице больше 2 диоптрий);</li>
+                        <li>защита от микротравм, атмосферного воздействия и УФ-излучения;</li>
+                    </ol>
+                </Col>
+            </div>
+            <div style={{
+                width: 'auto',
+                // textAlign: "center",
+                border: '2px solid white',
+                padding: "15px",
+                marginTop: "15px"
+            }}>
+
+                <Col >
+                    <h3 style={{ color: "white" }}>➖️Минусы ношения контактных линз :</h3>
+                    <ol style={{ color: "#d3bb7e" }}>
+                        <li>Установка и снятие линз требует определённых навыков;
+                        </li>
+                        <li>нуждаются в ежедневном уходе с использованием специальных средств;</li>
+                        <li>опасность травмирования или инфицирования глаза;</li>
+                        <li>традиционные мягкие контактные линзы не дают лечебного эффекта</li>
+                    </ol>
+                </Col>
+            </div>
 
             <h1 className='text-center mt-5'> ПРЕИМУЩЕСТВА ОТДЕЛЕНИИ</h1>
             <Row className="mt-5">
