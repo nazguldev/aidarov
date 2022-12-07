@@ -236,12 +236,12 @@ function MainContainers({ setShow }) {
                 Ваша улыбка - наша забота!
               </h1>
 
-              <h2 style={{ color: "white" }}>
+              <p style={{ color: "white" }}>
                 Всем Ассолому алейкум!
                 Дорогой мой читатель, добро пожаловать в нашу клинику.
                 Клиника Айдарова всегда будет стремиться, только к качестве и красоте с инновационными технологиями.
 
-              </h2>
+              </p>
               <div className="text-center pb-2">
                 {/* <Button1 setShow={setShow} /> */}
                 <div className="pb-3 pt-3 mt-2 mb-3 div__a">
