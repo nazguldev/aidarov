@@ -173,12 +173,12 @@ function AboutUrologi({ setShow }) {
             <div className='container AboutUrolog'>
             <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img width="50px" src={'https://st2.depositphotos.com/26044198/47235/v/600/depositphotos_472358090-stock-illustration-urology-and-organ-transplantation-concept.jpg'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://st2.depositphotos.com/26044198/47235/v/600/depositphotos_472358090-stock-illustration-urology-and-organ-transplantation-concept.jpg'} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/">О Клинике</Nav.Link>
-                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+               
                 <NavDropdown title="Услуги" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
                   <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>

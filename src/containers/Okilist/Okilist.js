@@ -83,7 +83,7 @@ function Okilist({ setShow }) {
         <div className='container'>
             <Navbar bg="dark" expand="lg" variant='dark'>
                 <Container>
-                    <Navbar.Brand href="/"><img width="50px" src={'https://imgtest.mir24.tv/uploaded/images/crops/2022/February/870x489_0x417_detail_crop_20220225174534_fd6eef58_d8f986c597b46d9003f9449f1b5501f6e9f0b74d0859ef4d3c4165341aa8e638.jpg'} /></Navbar.Brand>
+                    <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://imgtest.mir24.tv/uploaded/images/crops/2022/February/870x489_0x417_detail_crop_20220225174534_fd6eef58_d8f986c597b46d9003f9449f1b5501f6e9f0b74d0859ef4d3c4165341aa8e638.jpg'} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

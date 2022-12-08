@@ -24,7 +24,7 @@ function AboutLaboratory({ setShow }) {
         <div className={'Laboratory'}>
              <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img width="50px" src={'http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png'} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
