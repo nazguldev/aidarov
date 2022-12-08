@@ -178,7 +178,7 @@ function AboutUrologi({ setShow }) {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/">О Клинике</Nav.Link>
-                {/* <Nav.Link href="/ContactClinick">Контакты</Nav.Link> */}
+               
                 <NavDropdown title="Услуги" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/aboutDental">Стоматология</NavDropdown.Item>
                   <NavDropdown.Item href="/AboutGynecology">Гинекология</NavDropdown.Item>
