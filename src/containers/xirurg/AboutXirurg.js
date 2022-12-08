@@ -60,7 +60,7 @@ function AboutXirurg({ setShow }) {
             <div className='container aboutXirurg mt-4'>
             <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img width="50px" src={'https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png'} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

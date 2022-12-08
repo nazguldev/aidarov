@@ -147,7 +147,7 @@ function AboutTerapiya({ setShow }) {
     <div className='terapiya' style={{ width: "100%" }}>
        <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img width="50px" src={'http://linoko.by/wp-content/uploads/2019/01/logo-1024x576.png'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'http://linoko.by/wp-content/uploads/2019/01/logo-1024x576.png'} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

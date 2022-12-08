@@ -170,7 +170,7 @@ function AboutLor({ setShow }) {
             <div className='container AboutUrolog'>
                 <Navbar bg="dark" expand="lg" variant='dark'>
                     <Container>
-                        <Navbar.Brand href="/"><img width="50px" src={'https://vvclinic.com.ua/images/news/lor_vrach_kiev.jpg'} /></Navbar.Brand>
+                        <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://vvclinic.com.ua/images/news/lor_vrach_kiev.jpg'} /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
