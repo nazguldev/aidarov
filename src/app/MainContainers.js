@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import { Card, Carousel, Col, Row, Table } from 'react-bootstrap';
-import Button1 from '../Button1';
-import AutoVideo from '../components/Vidoe/AutoVideo';
 import _Navbar from './nav/_Navbar'
-import imgg from '../img.aidarov/imgg.jpeg'
+import imgg from '../img.aidarov/imgg.png'
 import './MainContainer.scss'
 import RunText from '../components/runText/RunText';
 import { useEffect } from 'react';
 import AOS from "aos"
 import Accordions from '../components/accrdion/Accordions';
-import patient1 from '../containers/dental/Image/patient1.jpg'
-import patient2 from '../containers/dental/Image/patient2.jpg'
-import patient5 from '../containers/dental/Image/patient5.jpg'
 import price1 from './PriceMain'
+import stiff1 from '../containers/dental/dental.img/stiff1.jpg'
+import ftiff2 from '../containers/dental/dental.img/ftiff2.jpg'
+import foto from '../containers/dental/dental.img/foto.jpg'
 
 function MainContainers({ setShow }) {
     const t = price1
@@ -97,6 +95,7 @@ function MainContainers({ setShow }) {
 
     ]
 
+
     const feedback = [
         {     
             name:"Айжан",      
@@ -132,6 +131,7 @@ function MainContainers({ setShow }) {
         }
     ]
  
+
     const text = [
         {
             texts: "Клининика Айдарова",
@@ -171,10 +171,10 @@ function MainContainers({ setShow }) {
         }, {
             texts: "Урология",
             t: "/"
-        },{
+        }, {
             texts: "Лор",
             t: "/"
-        },{
+        }, {
             texts: "Окулист",
             t: "/"
         },
@@ -338,8 +338,8 @@ function MainContainers({ setShow }) {
                                 <div className='mt-3'>
                                     {/* <Button1 setShow={setShow} /> */}
                                     <div className="pb-3 pt-3 mt-2 mb-3 div__a">
-                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
-                                </div>
+                                        <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
@@ -349,28 +349,15 @@ function MainContainers({ setShow }) {
 
                 <div className='container'>
                     <h1 className='text-center pt-5 pb-5'>Наши Врачи</h1>
-                    <Row>
-                        <Col xl={12} md={12} sm={12}>
-                            <Carousel>
-                                {carusel.map((e) => {
-                                    return (
-                                        <Carousel.Item>
-
-                                            <img
-                                                className="d-block w-100 text-center"
-                                                src={e.img}
-                                                alt="First slide" />
-                                            <Carousel.Caption>
-                                                <h3>{e.title}</h3>
-                                                <h5>{e.text}</h5>
-                                            </Carousel.Caption>
-                                        </Carousel.Item>
-                                    )
-                                })}
-
-                            </Carousel>
+                    <Row className='text-center'>
+                        <Col sm={6} xs={12} md={4} >
+                        <Card.Img variant="top" className='mt-3' style={{width:"100%"}} src={stiff1} />
                         </Col>
-
+                        <Col sm={6} xs={12} md={4} >
+                        <Card.Img variant="top" className='mt-3' style={{width:"100%"}} src={ftiff2} />
+                        </Col> <Col sm={6} xs={12} md={4} >
+                        <Card.Img variant="top" className='mt-3' style={{width:"100%"}} src={foto} />
+                        </Col>
                     </Row>
                     <Row className="mt-5">
                         <Col xs={12} md={4}  >

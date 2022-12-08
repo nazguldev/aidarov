@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
 import RunText from '../../../components/runText/RunText';
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import { Card, Carousel, Col, Row, Table } from 'react-bootstrap';
 import DentalNavbar from './DentalNavbar';
-import imgg from '../../../img.aidarov/imgg.jpeg'
+import imgg from '../../../img.aidarov/imgg.png'
 import './Appbar.scss'
 import Button1 from '../../../Button1';
+import implants from '../dental.img/implants.png'
+import orp from '../dental.img/orp.jpg'
+import orp2 from '../dental.img/orp2.jpg'
 import AOS from 'aos';
 
-function Orp({setShow}) {
+function Orp({ setShow }) {
     const text = [
         {
             texts: 'ТЕСТ ДРАЙВ УЛЫБКИ',
@@ -15,7 +18,7 @@ function Orp({setShow}) {
         }, {
             texts: 'ИСПРАВЛЕНИЕ ПРИКУСА',
             t: '/'
-        },  {
+        }, {
             texts: 'ЛЕЧЕНИЕ ВО СНЕ',
             t: '/'
         }, {
@@ -43,18 +46,22 @@ function Orp({setShow}) {
             <DentalNavbar />
             <h1 className=''>Ортопедия
             </h1>
-            <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br/>отсутствия зубов можно <br/>восстанавить с несъемный<br/> мостовидными конструкциями<br/> или съемными.</h2>
-            <Col sm={6}>
-            <div className="pb-3 pt-3 mt-2 mb-3 div__a">
-                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
-                                </div>
+            <Row>           <Col sm={6}>
+                <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br />отсутствия зубов можно <br />восстанавить с несъемный<br /> мостовидными конструкциями<br /> или съемными.</h2>
+                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
+                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                </div>
             </Col>
-           
+                <Col sm={6}>
+                    <img src={implants} />
+                </Col></Row>
+
+
             <h1 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}> Ортопедический услуги</h1>
             <h2 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "30px" }}>
                 Выбор способа зависит от клинической ситуации пациента
             </h2>
-           
+
             <div>
                 <Col className="mt-3">
                     <div style={{
@@ -134,7 +141,7 @@ function Orp({setShow}) {
                                             <td style={{ textAlign: "center" }}>Пластмасса</td>
                                             <td style={{ textAlign: "center" }}>1000 сом</td>
                                         </tr>
-                                       </tbody>
+                                    </tbody>
                                 </Table>
                             </h3>
                         </Card.Body>
@@ -142,25 +149,56 @@ function Orp({setShow}) {
                 </Col>
             </div>
             <Row className="mt-5">
-                    <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in" className='justify-content-evenly text-center' >
-                            <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
-                            </img>
-                            <Card.Title className='text_nav'>Доктор Бекмамат</Card.Title>
-                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель <br/>врач стоматолог общей <br/>практики и имплантолог</span>
+                <Col xs={12} md={6} lg={6}>
+                    <h1 className='text-center'>СЪЕМНЫЙ</h1>
+                    <img width={'100%'} src="https://implant-expert.ru/wp-content/uploads/2018/12/%D1%81%D1%8A%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%B7%D1%8B.png" />
+
+                </Col>
+                <Col xs={12} md={6} lg={6}>
+                    <h1 className='text-center'>HEСЪЕМНЫЙ</h1>
+                    <img width={'100%'} src="https://megadenta.ru/sites/default/files/2022-01/13156861497599927_0.jpg" />
+
+                </Col>
+            </Row>
+            <Row className="mt-5">
+                <Col xs={12} md={6} lg={6}>
+                    <div data-aos="zoom-in" className='justify-content-evenly text-center' >
+                        <img class=" t013__img t-img" src={imgg} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
+                        </img>
+                        <Card.Title className='text_nav'>Доктор Бекмамат</Card.Title>
+                        <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель <br />врач стоматолог общей <br />практики и имплантолог</span>
+                    </div>
+                </Col>
+                <Col xs={12} md={6} lg={6}>
+                    <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
+                        <div >
+                            Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
+                            на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
+                            ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены.  где во время ожидания можно <br />послушать музыку, почитать
+                            что-нибудь интересное или выпить чашечку кофе.
                         </div>
+                    </div>
+                </Col>
+            </Row>
+            <h1 className='text-center'>Результаты нашей работы</h1>
+            <Row>
+            <Col xs={12} md={6} lg={6}>
+           
+                    <img
+                        className="d-block mt-3 w-100"
+                        src={orp}
+                        alt="First slide"
+                    />
                     </Col>
                     <Col xs={12} md={6} lg={6}>
-                        <div data-aos="zoom-in-up" className='justify-content-evenly text_nav m-3'>
-                            <div >
-                                Я хотел, чтобы клиника не напоминала больницу. Поэтому мы создали пространство, которое настраивает<br />
-                                на правильную волну совместного творчества. Если люди приходят лечить зубы как на каторгу, то сложно <br />
-                                ожидать от них высокогоуровня мотивации. Все мы немного нервничаем, если вокруг больничные<br /> белые стены.  где во время ожидания можно <br />послушать музыку, почитать
-                                что-нибудь интересное или выпить чашечку кофе.
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
+                    <img
+                        className="d-block mt-3 w-100"
+                        src={orp2}
+                        alt="Second slide"
+                    />                   
+              </Col>
+           
+            </Row>
             <RunText name={text} />
 
         </div>

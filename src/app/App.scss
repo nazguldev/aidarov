@@ -1,3 +1,17 @@
+@media screen and (max-width: 800px) {
+  img {
+    width: 314px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  img {
+    width: 100%;
+  }
+}
+
+  
+  
+  
 h1{
     color: #d3bb7e;
     font-family:  Arial sans-serif;
@@ -20,7 +34,6 @@ h1{
     border-style: solid;
     display: flex;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    
 }
 .phone_item{
     width: 250px;
@@ -36,11 +49,11 @@ h1{
     position: center;
     border-color: #d3bb7e;
     border-style: solid;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s
+   ease-in-out, border-color 0.2s ease-in-out;
 
 }
 .carousel-indicators{
-    
     display: none;
   }
   
