@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Row, Card, Col, Table, } from 'react-bootstrap';
+import { Row, Card, Col, Table, Carousel} from 'react-bootstrap';
 import Accordions from '../../components/accrdion/Accordions';
 import './dental.scss'
 import AOS from "aos";
@@ -63,6 +63,8 @@ function Terapii({ setShow }) {
             t: '/'
         },
     ]
+
+  
     return (
         <>
             <div className={'container aboutClinic '}>
@@ -188,8 +190,10 @@ function Terapii({ setShow }) {
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center pt-2 pb-2">пообщаться с сотрудниками</h3>
                     </Col>
                 </div>
+                
             </div>
 
+           
         </>
 
     );
