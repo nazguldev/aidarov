@@ -99,7 +99,7 @@ function Iplant({ setShow }) {
                 <DentalNavbar />
                 <Row>
                     <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
-                        Имплантация зубов. Беремся за самые сложные случаи
+                        Имплантация зубов. Беремся за самые сложные случи
                     </h1>
                     <h3 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "20px" }}>
                         Потеря зубов — это не преграда для здоровой<br /> и красивой улыбки. Имплантация поможет <br /> вернуть утраченные зубы с помощью самых<br /> современных технологий.
@@ -128,6 +128,9 @@ function Iplant({ setShow }) {
                                     <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
                                 </div>
                         </Col>
+                    </Col>
+                    <Col>
+                    <img src="https://ortholove.ru/upload/implantaciya-zubov/konstrukciya-all-on-6-2.png"/>
                     </Col>
 
                 </Row>

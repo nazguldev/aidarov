@@ -17,12 +17,16 @@ import result22 from '../dental/Image/result22.jpg'
 import result33 from '../dental/Image/result33.jpg'
 import result31 from '../dental/Image/result31.jpg'
 import konsultasya from '../dental/Image/konsultasya.png'
-
 import Button1 from '../../Button1'
+import foto from './dental.img/foto.jpg'
 import './MainDental.scss'
 import '../../app/App.scss'
 import DentalNavbar from '../dental/dentalAppbar/DentalNavbar'
-import aidarovs from '../../img.aidarov/aidarovs.jpg'
+import Aidarovs from '../dental/Image/Aidarovs.png'
+import glfoto from '../dental/dental.img/glfoto.jpg'
+import stiff1 from './dental.img/stiff1.jpg'
+import ftiff2 from './dental.img/ftiff2.jpg'
+
 
 function MainContainers({ setShow }) {
 
@@ -228,7 +232,7 @@ function MainContainers({ setShow }) {
   return (
     <>
       <DentalNavbar />
-      <div className='maindental ' style={{ marginTop: "20px" }}>
+      <div className='maindental' style={{ marginTop: "20px" }}>
         <Container>
           <Row >
             <Col sm={6} xs={12} md={4}>
@@ -249,11 +253,11 @@ function MainContainers({ setShow }) {
                 </div>
               </div>
             </Col>
-            <Col sm={6} xs={12} md={6}>
-              <Card sm={6} xs={12} md={6} style={{ backgroundColor: 'black', }} className="mt-2"   >
-                <img  src={aidarovs} />
+            <Col sm={6} xs={12} md={5}>
+              {/* <Card sm={6} xs={12} md={6} className="mt-2"   > */}
+              <img style={{ width: "100%" }} src={glfoto} />
 
-              </Card>
+              {/* </Card> */}
             </Col>
           </Row>
         </Container>
@@ -261,14 +265,13 @@ function MainContainers({ setShow }) {
       <RunText name={text} />
       <Container>
         <>
-          <Row className="mt-3">
-            <Col md={6} xs={12} sm={12}>
-              <Card md={6} xs={12} sm={12} style={{ backgroundColor: 'black', }}>
-                <img src={aidarov} />
+          <Row className="">
+            <Col sm={6} xs={12} md={6} >
 
-              </Card>
+              <img style={{ width: "100%" }} src={Aidarovs} />
+
             </Col>
-            <Col sm={6} xs={12} md={6} style={{ color: 'white', }}>
+            <Col sm={6} xs={12} md={6} style={{ color: 'white', marginTop: "80px" }}>
               <Card.Text>
                 <b> Здравствуйте!
                   Меня зовут Бекмамат Айдаров.
@@ -308,34 +311,60 @@ function MainContainers({ setShow }) {
           </Col>
           <Row className="mt-5 ">
             <Col sm={6} xs={12} md={4}>
-              <Card sm={6} xs={12} md={4} className="mt-2"   >
-                <img src={patient1} />
-              </Card>
+              {/* <Card sm={6} xs={12} md={4} className="mt-2"   > */}
+              <img className="mt-2" style={{ width: "100%" }} src={patient1} />
+              {/* </Card> */}
 
             </Col>
             <Col sm={6} xs={12} md={4}>
-              <Card sm={6} xs={12} md={4} className="mt-2">
-                <img src={patient5} />
-              </Card>
+              {/* <Card sm={6} xs={12} md={4} className="mt-2"> */}
+              <img className="mt-2" style={{ width: "100%" }} src={patient5} />
+              {/* </Card> */}
 
             </Col>
             <Col sm={6} xs={12} md={4}>
-              <Card sm={6} xs={12} md={4} className="mt-2">
-                <img src={patient2} />
-              </Card>
+              {/* <Card sm={6} xs={12} md={4} className="mt-2" style={{backgroundColor:"none"}}> */}
+              <img className="mt-2" style={{ width: "100%" }} src={patient2} />
+              {/* </Card> */}
 
             </Col>
           </Row>
+
+          <div>
+            <h1 className='text-center'>Отзывы наших пациентов</h1>
+            <Carousel style={{ backgroundColor: '#d3bb7e' }}>
+
+              <Carousel.Item>
+                <p className='p-2' style={{ color: "black" }}>«Я носила сапфировые брекеты, но из-за съёмок их приходилось периодически снимать и снова ставить, поэтому мои зубы так и не выровнялись, и в не лучшую сторону изменилась дикция. Поэтому я обратилась к доктору Бекмамату. Подкупило то, что у него в клинике новые технологии и можно увидеть, как будет выглядеть моя улыбка после лечения!»</p>
+                <h3 className='mt-3 p-2'>Аяна Аснова</h3>
+
+
+              </Carousel.Item>
+              <Carousel.Item>
+                <p className='p-2' style={{ color: "black" }}>«Мой волшебный стоматолог 🤩🦷 — доктор Бекмамат. Именно он удалил мне 4 зуба мудрости за один раз без боли и негативных последствий. Швы сняли уже через неделю. Не было ни отёков, ни синяков, хотя удаление было сложное.
+                  Зная мой перфекционизм, я не остановилась 😅
+                  Моя, не побоюсь этого слова, идеальная улыбка готова! 🤪🙌🏼 Как я счастлива, что несколько месяцев назад решилась на это! Теперь мои зубки получили гарантию аж на 30 лет! Спасибо, мой любимый доктор Бекмамат, за профессионализм и терпение! 😅🙉
+                  Уже мама и сестра лечат зубки только у моего доктора! А если я доверяю ему самых близких, значит, он действительно лучший 👏🏻"</p>
+                <h3 className='mt-3 p-2'>Назэрке</h3>
+              </Carousel.Item>
+              <Carousel.Item>
+                <p className='p-2' style={{ color: "black" }}>«Я ходил в разные клиники, и мне всё время всё не нравилось. Всегда вырывали зубы, было больно, я потом ходил мучился. И я как-то попал в клинику доктора Бекмамат, и тут всё было как по волшебству. Пришёл, у меня была дикая зубная боль, сажусь к доктору на кресло, проходит 5 минут, и я пишу доктору (говорить-то я не могу): „Можно уже говорить?“. А он такой: „А я уже всё тебе сделал“. Невероятно просто! Здесь происходит реальная магия, прямо так, как делаю я. Приходите лечиться к доктору Бекмамату!»</p>
+                <h3 className='mt-3 p-2'>Мурат</h3>
+              </Carousel.Item>
+            </Carousel>
+
+
+          </div>
           <Row>
             <h1 className='mt-5 mb-3 text-center'>
               Почему клиника Айдарова?
             </h1>
-            <Col sm={6} xs={12} md={6}>
-              <Card >
-                <img src={komanda} />
-              </Card>
+            <Col sm={6} xs={12} md={5}>
+              <>
+                <img style={{ width: "100%" }} src={foto} />
+              </>
             </Col>
-            <Col sm={6} xs={12} md={6}>
+            <Col sm={6} xs={12} md={7}>
               <Accordion defaultActiveKey={['0']} alwaysClose style={{ backgroundColor: 'black', color: '#d3bb7e', }}>
                 {
                   accordion.map(e => {
@@ -400,9 +429,19 @@ function MainContainers({ setShow }) {
               </h5>
             </Col>
             <Col sm={6} xs={12} md={4}>
-              <Card sm={6} xs={12} md={4}>
-                <img src={komanda} />
-              </Card>
+              {/* <Card sm={6} xs={12} md={4}> */}
+              <img style={{ width: "100%" }} src={stiff1} />
+              {/* </Card> */}
+            </Col>
+          </Row>
+          <Row className='text-center'>
+            <Col sm={6} xs={12} md={4} >
+              <Card.Img variant="top" className='mt-3' style={{ width: "100%" }} src={ftiff2} />
+            </Col> <Col sm={6} xs={12} md={4} >
+              <Card.Img variant="top" className='mt-3' style={{ width: "100%" }} src={foto} />
+            </Col>
+            <Col sm={6} xs={12} md={4} >
+              <Card.Img variant="top" className='mt-3' style={{ width: "100%" }} src={stiff1} />
             </Col>
           </Row>
           <h1 className='mt-3 text-center'>

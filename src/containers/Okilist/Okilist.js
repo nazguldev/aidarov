@@ -180,7 +180,7 @@ function Okilist({ setShow }) {
                 <p className='text_nav mt-3'>Обязательно нужно посещать окулиста детям с плохой наследственностью. В детском возрасте проще выявить и вылечить многие нарушения — астигматизм, косоглазие, дальнозоркость, близорукость и др. Своевременное назначение коррекции позволит избежать развития других заболеваний — косоглазия и амблиопии. Наблюдаться у окулиста детям желательно как минимум раз в год. </p>
             </div>
 
-            <h3 style={{ color: "#d3bb7e", marginTop: "15px",textAlign:"center" }}>Что лучше очки или линзы для глаз?</h3>
+            <h3 style={{ color: "#d3bb7e", marginTop: "15px", textAlign: "center" }}>Что лучше очки или линзы для глаз?</h3>
             <div className='text-center'>
                 <img style={{ maxHeight: '100%', maxWidth: '100%', marginTop: "10px" }} src="https://img.tsn.ua/cached/075/tsn-ed71814124f95cefb3093cdb7dd2dd14/thumbs/1200x630/5b/17/f318eef54fa6734f40fef55598fa175b.jpeg" />
             </div>

@@ -9,7 +9,7 @@ function DentalNavbar(props) {
     <div className='containar'>
       <Navbar bg="dark" expand="lg" variant='dark'>
         <Container>
-          <Navbar.Brand href="/"><img width="50px" src={logo} /></Navbar.Brand>
+          <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={logo} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             
