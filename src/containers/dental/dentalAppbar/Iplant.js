@@ -99,15 +99,12 @@ function Iplant({ setShow }) {
                 <DentalNavbar />
                 <Row>
                     <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
-                        Имплантация зубов. Беремся за самые сложные случи
+                        Имплантация зубов. Беремся за самые сложные моменты
                     </h1>
                     <h3 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "20px" }}>
                         Потеря зубов — это не преграда для здоровой<br /> и красивой улыбки. Имплантация поможет <br /> вернуть утраченные зубы с помощью самых<br /> современных технологий.
                     </h3>
                     <Col md={6} className={""}>
-                        <Card.Text style={{ color: "white", fontSize: "20px" }}>
-                            -Современное оборудование,
-                        </Card.Text>
                         <Card.Text style={{ color: "white", fontSize: "20px" }}>
                             -Современное оборудование,
                         </Card.Text>
@@ -146,10 +143,10 @@ function Iplant({ setShow }) {
                     Какие проблемы решает имплантация зубов?
                 </h1>
                 <p className="text-center mt-3" style={{ color: "white", fontSize: "25px", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                    Имплантат изготавливается из титана, долго служит, отлично приживается в<br /> организме  и заменяет естественный корень зуба.
+                    Имплантат изготовливается из титана, долго служит, отлично приживается в<br /> организме  и заменяет естественный корень зуба.
                 </p>
                 <p className="text-center mt-3" style={{ color: "#d3bb7e", fontSize: "20px", fontFamily: 'GraphikTT Arial sans-serif', }}>
-                    После установки на него устанавливается коронка, которая визуально не отличается от родного зуба.
+                    После установки на него установливается коронка, которая визуально не отличается от родного зуба.
                 </p>
                 <Table striped bordered hover>
                     <thead>
@@ -177,7 +174,7 @@ function Iplant({ setShow }) {
             </div>
             <div className="container mt-5 text-center">
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "100px" }}>
-                    Преимущества имплантации в клинике <br /> Доктор Айдаров
+                    Преимущества имплантации в клинике <br /> Доктора Айдарова
                 </h1>
                 <Accordions name={data} />
                 <h2 style={{ color: "#d3bb7e",  fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>

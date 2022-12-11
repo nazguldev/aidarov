@@ -23,7 +23,7 @@ import './MainDental.scss'
 import '../../app/App.scss'
 import DentalNavbar from '../dental/dentalAppbar/DentalNavbar'
 import Aidarovs from '../dental/Image/Aidarovs.png'
-import glfoto from '../dental/dental.img/glfoto.jpg'
+import glfoto from '../dental/dental.img/glfoto.png'
 import stiff1 from './dental.img/stiff1.jpg'
 import ftiff2 from './dental.img/ftiff2.jpg'
 

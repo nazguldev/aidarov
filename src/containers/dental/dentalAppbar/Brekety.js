@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, CardImg, Col, Row } from 'react-bootstrap';
 import AOS from 'aos'
 import Accordions from '../../../components/accrdion/Accordions'
 import imgg from '../../../img.aidarov/imgg.jpeg'
@@ -8,6 +8,8 @@ import RunText from '../../../components/runText/RunText';
 import DentalNavbar from '../dentalAppbar/DentalNavbar'
 import AutoVideo from '../../../components/Vidoe/AutoVideo';
 import './Appbar.scss'
+import breket from "../dental.img/brekety.png";
+
 
 function Brekety({ setShow }) {
     useEffect(() => {
@@ -198,43 +200,53 @@ function Brekety({ setShow }) {
                         </Col>
                     </Col>
                 </Row>
-                <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
-                    Преимущества брекетов
-                </h1>
-                <Card.Text style={{ color: "white", fontSize: "20px", }}>
-                    Мы используем высокотехнологичную, усовершенствованную,<br /> индивидуализированную американскую брекет-систему Damon.<br /> Обтекаемая и самолигирующая система обеспечивает плавное<br /> и естественное перемещение зубов без дискомфортных ощущений.</Card.Text>
+                <Row>
+                            <Col sm={8} md={8} xs={8}>
+                        <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
+                                Преимущества брекетов
+                            </h1>
+                            <Card.Text style={{ color: "white", fontSize: "20px", }}>
+                                Мы используем высокотехнологичную, усовершенствованную,<br /> индивидуализированную американскую брекет-систему Damon.<br /> Обтекаемая и самолигирующая система обеспечивает плавное<br /> и естественное перемещение зубов без дискомфортных ощущений.</Card.Text>
+                        </Col>
+                        <Col sm={8} md={4} xs={8}>
+                            <Card.Img className="h-150 w-100" src= {breket}></Card.Img>
+                        </Col>
+
+                </Row>
+               
+              
                 <Row>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">01</h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Запись на консультацию</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Гарантированный результат. Установка брекетов взрослым в большинстве случаев – единственный способ эффективной коррекции зубного ряда.</p>
 
                     </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">02</h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Первичная консультация у врача-специалиста для оценки состояния зубов и дёсен с использованием сверхточного рентгеновского аппарата Sirona Orthophos XG</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Современные брекеты мало влияют на эстетику улыбки. Особого упоминания здесь заслуживают невидимые лингвальные системы, которые клеятся на внутреннюю часть зубов (впрочем, их использование возможно далеко не всегда).</p>
                     </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">03</h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Составление плана лечения с указанием всех вариантов, этапов и стоимости каждого из них</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Широкий перечень показаний. Если многие другие ортодонтические конструкции неэффективны в случае серьёзных аномалий, то брекетами успешно исправляют практически любые эстетические проблемы прикуса. </p>
                     </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">04</h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Проведение предварительных работ</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Отсутствие верхних возрастных ограничений. Устанавливать брекеты для коррекции прикуса можно как в 25, так и в 60. Единственный момент, который при этом нужно учитывать – это то, то с возрастом требуется больше времени на закрепление результата (так называемый ретенционный период увеличивается).</p>
 
                     </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">05</h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Выравнивание зубов с помощью несъёмных ортодонтических конструкций. Сроки ношения брекетов зависят от сложности конкретного случая и индивидуальных особенностей пациента</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Сильная боль – не более чем миф. Действительно, в первые дни после установки у пациента могут возникнуть болезненные и дискомфортные ощущения. Это абсолютно нормальное явление, обусловленное тем, что на зубы теперь оказывается непривычное давление. В большинстве случаев речь идёт об умеренных болезненных ощущениях или зуде в дёснах, которые обычно проходят самостоятельно уже через несколько дней.</p>
                     </Col>
                     <Col xs={12} md={4} >
                         <h3 data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">06  </h3>
-                        <p style={{ color: "white" }} className="text-center p-2 m-2">Ровная и здоровая улыбка</p>
+                        <p style={{ color: "white" }} className="text-center p-2 m-2">Брекеты не оказывают вредного воздействия на зубную эмаль, поскольку в нормальном здоровом состоянии она способна полностью выдерживать нагрузки от такой механической конструкции. Разумеется, если эмаль повреждена, то обязательным условием будет предварительное лечение зубов и полная санация полости рта.</p>
                     </Col>
                 </Row>
                 <h1 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
