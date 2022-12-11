@@ -7,7 +7,10 @@ import Accordions from '../../../components/accrdion/Accordions';
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import './Appbar.scss'
 import Button1 from '../../../Button1';
-import DentalNavbar from '../dentalAppbar/DentalNavbar'
+import DentalNavbar from '../dentalAppbar/DentalNavbar';
+import ultra_zvuk from "../dental.img/ultra-zvukotbeliv.png";
+import polirovka from "../dental.img/polirovka.jpg";
+import airflow from "../dental.img/air-flow.jpg";
 
 
 function Otbali({ setShow }) {
@@ -85,7 +88,7 @@ function Otbali({ setShow }) {
                         <h1 className='' >Отбеливания</h1>
                         <h4 className='' style={{ color: "#d3bb7e", }}>Белоснежная улыбка без вреда для зубов!
                         </h4>
-                        <h3 className='mt-3' style={{ color: "white" }}>Метод 3-х этапного отбаливание:</h3>
+                        <h3 className='mt-3' style={{ color: "white" }}>Метод 3-х этапного отбеливание:</h3>
                         <h4 className=' mt-3' style={{ color: "white" }}>1.Ультра звуковая 500с</h4>
                         <h4 className=' mt-3' style={{ color: "white" }}>2.Полировка с пастой 500с</h4>
                         <h4 className=' mt-3' style={{ color: "white" }}>3.Air Flow   500с</h4>
@@ -162,24 +165,33 @@ function Otbali({ setShow }) {
             </div>
 
 
-            <div className="container text-center">
-                <Row> <h1 style={{ color: "#d3bb7e", }}>
-                    Виды <br />отбеливания
-                </h1>
-                    <Col xs={12} md={4}>
-
-                        <img class=" t013__img t-img" src={''} >
-                        </img>
-
-                    </Col>
-                    <Col xs={12} md={4}>
-                        <img class=" t013__img t-img" src={''} >
-                        </img>
-
-                    </Col>
+            <div className="container text-center  mt-5">
+                <Row className='mt-5'> 
+                    <h1 style={{ color: "#d3bb7e", }}>
+                        Виды профессионального отбеливания
+                    </h1>
                     <Col xs={12} md={4} >
-                        <img class=" t013__img t-img" src={''} >
+                     <h4 style={{color: "white"}}> Ультра-звуковое отбеливание</h4> 
+                    
+                        <img  src={ultra_zvuk } >
                         </img>
+                       
+                    </Col>
+                   
+                    <Col xs={12} md={4}>
+                    <h4 style={{color: "white"}}>Полировка с пастой</h4> 
+                    
+                        <img  src={polirovka} >
+                        </img>
+                        
+
+                    </Col>
+                   
+                    <Col xs={12} md={4}>
+                   <h4 style={{color: "white"}}>Air-flow</h4> 
+                        <img  src={airflow} >
+                        </img>
+                       
                     </Col>
                 </Row>
 

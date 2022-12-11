@@ -47,7 +47,7 @@ function Orp({ setShow }) {
             <h1 className=''>Ортопедия
             </h1>
             <Row>           <Col sm={6}>
-                <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частисное или полное <br />отсутствия зубов можно <br />восстанавить с несъемный<br /> мостовидными конструкциями<br /> или съемными.</h2>
+                <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частичное или полное <br />отсутствия зубов можно <br />восстановить с несъемный<br /> мостовидными конструкциями<br /> или съемными.</h2>
                 <div className="pb-3 pt-3 mt-2 mb-3 div__a">
                     <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
                 </div>
@@ -57,7 +57,7 @@ function Orp({ setShow }) {
                 </Col></Row>
 
 
-            <h1 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}> Ортопедический услуги</h1>
+            <h1 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}> Ортопедические услуги</h1>
             <h2 style={{ textAlign: "center", color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "30px" }}>
                 Выбор способа зависит от клинической ситуации пациента
             </h2>
