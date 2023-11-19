@@ -30,9 +30,9 @@ function _Navbar(props) {
               </Nav>
              <Nav>
              <NavDropdown title="Контакты" id="basic-nav-dropdown">
-                <NavDropdown.Item href='tel:+996709545487' > +996709545487 </NavDropdown.Item>
-                <NavDropdown.Item href='tel:+996779545487' >+996779545487 </NavDropdown.Item>
-                <NavDropdown.Item href='tel:+996555545487' >+996555545487 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996706245758' > +996776245758 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996776245758' >+996776245758 </NavDropdown.Item>
+                <NavDropdown.Item href='tel:+996556245758' >+996776245758 </NavDropdown.Item>
                 </NavDropdown>
 
              </Nav>
