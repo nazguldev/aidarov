@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table , Carousel} from 'react-bootstrap';
-import _Navbar from "../../app/nav/_Navbar"
-import Button1 from '../../Button1';
+import ur from '../../logoImage/ur.png'
 import RunText from '../../components/runText/RunText';
 import './urolog.scss'
 import Accordions from '../../components/accrdion/Accordions';
@@ -173,7 +172,7 @@ function AboutUrologi({ setShow }) {
             <div className='container AboutUrolog'>
             <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://st2.depositphotos.com/26044198/47235/v/600/depositphotos_472358090-stock-illustration-urology-and-organ-transplantation-concept.jpg'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={ur} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -252,24 +251,24 @@ function AboutUrologi({ setShow }) {
                         </div>
                     </Col>
                 </Row>
-                <Row className='mt-5'>
-                    <h1 className='text-center mb-3'>
-                        Наши пациенты
-                    </h1>
-                    {patients.map(e => {
-                        return (
-                            <>
-                                <Col md={4} sm={6} xs={12} >
-                                    <div>
-                                        <Card.Img className='W-100 h-100' src={e.img}></Card.Img>
-                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
-                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
-                                    </div>
-                                </Col>
-                            </>
-                        )
-                    })}
-                </Row>
+                {/*<Row className='mt-5'>*/}
+                {/*    <h1 className='text-center mb-3'>*/}
+                {/*        Наши пациенты*/}
+                {/*    </h1>*/}
+                {/*    {patients.map(e => {*/}
+                {/*        return (*/}
+                {/*            <>*/}
+                {/*                <Col md={4} sm={6} xs={12} >*/}
+                {/*                    <div>*/}
+                {/*                        <Card.Img className='W-100 h-100' src={e.img}></Card.Img>*/}
+                {/*                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>*/}
+                {/*                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>*/}
+                {/*                    </div>*/}
+                {/*                </Col>*/}
+                {/*            </>*/}
+                {/*        )*/}
+                {/*    })}*/}
+                {/*</Row>*/}
             </div>
             <RunText name={text}/>
             <div className='container'>
@@ -296,9 +295,10 @@ function AboutUrologi({ setShow }) {
                     </Table>
                 </Col>
             </div>
-            <Row className="justify-content-center mt-5">
+            <div className="d-flex   justify-content-center ">
                 <Col sm={10} md={8} xs={10}>
-                <h1 className='text-center pt-5 pb-5'>Отзывы</h1>
+                <h1 className='text-center pt-5 pb-5'>”
+                    Добрые слова от наших пациентов</h1>
                 <Carousel >
                         {
                             feedback_urology.map(e => {
@@ -318,7 +318,7 @@ function AboutUrologi({ setShow }) {
                         }
                     </Carousel>
                     </Col>
-                    </Row>
+                    </div>
         </>
 
     );

@@ -15,7 +15,11 @@ function Footer() {
         width: '100%',
       }}>
         <div className="container">
-          <div className="row">
+          <iframe
+              title="Google Map"
+              width="100%"
+              height="300"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32687.61675840791!2d72.81324476283164!3d40.522879187938685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaea1dcffea75%3A0x4991214020da62cf!2zNzMg0J_RgC4g0JzQsNGB0LDQu9C40LXQstCwLCDQntGI!5e0!3m2!1sky!2skg!4v1699613003437!5m2!1sky!2skg"  ></iframe> <div className="row">
             {/* collumn1 */}
             <div className="col">
               <h5 className="textinfooter">

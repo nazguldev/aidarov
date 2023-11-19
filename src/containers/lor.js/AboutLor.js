@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table, Carousel } from 'react-bootstrap';
-import _Navbar from "../../app/nav/_Navbar"
-import Button1 from '../../Button1';
+import lor from '../../logoImage/lor.png'
 import RunText from '../../components/runText/RunText';
 import './lor.scss'
 import Accordions from '../../components/accrdion/Accordions';
@@ -90,13 +89,15 @@ function AboutLor({ setShow }) {
     const text = [{
         texts: "Как лечить простатит",
         t: "/"
-    }, {
+    },
+        {
         texts: "Уретрит",
         t: "/"
     }, {
         texts: "Нефрит",
         t: "/"
-    }, {
+    },
+        {
         texts: "Бактериальный вагиноз.",
         t: "/"
     }, {
@@ -170,7 +171,7 @@ function AboutLor({ setShow }) {
             <div className='container AboutUrolog'>
                 <Navbar bg="dark" expand="lg" variant='dark'>
                     <Container>
-                        <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://vvclinic.com.ua/images/news/lor_vrach_kiev.jpg'} /></Navbar.Brand>
+                        <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={lor} /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -306,48 +307,31 @@ function AboutLor({ setShow }) {
                     </Col>
                 </Row>
                 </div>
-                <Row>
-                    <Col xs={12} md={6} lg={6}>
-                        <div className='justify-content-evenly text-center  ' >
-                            <img class=" t013__img t-img" src={'https://pngimg.com/uploads/doctor/doctor_PNG15980.png'} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">
-                            </img>
-                            <Card.Title className='text_nav'>Доктор Айдаров Чынгыз</Card.Title>
-                            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач урологии </span>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} lg={6}>
-                        <div className='justify-content-evenly text_nav mt-3'>
-                            <div >
-                                Я Айдаров Чынгыз родился в городе Ош. 06.05.1991 год.Окончил школу Карло-Маркса в 2008 году. Поступил в Медицинскую академию 2009 году. Окончил мед – академию 2014 году факультет лечебное дело. Поступил в ординатуру 2014 году по специальности врач уролог. С 2016 года работал в ОМОКБ до 2019года. С 2019 года работаю в частной клинике Айдарова Камалдина Абдурахмановича. Занимаемся хирургическим и терапевтическим лечением урологических заболевании. Особое направления в области мужского бесплодия.Спермограмма
-                            </div>
+                {/*<Row>*/}
+                {/*    <Col xs={12} md={6} lg={6}>*/}
+                {/*        <div className='justify-content-evenly text-center  ' >*/}
+                {/*            <img class=" t013__img t-img" src={'https://pngimg.com/uploads/doctor/doctor_PNG15980.png'} imgfield="img" data-tu-max-width="320" data-tu-max-height="320" data-tu-cover="c" alt="" role="presentation">*/}
+                {/*            </img>*/}
+                {/*            <Card.Title className='text_nav'>Доктор Айдаров Чынгыз</Card.Title>*/}
+                {/*            <span className='text_nav' style={{ fontSize: '14px', lineHeight: '18px' }} data-customstyle="yes">Основатель и<br /> главный врач урологии </span>*/}
+                {/*        </div>*/}
+                {/*    </Col>*/}
+                {/*    <Col xs={12} md={6} lg={6}>*/}
+                {/*        <div className='justify-content-evenly text_nav mt-3'>*/}
+                {/*            <div >*/}
+                {/*                Я Айдаров Чынгыз родился в городе Ош. 06.05.1991 год.Окончил школу Карло-Маркса в 2008 году. Поступил в Медицинскую академию 2009 году. Окончил мед – академию 2014 году факультет лечебное дело. Поступил в ординатуру 2014 году по специальности врач уролог. С 2016 года работал в ОМОКБ до 2019года. С 2019 года работаю в частной клинике Айдарова Камалдина Абдурахмановича. Занимаемся хирургическим и терапевтическим лечением урологических заболевании. Особое направления в области мужского бесплодия.Спермограмма*/}
+                {/*            </div>*/}
 
-                            <div className='mt-3'>
-                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
-                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
-                                </div>
+                {/*            <div className='mt-3'>*/}
+                {/*                <div className="pb-3 pt-3 mt-2 mb-3 div__a">*/}
+                {/*                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>*/}
+                {/*                </div>*/}
 
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className='mt-5'>
-                    <h1 className='text-center mb-3'>
-                        Наши пациенты
-                    </h1>
-                    {patients.map(e => {
-                        return (
-                            <>
-                                <Col md={4} sm={6} xs={12} >
-                                    <div>
-                                        <Card.Img className='W-100 h-100' src={e.img}></Card.Img>
-                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
-                                        <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
-                                    </div>
-                                </Col>
-                            </>
-                        )
-                    })}
-                </Row>
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
+
             </div>
             <RunText name={text} />
             <div className='container'>
@@ -374,7 +358,7 @@ function AboutLor({ setShow }) {
                     </Table>
                 </Col>
             </div>
-            <Row className="justify-content-center mt-5">
+            <div className=" d-flex justify-content-center mt-5">
                 <Col sm={10} md={8} xs={10}>
                 <h1 className='text-center pt-5 pb-5'>Отзывы</h1>
                 <Carousel >
@@ -396,7 +380,7 @@ function AboutLor({ setShow }) {
                         }
                     </Carousel>
                     </Col>
-                    </Row>
+                    </div>
         </>
 
     );

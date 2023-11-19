@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table, Carousel } from 'react-bootstrap'
-import Button1 from '../../Button1';
+import  gin from '../../logoImage/gin.png'
 import './gynecolog.scss'
 import Accordions from '../../components/accrdion/Accordions';
 import RunText from '../../components/runText/RunText';
@@ -51,18 +51,18 @@ function AboutGynecology({ setShow }) {
     const patients = [
         {
             img: 'https://img.freepik.com/free-photo/elder-patient-with-medical-mask-and-covid-recovery-center-female-doctor-look-together-at-results_23-2148847861.jpg',
-            title: "TITLE",
-            known_for: "TEXT",
+          /*  title: "Марина Николаевна",
+            known_for: ",*/
         },
         {
             img: `https://n1s2.hsmedia.ru/7e/82/a6/7e82a6f11cb2816561372474f9ec82ec/1920x1152_0xac120003_14017473821644308034.jpeg`,
-            title: "TITLE",
-            known_for: "TEXT",
+           /* title: "Анипа Назарбекова\"",
+            known_for: "TEXT",*/
         },
         {
-            img: 'https://img.freepik.com/free-photo/elder-patient-with-medical-mask-and-covid-recovery-center-female-doctor-look-together-at-results_23-2148847861.jpg',
-            title: "TITLE",
-            known_for: "TEXT",
+            img: ' https://dgkb-9.ru/sites/dgkb-9/files/styles/medium/public/images/news/IMG-20210830-WA0019.jpg?itok=5AFagYn6',
+            /*title: "TITLE",
+            known_for: "TEXT",*/
         }
     ]
     const as = [
@@ -182,7 +182,7 @@ function AboutGynecology({ setShow }) {
                 <div className='container'>
                     <Navbar bg="dark" expand="lg" variant='dark'>
                         <Container>
-                            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }}src={'https://agsmedico.com/img/especialidades/GinecologiayObstetricia.png'} /></Navbar.Brand>
+                            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={gin} /></Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
@@ -271,23 +271,44 @@ function AboutGynecology({ setShow }) {
                             В медицине различают большие и малые гинекологические операции. Каждый вид оперативного вмешательства имеет свои особенности, и используется при определенных медицинских показаниях. В клинике профессора Асымбековой работают врачи-хирурги с огромным практическим опытом в оперативной гинекологии. Наши специалисты – это не просто высококлассные хирурги и гинекологи, но и обладатели ученых степеней. Многие из них являются авторами инновационных хирургических методик.
                         </p>
                     </div>
-                    <Row className='mt-5'>
-                        <h1 className='text-center mb-3'>
-                            Наши пациенты
-                        </h1>
-                        {patients.map(e => {
-                            return (
-                                <>
-                                    <Col md={4} sm={6} xs={12} >
-                                        <div>
-                                            <Card.Img className='w-100 h-100' src={e.img}></Card.Img>
-                                            <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>
-                                            <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>
-                                        </div>
-                                    </Col>
-                                </>
-                            )
-                        })}
+                    <Row className='mt-5 justify-content-center'>
+                        {/*<h1 className='text-center mb-3'>*/}
+                        {/*    Наши пациенты*/}
+                        {/*</h1>*/}
+                        {/*{patients.map(e => {*/}
+                        {/*    return (*/}
+                        {/*        <>*/}
+                        {/*            <Col md={4} sm={6} xs={12} >*/}
+                        {/*                <div>*/}
+                        {/*                    <Card.Img className='w-100 h-100' src={e.img}></Card.Img>*/}
+                        {/*                    <Card.Text style={{ color: "white", textAlign: "center" }}>{e.title}</Card.Text>*/}
+                        {/*                    <Card.Text style={{ color: "white", textAlign: "center" }}>{e.known_for}</Card.Text>*/}
+                        {/*                </div>*/}
+                        {/*            </Col>*/}
+                        {/*        </>*/}
+                        {/*    )*/}
+                        {/*})}*/}
+                        <Col sm={10} md={8} xs={10}>
+                            <h1 className='text-center pt-5 pb-5'>”
+                                Добрые слова от наших пациентов</h1>
+                            <Carousel >
+                                {
+                                    feedback_ginecology.map(e => {
+                                        return (
+                                            <Carousel.Item >
+                                                <div className='feedback_ginecology'>
+                                                    <h4>{e.name}</h4>
+                                                    <p>
+                                                        {e.text}
+                                                    </p>
+                                                </div>
+                                            </Carousel.Item>
+                                        )
+                                    })
+                                }
+                            </Carousel>
+                        </Col>
+
                     </Row>
                 </div>
             </div>
@@ -377,29 +398,11 @@ function AboutGynecology({ setShow }) {
                             })}
                         </tbody>
                     </Table>
+
                 </Col>
+
             </div>
-            <Row className="justify-content-center mt-5">
-                <Col sm={10} md={8} xs={10}>
-                <h1 className='text-center pt-5 pb-5'>Отзывы</h1>
-                <Carousel >
-                        {
-                            feedback_ginecology.map(e => {
-                                return (
-                                    <Carousel.Item >
-                                        <div className='feedback_ginecology'>
-                                        <h4>{e.name}</h4>
-                                       <p>
-                                           {e.text}
-                                       </p>
-                                        </div>
-                                    </Carousel.Item>
-                                )
-                            })
-                        }
-                    </Carousel>
-                    </Col>
-                    </Row>
+
         </>
     );
 }

@@ -183,7 +183,7 @@ function Iplant({ setShow }) {
                 <h2 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "50px" }}>
                     Выбор способа зависит от клинической ситуации пациента
                 </h2>
-                <Row style={{ textAlign: "center" }}>
+                <Row >
                     <Col md={6} className="mt-3">
                         <div style={{
                             width: 'auto', textAlign: "center", border: '2px solid #d3bb7e',

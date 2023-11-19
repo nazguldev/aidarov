@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import RunText from '../../../components/runText/RunText';
 import AOS from 'aos'
-import AutoVideo from '../../../components/Vidoe/AutoVideo';
 import Accordions from '../../../components/accrdion/Accordions';
 import imgg from '../../../img.aidarov/imgg.jpeg'
 import './Appbar.scss'
@@ -170,27 +169,25 @@ function Otbali({ setShow }) {
                     <h1 style={{ color: "#d3bb7e", }}>
                         Виды профессионального отбеливания
                     </h1>
-                    <Col xs={12} md={4} >
-                     <h4 style={{color: "white"}}> Ультра-звуковое отбеливание</h4> 
-                    
-                        <img  src={ultra_zvuk } >
+                    <Col xs={12} md={6} lg={6} >
+                     <h4 style={{color: "white"}}> Ультра-звуковое отбеливание</h4>
+                        <img className='p-2'  src={ultra_zvuk } >
                         </img>
                        
                     </Col>
                    
-                    <Col xs={12} md={4}>
+                    <Col xs={12} md={6} lg={6}>
                     <h4 style={{color: "white"}}>Полировка с пастой</h4> 
                     
-                        <img  src={polirovka} >
+                        <img className='p-2' src={polirovka} >
                         </img>
                         
 
                     </Col>
                    
-                    <Col xs={12} md={4}>
+                    <Col xs={12} md={6} lg={6}>
                    <h4 style={{color: "white"}}>Air-flow</h4> 
-                        <img  src={airflow} >
-                        </img>
+                        <img className='p-2' src={airflow} ></img>
                        
                     </Col>
                 </Row>

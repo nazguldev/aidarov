@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row,Carousel } from 'react-bootstrap'
-import Button1 from '../../Button1';
+import xir from '../.././logoImage/xir.png'
 import './xirurg.scss'
 import _Navbar from "../../app/nav/_Navbar"
 import Accordions from '../../components/accrdion/Accordions'
@@ -60,7 +60,8 @@ function AboutXirurg({ setShow }) {
             <div className='container aboutXirurg mt-4'>
             <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={xir} />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -163,7 +164,7 @@ function AboutXirurg({ setShow }) {
                     </Col>
                 </Row>
             </div>
-            <Adoctors />
+            {/*<Adoctors />*/}
             <Price />
             {/* <RunText /> */}
             <div className='container'>
@@ -213,7 +214,8 @@ function AboutXirurg({ setShow }) {
                     </Row>
                     <Row className="justify-content-center mt-5">
                 <Col sm={10} md={8} xs={10}>
-                <h1 className='text-center pt-5 pb-5'>Отзывы</h1>
+                <h1 className='text-center pt-5 pb-5'>”
+                    Добрые слова от наших пациентов</h1>
                 <Carousel >
                         {
                             feedback_xirurg.map(e => {

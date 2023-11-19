@@ -46,7 +46,8 @@ function Orp({ setShow }) {
             <DentalNavbar />
             <h1 className=''>Ортопедия
             </h1>
-            <Row>           <Col sm={6}>
+            <Row>
+                <Col sm={6}>
                 <h2 className='mt-3 mb-3' style={{ color: "white" }}>Частичное или полное <br />отсутствия зубов можно <br />восстановить с несъемный<br /> мостовидными конструкциями<br /> или съемными.</h2>
                 <div className="pb-3 pt-3 mt-2 mb-3 div__a">
                     <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
@@ -69,7 +70,7 @@ function Orp({ setShow }) {
                     }}>
                         <Card.Body>
                             <h3 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "30px" }}>СЪЕМНЫЙ</h3>
-                            <h3 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', margin: "10px", textAlign: "center" }}>
+                            <h6 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', margin: "10px", textAlign: "center" }}>
                                 <Table striped bordered hover variant='dark'>
                                     <thead>
                                         <tr>
@@ -104,7 +105,7 @@ function Orp({ setShow }) {
 
                                     </tbody>
                                 </Table>
-                            </h3>
+                            </h6>
                         </Card.Body>
                     </div>
                 </Col>
@@ -114,7 +115,7 @@ function Orp({ setShow }) {
                     }}>
                         <Card.Body>
                             <h3 style={{ color: "#d3bb7e", fontFamily: 'GraphikTT Arial sans-serif', marginTop: "30px" }}>НЕСЪЁМНОЕ</h3>
-                            <h3 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', margin: "10px", textAlign: "center" }}>
+                            <h6 style={{ color: "white", fontFamily: 'GraphikTT Arial sans-serif', margin: "10px", textAlign: "center" }}>
                                 <Table striped bordered hover variant='dark'>
                                     <thead>
                                         <tr>
@@ -143,7 +144,7 @@ function Orp({ setShow }) {
                                         </tr>
                                     </tbody>
                                 </Table>
-                            </h3>
+                            </h6>
                         </Card.Body>
                     </div>
                 </Col>
@@ -151,7 +152,7 @@ function Orp({ setShow }) {
             <Row className="mt-5">
                 <Col xs={12} md={6} lg={6}>
                     <h1 className='text-center'>СЪЕМНЫЙ</h1>
-                    <img width={'100%'} src="https://implant-expert.ru/wp-content/uploads/2018/12/%D1%81%D1%8A%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%B7%D1%8B.png" />
+                    <img width={'100%'} src="https://vimontale.ru/wp-content/themes/vimontale/i/2/2.jpg" />
 
                 </Col>
                 <Col xs={12} md={6} lg={6}>

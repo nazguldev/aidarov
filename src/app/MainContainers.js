@@ -11,7 +11,14 @@ import price1 from './PriceMain'
 import stiff1 from '../containers/dental/dental.img/stiff1.jpg'
 import ftiff2 from '../containers/dental/dental.img/ftiff2.jpg'
 import foto from '../containers/dental/dental.img/foto.jpg'
-
+import stom from '../logoImage/stom.png'
+import gin from '../logoImage/gin.png'
+import ur from '../logoImage/ur.png'
+import lor from '../logoImage/lor.png'
+import xir from '../logoImage/xir.png'
+import labs from '../logoImage/labs.png'
+import ok from '../logoImage/ok.png'
+import ter from '../logoImage/ter.png'
 function MainContainers({ setShow }) {
     const t = price1
     useEffect(() => {
@@ -94,8 +101,6 @@ function MainContainers({ setShow }) {
         },
 
     ]
-
-
     const feedback = [
         {     
             name:"Айжан",      
@@ -130,8 +135,6 @@ function MainContainers({ setShow }) {
             text:"В клинику «МЦ Айдаров» пришла 3 года назад на консультацию по ортодонтическому лечению. Я очень довольна тем, что осталась в этой клинике.",
         }
     ]
- 
-
     const text = [
         {
             texts: "Клининика Айдарова",
@@ -204,24 +207,23 @@ function MainContainers({ setShow }) {
                                 Кардиология,
                                 Стоматология,
                                 Неврология
-                                <div className="pb-3 pt-3 mt-2 mb-3 div__a">
-                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}   > Записаться на прием</a>
+                                <div className="pb-3 pt-3 mt-5 mb-5 div__a">
+                                    <a href={'tel:+996776000000'} style={{ textDecoration: "none" }} className={'p-2 textinfooter2 rounded'}> Записаться на прием</a>
                                 </div>
                             </p>
                         </Col>
                     </div>
                 </div>
-                <div className='container'>
-                    <h1 className='text-center pt-3 pb-3 '>УСЛУГИ  КЛИНИКИ:</h1>
-
-                    <Row>
+                <div className='container mt-2'>
+                    <h1 className='text-center pt-3 pb-3'>УСЛУГИ  КЛИНИКИ:</h1>
+                    <Row >
                         <Col sm={6} xs={12} md={4}>
                             <a href='/aboutDental'>
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
 
                                         <Card.Title className='text-center pb-3'>Стоматология</Card.Title>
-                                        <Card.Img className='images_item' variant="top" src='https://images1-fabric.practo.com/rekha-dental-clinic-and-implant-center-ghaziabad-1464245959-57469ec7e278c.png' />
+                                        <Card.Img className='images_item' variant="top" src={stom} />
                                     </Card.Body>
                                 </div>
                             </a>
@@ -231,7 +233,7 @@ function MainContainers({ setShow }) {
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
                                         <Card.Title className='text-center pb-3'>Хирургия</Card.Title>
-                                        <Card.Img className=' images_item ' variant="top" src='https://images.squarespace-cdn.com/content/v1/5d752f9b79dbbb3fce1ecf1b/1578856941630-IS6RIUSYKXOWHUMG2YBH/Meta_Icons-08.png' />
+                                        <Card.Img className=' images_item ' variant="top" src={xir} />
 
                                     </Card.Body>
                                 </div>
@@ -242,7 +244,7 @@ function MainContainers({ setShow }) {
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Body>
                                         <Card.Title className='text-center pb-3'>Терапия</Card.Title>
-                                        <Card.Img className='images_item' variant="top" src='http://linoko.by/wp-content/uploads/2019/01/logo-1024x576.png' />
+                                        <Card.Img className='images_item' variant="top" src={ter} />
 
                                     </Card.Body>
                                 </div>
@@ -253,7 +255,7 @@ function MainContainers({ setShow }) {
                             <a href='/AboutLaboratory'>
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Лаборатория</Card.Title>
-                                    <Card.Img className='images_item' variant="top" src='http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png' />
+                                    <Card.Img className='images_item' variant="top" src={labs} />
 
                                 </div>
                             </a>
@@ -263,15 +265,16 @@ function MainContainers({ setShow }) {
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Гинекология
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://agsmedico.com/img/especialidades/GinecologiayObstetricia.png' />
+                                    <Card.Img className=' images_item ' variant="top" src={gin} />
                                 </div>
                             </a>
-                        </Col> <Col sm={6} xs={12} md={4} >
+                        </Col>
+                        <Col sm={6} xs={12} md={4} >
                             <a href='/AboutUrologi'>
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Урология
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://st2.depositphotos.com/26044198/47235/v/600/depositphotos_472358090-stock-illustration-urology-and-organ-transplantation-concept.jpg' />
+                                    <Card.Img className=' images_item ' variant="top" src={ur} />
                                 </div>
                             </a>
                         </Col>
@@ -280,7 +283,7 @@ function MainContainers({ setShow }) {
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Лор
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://vvclinic.com.ua/images/news/lor_vrach_kiev.jpg' />
+                                    <Card.Img className=' images_item ' variant="top" src={lor} />
                                 </div>
                             </a>
                         </Col>
@@ -289,7 +292,7 @@ function MainContainers({ setShow }) {
                                 <div style={{ marginTop: "10px", backgroundColor: "white" }}>
                                     <Card.Title className='text-center pb-3'>Окулист
                                     </Card.Title>
-                                    <Card.Img className=' images_item ' variant="top" src='https://imgtest.mir24.tv/uploaded/images/crops/2022/February/870x489_0x417_detail_crop_20220225174534_fd6eef58_d8f986c597b46d9003f9449f1b5501f6e9f0b74d0859ef4d3c4165341aa8e638.jpg' />
+                                    <Card.Img className=' images_item ' variant="top" src={ok} />
                                 </div>
                             </a>
                         </Col>   </Row>
@@ -362,48 +365,48 @@ function MainContainers({ setShow }) {
                     <Row className="mt-5">
                         <Col xs={12} md={4}  >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">01</h3>
+                                data-aos-anchor-placement="top-bottom" className="tn-atom text-center  p-2 ">01</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Стоматология
                             </p>
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">02</h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">02</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Хирургия </p>
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">03</h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">03</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Терапия
 
                             </p>
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">04</h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">04</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Лаборатория</p>
 
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">05</h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">05</h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">
                                 Гинекология</p>
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">06  </h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">06  </h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">
                                 Урология</p>
                         </Col>
                         <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">06  </h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">06  </h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Лор
                             </p>
                         </Col> <Col xs={12} md={4} >
                             <h3 data-aos="fade-up"
-                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 m-2">07  </h3>
+                                data-aos-anchor-placement="top-bottom" class="tn-atom text-center  p-2 ">07  </h3>
                             <p style={{ color: "white" }} className="text-center p-2 m-2">Окулист
                             </p>
                         </Col>
@@ -421,42 +424,35 @@ function MainContainers({ setShow }) {
                         <Col md={10} xs={10}  >
                             <Accordions name={accordion2} />
                         </Col>
+                        <Col sm={10} md={8} xs={10}>
+                            <h1 className='text-center pt-5 pb-5'>”
+                                Добрые слова от наших пациентов</h1>
+                            <Carousel >
+                                { feedback.map(e => {
+                                    return (
+                                        <Carousel.Item >
+                                            <div className='feedback_div'>
+                                                <h4>{e.name}</h4>
+                                                <p>
+                                                    {e.text}
+                                                </p>
+                                            </div>
+
+
+                                        </Carousel.Item>
+                                    )
+                                })
+                                }
+
+                            </Carousel>
+                        </Col>
+
 
                     </Row>
+                    <RunText name={text}/>
                 </div>
-
-                <div className='text-center'>
-                    <RunText name={text} />
-                </div>
-
-               <Row className="justify-content-center mt-5">
-                <Col sm={10} md={8} xs={10}>
-                <h1 className='text-center pt-5 pb-5'>Отзывы</h1>
-                <Carousel >
-                        {
-                            feedback.map(e => {
-                                return (
-                                    <Carousel.Item >
-                                        <div className='feedback_div'>
-                                        <h4>{e.name}</h4>
-                                       <p>
-                                           {e.text}
-                                       </p>
-                                        </div>
-                                           
-                                        
-                                    </Carousel.Item>
-                                )
-                            })
-                        }
-                    </Carousel>
-                    </Col>
-                    </Row>
-                    </div>
-
-
+            </div>
         </>
     );
 }
-
 export default MainContainers;

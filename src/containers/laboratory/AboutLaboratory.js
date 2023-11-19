@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Nav, Navbar, NavDropdown, Row, Table } from 'react-bootstrap'
 import './Laboratory.scss'
+import  labs from '../../logoImage/labs.png'
 import _Navbar from "../../app/nav/_Navbar"
 import lab from './product';
 import Button1 from '../../Button1';
@@ -24,7 +25,7 @@ function AboutLaboratory({ setShow }) {
         <div className={'Laboratory'}>
              <Navbar bg="dark" expand="lg" variant='dark'>
           <Container>
-            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={'http://s1.iconbird.com/ico/0612/iloviconsbysvengraph/w512h5121339361119lab.png'} /></Navbar.Brand>
+            <Navbar.Brand href="/"><img style={{ width: '50px', height: '50px', borderRadius: '50%' }} src={labs} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
